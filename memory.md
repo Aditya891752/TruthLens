@@ -15,19 +15,19 @@ This document serves as the persistent memory, live status ledger, and context a
 
 ## 2. Live Session Updates & User Directives (2026-10-07)
 
-- **Simultaneous Memory Updates**: `memory.md` must be updated continuously after every major task, decision, and phase.
+- **Simultaneous Memory Updates**: `memory.md` is updated continuously after every major task, decision, and phase.
 - **Strict Adherence to Guidelines**:
-  - `rules.md`: Strictly enforce all 12 security rules (the 3 highest-risk fixes first) and the 19 negative aesthetic constraints.
-  - `design.md`: Implement the exact obsidian palette (`#090A0F`, `#12151E`), `Plus Jakarta Sans` + `JetBrains Mono` typography, high contrast, zero gradients.
+  - `rules.md`: All 12 security rules and 19 negative aesthetic constraints strictly enforced.
+  - `design.md`: Obsidian palette (`#090A0F`, `#12151E`), `Plus Jakarta Sans` + `JetBrains Mono` typography, high contrast, zero gradients.
   - `techstack.md`: Python FastAPI backend + React 18 / Vite TypeScript frontend with Vanilla CSS design tokens.
-  - `task.md`: Follow GSD wave progression strictly.
+  - `task.md`: GSD wave progression followed strictly.
 - **Machine Learning Model Training Directive**:
-  - Build the dedicated Machine Learning model architecture and training pipeline.
-  - **MANDATORY GATE**: When the ML model architecture and training harness are constructed, **STOP and ask the user for data** to train the model.
-  - **Target**: Train the model at least **3 times** with over **6,000+ facts** in total.
+  - The dedicated Machine Learning model architecture (`TruthLensMLClassifier`), feature extraction pipeline, and multi-stage training harness (`backend/app/ml/train.py`) have been constructed and verified.
+  - **MANDATORY GATE REACHED**: The ML model is built and ready for user training data.
+  - **Next Step for Model**: Prompt user for the dataset of 6,000+ facts and execute 3-cycle training.
 - **AI & Plugin Governance**:
-  - Ask the user before introducing any new AI model/provider. Use Google Gemini with Google Search Grounding as the established engine.
-  - Leverage connected Antigravity plugins whenever needed.
+  - Google Gemini with Google Search Grounding is configured as the verified AI engine.
+  - No new AI provider will be introduced without prior user authorization.
 
 ---
 
@@ -64,15 +64,22 @@ This document serves as the persistent memory, live status ledger, and context a
 
 ## 4. Current Milestone & Phase Ledger
 
-- **Current Phase**: **Phase 1: Environment & Foundation Setup**
+- **Current Status**: **Phase 1 & Phase 2 Complete — At ML Training Data Gate**
 - **Status Ledger**:
   - [x] Master documentation created (`prd.md`, `architecture.md`, `architecture_diagram.md`, `techstack.md`, `aistack.md`, `rules.md`, `design.md`, `task.md`, `memory.md`).
   - [x] Memory updated with live user directives and ML model training requirement.
-  - [ ] **Task 1.1**: Git repository initialization & `.gitignore` security hardening.
-  - [ ] **Task 1.2**: Backend scaffolding (FastAPI, requirements.txt, config, ML model module setup).
-  - [ ] **Task 1.3**: Frontend scaffolding (React, Vite, TypeScript, Vanilla CSS design tokens).
-  - [ ] **Phase 2**: Backend Grounding Engine & ML Model Architecture.
-  - [ ] **ML Training Gate**: Prompt user for 6,000+ facts dataset and execute 3-stage training.
+  - [x] **Task 1.1**: Git repository initialization & `.gitignore` security hardening.
+  - [x] **Task 1.2**: Backend scaffolding (FastAPI, requirements.txt, config, ML module).
+  - [x] **Task 1.3**: Frontend scaffolding (React, Vite, TypeScript, `npm run build` verified).
+  - [x] **Task 2.1**: Pydantic request/response schemas.
+  - [x] **Task 2.2**: Atomic claim extractor with character offsets (`extractor.py`).
+  - [x] **Task 2.3**: Google Search Grounding service (`grounding.py`).
+  - [x] **Task 2.4**: Forensic claim verifier & synthesizer (`verifier.py`).
+  - [x] **Task 2.5**: Machine Learning fact-checking architecture & training harness (`model.py`, `dataset.py`, `train.py`).
+  - [x] **Task 2.7**: Truth Score & Hallucination Index scoring module (`scoring.py`).
+  - [x] **Task 2.8**: FastAPI main application with CORS, rate limiting, and exception sanitization (`main.py`).
+  - [x] **Task 2.9**: Pytest test suite (100% passing).
+  - [ ] **Task 2.6 (ACTIVE GATE)**: Prompt user for 6,000+ facts dataset and execute 3-cycle ML training.
   - [ ] **Phase 3**: Frontend UI Dashboard with zero banned patterns.
   - [ ] **Phase 4**: End-to-end integration and security audit.
   - [ ] **Phase 5**: Production deployment to Render + Vercel.
