@@ -6,25 +6,11 @@ export default function Toast({ message }: ToastProps) {
   if (!message) return null;
 
   return (
-    <div style={{
-      position: 'fixed',
-      bottom: 'var(--space-6)',
-      right: 'var(--space-6)',
-      backgroundColor: 'var(--bg-surface-3)',
-      color: 'var(--text-primary)',
-      border: '1px solid var(--accent-base)',
-      borderRadius: 'var(--radius-md)',
-      padding: 'var(--space-3) var(--space-5)',
-      fontSize: '13px',
-      fontFamily: 'var(--font-mono)',
-      boxShadow: '0 8px 24px rgba(0, 0, 0, 0.5)',
-      zIndex: 9999,
-      display: 'flex',
-      alignItems: 'center',
-      gap: 'var(--space-2)'
-    }}>
-      <span style={{ color: 'var(--accent-base)' }}>✓</span>
-      <span>{message}</span>
+    <div className="fixed bottom-8 right-6 z-50 bg-[#0b1c30] text-white px-4 py-2.5 rounded border border-[#bfc7d2] shadow-lg flex items-center gap-2 animate-bounce-short">
+      <span className="material-symbols-outlined text-[#85f8c4] text-[18px]">
+        check_circle
+      </span>
+      <span className="font-mono text-xs text-white">{message}</span>
     </div>
   );
 }

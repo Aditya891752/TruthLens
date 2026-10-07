@@ -27,7 +27,7 @@ export default function ClaimsList({
       all: claims.length,
       contradicted: claims.filter((c) => c.verdict === 'CONTRADICTED').length,
       supported: claims.filter((c) => c.verdict === 'SUPPORTED').length,
-      unverified: claims.filter((c) => c.verdict === 'UNVERIFIED').length,
+      unverified: claims.filter((c) => c.verdict === 'UNVERIFIED').length
     };
   }, [claims]);
 
@@ -37,101 +37,79 @@ export default function ClaimsList({
   }, [mlPredictions]);
 
   return (
-    <div className="surface-panel" style={{ padding: 'var(--space-6)' }}>
-      {/* Title & Filter Tabs */}
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: 'var(--space-4)',
-        paddingBottom: 'var(--space-3)',
-        borderBottom: '1px solid var(--border-default)',
-        flexWrap: 'wrap',
-        gap: 'var(--space-2)'
-      }}>
-        <h2 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-primary)' }}>
-          Extracted Claims Stream ({filteredClaims.length})
+    <div className="flex flex-col gap-4">
+      {/* Filter and Header */}
+      <div className="bg-white border border-[#bfc7d2] rounded p-4 shadow-xs flex flex-wrap items-center justify-between gap-3">
+        <h2 className="font-sans font-bold text-sm uppercase tracking-wide text-[#131b2e]">
+          Extracted Claims Stream
         </h2>
-
-        {/* Filter Tabs */}
-        <div style={{ display: 'flex', gap: 'var(--space-1)' }}>
+        <div className="flex flex-wrap items-center gap-1.5 font-mono text-[11px]">
           <button
             type="button"
-            className="btn-secondary"
             onClick={() => setFilter('ALL')}
-            style={{
-              borderColor: filter === 'ALL' ? 'var(--border-strong)' : 'transparent',
-              backgroundColor: filter === 'ALL' ? 'var(--bg-surface-3)' : 'transparent',
-              color: filter === 'ALL' ? 'var(--text-primary)' : 'var(--text-secondary)',
-              padding: '4px 10px',
-              fontSize: '12px'
-            }}
+            className={`font-medium px-2.5 py-1 rounded transition-colors cursor-pointer ${
+              filter === 'ALL'
+                ? 'bg-[#131b2e] text-white'
+                : 'bg-white text-[#131b2e] border border-[#bfc7d2] hover:bg-[#f2f3ff]'
+            }`}
           >
             All ({counts.all})
           </button>
           <button
             type="button"
-            className="btn-secondary"
             onClick={() => setFilter('CONTRADICTED')}
-            style={{
-              borderColor: filter === 'CONTRADICTED' ? 'var(--contradicted-border)' : 'transparent',
-              backgroundColor: filter === 'CONTRADICTED' ? 'var(--contradicted-bg)' : 'transparent',
-              color: filter === 'CONTRADICTED' ? 'var(--contradicted-text)' : 'var(--text-secondary)',
-              padding: '4px 10px',
-              fontSize: '12px'
-            }}
+            className={`font-medium px-2.5 py-1 rounded transition-colors cursor-pointer ${
+              filter === 'CONTRADICTED'
+                ? 'bg-[#131b2e] text-white'
+                : 'bg-white text-[#991b1b] border border-[#fecaca] hover:bg-[#fef2f2]'
+            }`}
           >
             Contradicted ({counts.contradicted})
           </button>
           <button
             type="button"
-            className="btn-secondary"
             onClick={() => setFilter('SUPPORTED')}
-            style={{
-              borderColor: filter === 'SUPPORTED' ? 'var(--supported-border)' : 'transparent',
-              backgroundColor: filter === 'SUPPORTED' ? 'var(--supported-bg)' : 'transparent',
-              color: filter === 'SUPPORTED' ? 'var(--supported-text)' : 'var(--text-secondary)',
-              padding: '4px 10px',
-              fontSize: '12px'
-            }}
+            className={`font-medium px-2.5 py-1 rounded transition-colors cursor-pointer ${
+              filter === 'SUPPORTED'
+                ? 'bg-[#131b2e] text-white'
+                : 'bg-white text-[#065f46] border border-[#a7f3d0] hover:bg-[#ecfdf5]'
+            }`}
           >
             Supported ({counts.supported})
           </button>
           <button
             type="button"
-            className="btn-secondary"
             onClick={() => setFilter('UNVERIFIED')}
-            style={{
-              borderColor: filter === 'UNVERIFIED' ? 'var(--unverified-border)' : 'transparent',
-              backgroundColor: filter === 'UNVERIFIED' ? 'var(--unverified-bg)' : 'transparent',
-              color: filter === 'UNVERIFIED' ? 'var(--unverified-text)' : 'var(--text-secondary)',
-              padding: '4px 10px',
-              fontSize: '12px'
-            }}
+            className={`font-medium px-2.5 py-1 rounded transition-colors cursor-pointer ${
+              filter === 'UNVERIFIED'
+                ? 'bg-[#131b2e] text-white'
+                : 'bg-white text-[#92400e] border border-[#fde68a] hover:bg-[#fffbeb]'
+            }`}
           >
             Unverified ({counts.unverified})
           </button>
         </div>
       </div>
 
-      {/* Claims List */}
-      {filteredClaims.length === 0 ? (
-        <div style={{ padding: 'var(--space-6)', textAlign: 'center', color: 'var(--text-muted)', fontSize: '13px' }}>
-          No claims match the active status filter.
-        </div>
-      ) : (
-        <div>
-          {filteredClaims.map((claim) => (
-            <ClaimCard
-              key={claim.id}
-              claim={claim}
-              isSelected={selectedClaimId === claim.id}
-              onSelect={() => onSelectClaim(claim.id)}
-              mlPrediction={mlMap.get(claim.id)}
-            />
-          ))}
-        </div>
-      )}
+      {/* Stack of Claim Cards */}
+      <div className="flex flex-col gap-4">
+        {filteredClaims.map((claim, idx) => (
+          <ClaimCard
+            key={claim.id}
+            claim={claim}
+            index={idx + 1}
+            isSelected={selectedClaimId === claim.id}
+            onSelect={() => onSelectClaim(claim.id)}
+            mlPrediction={mlMap.get(claim.id)}
+          />
+        ))}
+
+        {filteredClaims.length === 0 && (
+          <div className="p-8 text-center bg-white border border-[#bfc7d2] rounded font-mono text-xs text-[#707881]">
+            No claims match the active filter ({filter}).
+          </div>
+        )}
+      </div>
     </div>
   );
 }

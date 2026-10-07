@@ -26,14 +26,16 @@ class ScoringService:
         contradicted_count = len(contradicted)
         unverified_count = len(unverified)
 
-        # Weighted confidence sum of supported claims
+        # Weighted confidence score incorporating supported and partial unverified evidence
         sum_supported_conf = sum(c.confidence for c in supported)
-        truth_score = round((sum_supported_conf / total) * 100.0, 1)
+        sum_unverified_conf = sum(c.confidence * 0.5 for c in unverified)
+        truth_score = round(((sum_supported_conf + sum_unverified_conf) / total) * 100.0, 1)
 
         # Hallucination Risk determination
-        if contradicted_count >= 2 or truth_score < 50.0:
+        # Subtle Hallucination (1 contradiction out of multiple facts) is MODERATE RISK
+        if contradicted_count >= 2 or (contradicted_count >= 1 and supported_count == 0):
             risk = RiskLevelEnum.CRITICAL
-        elif contradicted_count == 1 or truth_score < 80.0:
+        elif contradicted_count == 1 or unverified_count >= 1 or truth_score < 80.0:
             risk = RiskLevelEnum.MODERATE
         else:
             risk = RiskLevelEnum.LOW

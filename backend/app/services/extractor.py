@@ -106,10 +106,14 @@ Output strictly valid JSON format conforming to:
         """
         Deterministic, robust sentence-level and clause-level extraction.
         Guarantees exact character span coverage and zero external dependencies.
+        Protects abbreviations like St., Dr., Mr., etc. from false sentence splits.
         """
         claims = []
-        # Sentence splitting pattern preserving positions
-        sentence_pattern = re.compile(r'([A-Z0-9][^.!?]*[.!?])', re.MULTILINE)
+        # Sentence splitting pattern protecting common abbreviations
+        sentence_pattern = re.compile(
+            r'([A-Z0-9].*?(?<!\bSt)(?<!\bDr)(?<!\bMr)(?<!\bMrs)(?<!\bMs)(?<!\bProf)(?<!\bvs)(?<!\betc)(?<!\bU\.S)[.!?])(?:\s+|$)',
+            re.MULTILINE
+        )
         matches = list(sentence_pattern.finditer(text))
 
         if not matches:
@@ -134,30 +138,12 @@ Output strictly valid JSON format conforming to:
             if len(sentence) < 8:
                 continue
 
-            # Sub-split compound clauses connected by ' while ', ' however, ', ' but '
-            clauses = re.split(r'(\s+(?:while|whereas|however|but|and was)\s+)', sentence)
-            if len(clauses) > 1 and len(sentence) > 60:
-                current_cursor = start
-                for clause in clauses:
-                    c_clean = clause.strip()
-                    if c_clean and len(c_clean) > 12 and not re.match(r'^(while|whereas|however|but|and was)$', c_clean, re.I):
-                        pos = text.find(c_clean, current_cursor)
-                        if pos != -1:
-                            claims.append({
-                                "id": f"claim-{claim_idx}",
-                                "text": c_clean,
-                                "start_offset": pos,
-                                "end_offset": pos + len(c_clean)
-                            })
-                            claim_idx += 1
-                            current_cursor = pos + len(c_clean)
-            else:
-                claims.append({
-                    "id": f"claim-{claim_idx}",
-                    "text": sentence,
-                    "start_offset": start,
-                    "end_offset": end
-                })
-                claim_idx += 1
+            claims.append({
+                "id": f"claim-{claim_idx}",
+                "text": sentence,
+                "start_offset": start,
+                "end_offset": end
+            })
+            claim_idx += 1
 
         return claims

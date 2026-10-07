@@ -1,52 +1,54 @@
 :root {
-  /* Surfaces & Canvas (High-Contrast Obsidian Forensic Palette) */
-  --bg-base: #090A0F;
-  --bg-surface-1: #12151E;
-  --bg-surface-2: #181C28;
-  --bg-surface-3: #212738;
-  --bg-hover: #2A3247;
+  /* Surfaces & Canvas (White Color Grading Forensic Palette from Stitch) */
+  --bg-canvas: #faf8ff;
+  --bg-surface-lowest: #ffffff;
+  --bg-surface-low: #f2f3ff;
+  --bg-surface-1: #ffffff;
+  --bg-surface-2: #f8f9ff;
+  --bg-surface-3: #eaedff;
+  --bg-hover: #f2f3ff;
 
   /* Borders & Structure */
-  --border-subtle: #1C2230;
-  --border-default: #252B3B;
-  --border-strong: #3B4459;
-  --border-focus: #0EA5E9;
+  --border-subtle: #e2e8f0;
+  --border-default: #bfc7d2;
+  --border-strong: #707881;
+  --border-focus: #006194;
 
-  /* High-Contrast Typography Colors (Exceeds WCAG AAA) */
-  --text-primary: #F1F3F9;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
-  --text-inverse: #090A0F;
+  /* High-Contrast Typography Colors (Deep Charcoal / Slate over White) */
+  --text-primary: #131b2e;
+  --text-secondary: #3f4850;
+  --text-muted: #707881;
+  --text-inverse: #ffffff;
 
-  /* Semantic Status: Supported / Grounded Truth (Emerald) */
-  --supported-base: #10B981;
-  --supported-bg: #064E3B;
-  --supported-text: #A7F3D0;
-  --supported-border: #059669;
-  --supported-highlight: rgba(16, 185, 129, 0.22);
-  --supported-underline: #10B981;
+  /* Semantic Status: Supported / Grounded Truth (Forest Emerald) */
+  --supported-base: #006c4a;
+  --supported-bg: #ecfdf5;
+  --supported-text: #065f46;
+  --supported-border: #a7f3d0;
+  --supported-highlight: rgba(5, 150, 105, 0.12);
+  --supported-underline: #059669;
 
-  /* Semantic Status: Contradicted / Hallucination (Crimson) */
-  --contradicted-base: #EF4444;
-  --contradicted-bg: #450A0A;
-  --contradicted-text: #FECACA;
-  --contradicted-border: #DC2626;
-  --contradicted-highlight: rgba(239, 68, 68, 0.25);
-  --contradicted-underline: #EF4444;
+  /* Semantic Status: Contradicted / Hallucination (Forensic Crimson) */
+  --contradicted-base: #ba1a1a;
+  --contradicted-bg: #fef2f2;
+  --contradicted-text: #991b1b;
+  --contradicted-border: #fecaca;
+  --contradicted-highlight: rgba(220, 38, 38, 0.12);
+  --contradicted-underline: #dc2626;
 
-  /* Semantic Status: Unverified / Insufficient Evidence (Amber) */
-  --unverified-base: #F59E0B;
-  --unverified-bg: #451A03;
-  --unverified-text: #FDE68A;
-  --unverified-border: #D97706;
-  --unverified-highlight: rgba(245, 158, 11, 0.22);
-  --unverified-underline: #F59E0B;
+  /* Semantic Status: Unverified / Inconclusive (Warm Amber) */
+  --unverified-base: #d97706;
+  --unverified-bg: #fffbeb;
+  --unverified-text: #92400e;
+  --unverified-border: #fde68a;
+  --unverified-highlight: rgba(217, 119, 6, 0.12);
+  --unverified-underline: #d97706;
 
-  /* Forensic Action Accent (Steel Cyan) */
-  --accent-base: #0EA5E9;
-  --accent-hover: #38BDF8;
-  --accent-active: #0284C7;
-  --accent-text: #090A0F;
+  /* Forensic Action Accent (Technical Blue) */
+  --accent-base: #006194;
+  --accent-hover: #0369a1;
+  --accent-active: #004b73;
+  --accent-text: #ffffff;
 
   /* Typography Fonts (Plus Jakarta Sans + JetBrains Mono) */
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -63,10 +65,10 @@
   --space-10: 40px;
   --space-12: 48px;
 
-  /* Radius Tokens (Sharp, Functional Precision) */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
+  /* Radius Tokens */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
 
   /* Snappy Transitions */
   --transition-fast: 120ms ease;

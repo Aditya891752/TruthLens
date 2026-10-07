@@ -4,24 +4,24 @@ from app.models.response import PresetItem
 PRESETS: List[PresetItem] = [
     PresetItem(
         id="subtle-error",
-        title="Subtle Hallucination (Historical / Discovery)",
-        description="A blend of factual truths with subtle, misleading dates and institutions.",
-        category="Historical",
-        text="Alexander Fleming was a Scottish biologist who discovered penicillin in 1945 while conducting laboratory research at Cambridge University. Penicillin revolutionized modern medicine by serving as the first widely used antibiotic."
+        title="Subtle Hallucination",
+        description="A blend of factual truths with misleading dates and exaggerated synthetic claims.",
+        category="Historical / Pharmacology",
+        text="Alexander Fleming discovered penicillin in 1945 at St. Mary's Hospital after returning from a summer holiday. Penicillin was the world's first widely effective synthetic antibiotic, completely curing bacterial infections without side effects. During World War II, mass production techniques were developed in Peoria, Illinois using corn steep liquor fermentation. Today, penicillin resistance is estimated to affect over 98% of all hospital-acquired staphylococcal strains globally."
     ),
     PresetItem(
         id="severe-hallucination",
-        title="Severe Hallucination (Fabricated Space Mission)",
-        description="Entirely fabricated historical milestones and nonexistent spaceflight missions.",
-        category="Science & Aerospace",
-        text="NASA successfully launched Apollo 18 in July 1974, landing astronauts Thomas Miller and Robert Shaw in the Elysium Planitia region of Mars. The crew collected over 40 kilograms of Martian soil before returning safely to Earth."
+        title="Severe Hallucination",
+        description="Entirely fabricated historical milestones, nonexistent missions, and impossible dates.",
+        category="Fabrication",
+        text="Albert Einstein invented penicillin in 1820 while working at NASA headquarters in Geneva. The chemical was delivered exclusively via quantum teleportation to eradicate all viral influenza. In 1999, Fleming proved penicillin was inert and had zero biological efficacy in animal trials."
     ),
     PresetItem(
         id="accurate-reference",
-        title="Accurate Ground Truth (James Webb Telescope)",
+        title="Accurate Ground Truth",
         description="Factually verified scientific account with 100% grounded assertions.",
-        category="Astronomy",
-        text="The James Webb Space Telescope was launched on December 25, 2021, aboard an Ariane 5 rocket from Kourou, French Guiana. It currently orbits the Sun at the second Lagrange point (L2), approximately 1.5 million kilometers from Earth."
+        category="Grounded Reference",
+        text="Alexander Fleming discovered penicillin in 1928 at St. Mary's Hospital in London. Chain and Florey later purified and stabilized the antibiotic for clinical use in Oxford. In 1945, Fleming, Florey, and Chain shared the Nobel Prize in Physiology or Medicine for their landmark contributions."
     )
 ]
 

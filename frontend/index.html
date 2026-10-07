@@ -3,14 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TruthLens — AI Output Factuality & Hallucination Forensic Analyzer</title>
+    <meta name="shell-type" content="web_standard" />
+    <title>TruthLens — Real-Time AI Output Factuality & Hallucination Forensic Analyzer</title>
     <meta name="description" content="Forensic evaluation of AI-generated text and LLM outputs against grounded, real-time web truth." />
-    <meta name="theme-color" content="#090A0F" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#d2d9f4",
+              "tertiary-fixed-dim": "#ffb4ab",
+              "secondary": "#006c4a",
+              "on-primary-container": "#fdfcff",
+              "secondary-fixed": "#85f8c4",
+              "on-primary-fixed": "#001d31",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "tertiary-container": "#e02928",
+              "surface-bright": "#faf8ff",
+              "outline-variant": "#bfc7d2",
+              "on-background": "#131b2e",
+              "primary-fixed": "#cce5ff",
+              "surface": "#faf8ff",
+              "secondary-fixed-dim": "#68dba9",
+              "on-tertiary-container": "#fffbff",
+              "error": "#ba1a1a",
+              "surface-container-high": "#e2e7ff",
+              "on-error-container": "#93000a",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#93ccff",
+              "on-tertiary-fixed-variant": "#93000b",
+              "surface-container-low": "#f2f3ff",
+              "surface-variant": "#dae2fd",
+              "outline": "#707881",
+              "on-surface-variant": "#3f4850",
+              "on-tertiary-fixed": "#410002",
+              "on-secondary": "#ffffff",
+              "error-container": "#ffdad6",
+              "secondary-container": "#82f5c1",
+              "surface-tint": "#006398",
+              "inverse-on-surface": "#eef0ff",
+              "on-primary-fixed-variant": "#004b73",
+              "on-surface": "#131b2e",
+              "primary-container": "#007bb9",
+              "on-secondary-container": "#00714e",
+              "background": "#faf8ff",
+              "inverse-surface": "#283044",
+              "primary-fixed-dim": "#93ccff",
+              "primary": "#006194",
+              "on-primary": "#ffffff",
+              "tertiary-fixed": "#ffdad6",
+              "on-secondary-fixed-variant": "#005137",
+              "surface-container-highest": "#dae2fd",
+              "on-secondary-fixed": "#002114",
+              "tertiary": "#bb0112",
+              "surface-container": "#eaedff"
+            },
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"]
+            }
+          }
+        }
+      };
+    </script>
   </head>
-  <body>
+  <body class="bg-surface-container-lowest text-on-surface antialiased font-sans">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

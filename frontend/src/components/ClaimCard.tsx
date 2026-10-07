@@ -2,138 +2,180 @@ import { Claim, MLPrediction } from '../types/report';
 
 interface ClaimCardProps {
   claim: Claim;
+  index: number;
   isSelected: boolean;
   onSelect: () => void;
   mlPrediction?: MLPrediction;
 }
 
-export default function ClaimCard({ claim, isSelected, onSelect, mlPrediction }: ClaimCardProps) {
-  const badgeClass = claim.verdict === 'SUPPORTED'
-    ? 'badge-supported'
-    : claim.verdict === 'CONTRADICTED'
-    ? 'badge-contradicted'
-    : 'badge-unverified';
+export default function ClaimCard({
+  claim,
+  index,
+  isSelected,
+  onSelect,
+  mlPrediction
+}: ClaimCardProps) {
+  const confidencePct = (claim.confidence * 100).toFixed(1);
 
-  const confidencePct = Math.round(claim.confidence * 100);
+  // Status-dependent styling tokens
+  const statusConfig = {
+    SUPPORTED: {
+      stripColor: 'bg-[#059669]',
+      borderColor: 'border-[#059669]',
+      badgeBg: 'bg-[#ecfdf5]',
+      badgeText: 'text-[#065f46]',
+      badgeBorder: 'border-[#a7f3d0]',
+      groundingTitleColor: 'text-[#065f46]',
+      groundingIcon: 'verified',
+      groundingLabel: 'GOOGLE SEARCH GROUNDING VERIFICATION:',
+      mlIcon: 'check_circle',
+      mlIconColor: 'text-[#006c4a]',
+      verbatimBorder: 'border-[#059669]',
+      typeTag: 'GROUNDED_FACT'
+    },
+    CONTRADICTED: {
+      stripColor: 'bg-[#dc2626]',
+      borderColor: 'border-[#dc2626]',
+      badgeBg: 'bg-[#fef2f2]',
+      badgeText: 'text-[#991b1b]',
+      badgeBorder: 'border-[#fecaca]',
+      groundingTitleColor: 'text-[#991b1b]',
+      groundingIcon: 'search_check',
+      groundingLabel: 'GOOGLE SEARCH GROUNDING COUNTER-PROOF:',
+      mlIcon: 'warning',
+      mlIconColor: 'text-[#ba1a1a]',
+      verbatimBorder: 'border-[#dc2626]',
+      typeTag: 'TEMPORAL_CONFLICT'
+    },
+    UNVERIFIED: {
+      stripColor: 'bg-[#d97706]',
+      borderColor: 'border-[#d97706]',
+      badgeBg: 'bg-[#fffbeb]',
+      badgeText: 'text-[#92400e]',
+      badgeBorder: 'border-[#fde68a]',
+      groundingTitleColor: 'text-[#92400e]',
+      groundingIcon: 'help',
+      groundingLabel: 'FORENSIC ANALYSIS & CONFLICT DETAIL:',
+      mlIcon: 'sync_problem',
+      mlIconColor: 'text-[#d97706]',
+      verbatimBorder: 'border-[#d97706]',
+      typeTag: 'EVALUATIVE_CLAIM'
+    }
+  }[claim.verdict] || {
+    stripColor: 'bg-[#d97706]',
+    borderColor: 'border-[#d97706]',
+    badgeBg: 'bg-[#fffbeb]',
+    badgeText: 'text-[#92400e]',
+    badgeBorder: 'border-[#fde68a]',
+    groundingTitleColor: 'text-[#92400e]',
+    groundingIcon: 'help',
+    groundingLabel: 'FORENSIC ANALYSIS & CONFLICT DETAIL:',
+    mlIcon: 'sync_problem',
+    mlIconColor: 'text-[#d97706]',
+    verbatimBorder: 'border-[#d97706]',
+    typeTag: 'FACTUAL_CLAIM'
+  };
+
+  const claimNum = index < 10 ? `0${index}` : `${index}`;
 
   return (
-    <div
+    <article
       id={`claim-card-${claim.id}`}
-      className="surface-card"
       onClick={onSelect}
-      style={{
-        padding: 'var(--space-4)',
-        border: `1px solid ${isSelected ? 'var(--accent-base)' : 'var(--border-default)'}`,
-        cursor: 'pointer',
-        marginBottom: 'var(--space-3)'
-      }}
+      className={`claim-card bg-white border border-[#bfc7d2] rounded shadow-xs relative overflow-hidden transition-all duration-150 cursor-pointer ${
+        isSelected ? 'ring-2 ring-[#006194] bg-[#f2f3ff]/30' : ''
+      }`}
     >
-      {/* Top row: Claim ID, Status Badge, Confidence */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 'var(--space-2)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
-          <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 600 }}>
-            #{claim.id.toUpperCase()}
-          </span>
-          <span className={`badge ${badgeClass}`}>
-            {claim.verdict}
-          </span>
-        </div>
-        <div className="mono" style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>
-          Confidence: <strong style={{ color: 'var(--text-primary)' }}>{confidencePct}%</strong>
-        </div>
-      </div>
+      {/* 4px Status Strip */}
+      <div className={`absolute top-0 bottom-0 left-0 w-[4px] ${statusConfig.stripColor}`} />
 
-      {/* Claim Text */}
-      <div style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: 'var(--space-3)', lineHeight: '1.5' }}>
-        "{claim.text}"
-      </div>
-
-      {/* Forensic Reasoning Box */}
-      <div style={{
-        backgroundColor: 'var(--bg-surface-1)',
-        border: '1px solid var(--border-subtle)',
-        borderRadius: 'var(--radius-sm)',
-        padding: 'var(--space-3)',
-        fontSize: '13px',
-        color: 'var(--text-secondary)',
-        lineHeight: '1.5',
-        marginBottom: 'var(--space-3)'
-      }}>
-        <div className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '4px' }}>
-          Forensic Evidence &amp; Counter-Proof:
+      <div className="p-4 md:p-5 pl-5 md:pl-6">
+        {/* Card Header */}
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div className="flex items-center gap-2 font-mono text-[11px]">
+            <span className="font-bold text-[#131b2e]">#CLAIM-{claimNum}</span>
+            <span
+              className={`${statusConfig.badgeBg} ${statusConfig.badgeText} border ${statusConfig.badgeBorder} font-bold px-2 py-0.5 rounded`}
+            >
+              {claim.verdict}
+            </span>
+          </div>
+          <div className="flex items-center gap-4 font-mono text-[11px] text-[#707881]">
+            <span>
+              Confidence: <strong className="text-[#131b2e]">{confidencePct}%</strong>
+            </span>
+            <span>Type: {statusConfig.typeTag}</span>
+          </div>
         </div>
-        <div>{claim.reasoning}</div>
-      </div>
 
-      {/* ML Model Local Cross-Check (if available) */}
-      {mlPrediction && (
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: 'var(--space-2)',
-          fontSize: '11px',
-          fontFamily: 'var(--font-mono)',
-          color: 'var(--text-muted)',
-          marginBottom: 'var(--space-3)'
-        }}>
-          <span>ML Model Verdict:</span>
-          <span className={`badge ${mlPrediction.predicted_verdict === claim.verdict ? 'badge-supported' : 'badge-unverified'}`} style={{ fontSize: '10px', padding: '1px 6px' }}>
-            {mlPrediction.predicted_verdict} ({Math.round(mlPrediction.ml_confidence * 100)}%)
-          </span>
-          {mlPrediction.predicted_verdict === claim.verdict ? (
-            <span style={{ color: 'var(--supported-base)' }}>Consensus</span>
-          ) : (
-            <span style={{ color: 'var(--unverified-base)' }}>Divergent</span>
+        {/* Verbatim Assertion */}
+        <div
+          className={`border-l-2 ${statusConfig.verbatimBorder} pl-3 py-1 bg-[#f2f3ff] rounded-r mb-3`}
+        >
+          <p className="font-sans text-sm font-semibold text-[#131b2e] leading-snug">
+            “{claim.text}”
+          </p>
+        </div>
+
+        {/* Grounding Evidence Callout */}
+        <div className="border border-[#bfc7d2] rounded p-3 bg-white mb-3">
+          <div
+            className={`flex items-center gap-1.5 mb-1 font-mono text-[11px] font-bold ${statusConfig.groundingTitleColor}`}
+          >
+            <span className="material-symbols-outlined text-[16px]">
+              {statusConfig.groundingIcon}
+            </span>
+            <span>{statusConfig.groundingLabel}</span>
+          </div>
+          <p className="font-sans text-xs md:text-[13px] text-[#131b2e] leading-relaxed">
+            {claim.reasoning}
+          </p>
+        </div>
+
+        {/* ML Model Cross-Check & Lineage */}
+        <div className="flex flex-wrap items-center gap-2 mb-3">
+          {mlPrediction && (
+            <span className="bg-[#f2f3ff] text-[#131b2e] border border-[#bfc7d2] font-mono text-[11px] px-2.5 py-1 rounded inline-flex items-center gap-1.5">
+              <span className={`material-symbols-outlined text-[14px] ${statusConfig.mlIconColor}`}>
+                {statusConfig.mlIcon}
+              </span>
+              <span>
+                ML Model Verdict: <strong>{mlPrediction.predicted_verdict}</strong> (
+                {Math.round(mlPrediction.ml_confidence * 100)}%) •{' '}
+                {mlPrediction.predicted_verdict === claim.verdict
+                  ? 'Historical Ground Truth Match'
+                  : 'Semantic Entity Conflict Detected'}
+              </span>
+            </span>
           )}
         </div>
-      )}
 
-      {/* Web Sources & Grounding Links */}
-      {claim.sources && claim.sources.length > 0 && (
-        <div>
-          <div className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: 'var(--space-1)' }}>
-            Authoritative Web Citations ({claim.sources.length}):
+        {/* Authoritative Web Citations */}
+        {claim.sources && claim.sources.length > 0 && (
+          <div>
+            <span className="font-mono text-[11px] text-[#707881] uppercase font-semibold block mb-1.5">
+              Authoritative Evidence Citations:
+            </span>
+            <div className="flex flex-wrap gap-2">
+              {claim.sources.map((src, i) => (
+                <a
+                  key={i}
+                  href={src.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="font-mono text-[11px] bg-white hover:bg-[#f2f3ff] text-[#131b2e] border border-[#bfc7d2] px-2.5 py-1 rounded flex items-center gap-1 transition-colors cursor-pointer"
+                >
+                  <span>
+                    {src.title} ({src.domain})
+                  </span>
+                  <span className="material-symbols-outlined text-[12px]">north_east</span>
+                </a>
+              ))}
+            </div>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-            {claim.sources.map((src, i) => (
-              <a
-                key={i}
-                href={src.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '4px 8px',
-                  backgroundColor: 'var(--bg-surface-1)',
-                  borderRadius: 'var(--radius-sm)',
-                  fontSize: '12px',
-                  color: 'var(--text-secondary)',
-                  border: '1px solid var(--border-subtle)',
-                  transition: 'color var(--transition-fast), border-color var(--transition-fast)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = 'var(--accent-hover)';
-                  e.currentTarget.style.borderColor = 'var(--accent-base)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'var(--text-secondary)';
-                  e.currentTarget.style.borderColor = 'var(--border-subtle)';
-                }}
-              >
-                <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '80%' }}>
-                  {src.title}
-                </span>
-                <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
-                  {src.domain} ↗
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </article>
   );
 }
