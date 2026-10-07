@@ -112,15 +112,17 @@ This document serves as the persistent memory, live status ledger, and context a
 
 ## 4. Current Milestone & Phase Ledger
 
-- **Current Status**: **All 5 Phases 100% Implemented, Verified, and Tested with Google Stitch White Color Grading System**
+- **Current Status**: **All 5 Phases 100% Implemented, Verified, and Synced to GitHub Repository**
+- **Repository Remote**: `https://github.com/Aditya891752/TruthLens`
 - **Status Ledger**:
   - [x] Master documentation created (`prd.md`, `architecture.md`, `architecture_diagram.md`, `techstack.md`, `aistack.md`, `rules.md`, `design.md`, `task.md`, `memory.md`).
   - [x] **Phase 1**: Git repository, `.gitignore` hardening, FastAPI scaffolding, React + Vite scaffolding.
-  - [x] **Phase 2**: Atomic claim extractor with character offsets (`extractor.py`), Google Search Grounding service (`grounding.py`), claim verifier (`verifier.py`), scoring service (`scoring.py`), FastAPI routes and CORS (`main.py`), Pytest suite (5/5 passing).
-  - [x] **ML Training**: Ingested 19,301 facts from `D:\TRUTHLENS\ML MODEL DATASET` and completed 3 rigorous training cycles (F1-macro: 0.8511, accuracy: 85.21%). Persisted model to `trained_model.joblib`.
+  - [x] **Phase 2**: Atomic claim extractor with character offsets (`extractor.py`), Google Search Grounding service (`grounding.py`), claim verifier (`verifier.py`), scoring service (`scoring.py`), FastAPI routes and CORS (`main.py`), Pytest suite (7/7 passing).
+  - [x] **ML Training**: Ingested 19,301 facts from `D:\TRUTHLENS\ML MODEL DATASET` across all files (`expanded_facts_4500.csv`, `fact_checker_dataset_4500.csv`, `40585 (1)`, `trustcheck_dataset (2).csv.xls`, `trustcheck_verification_dataset (1).csv`) and completed 3 rigorous training cycles (validation accuracy: 85.29%, macro F1: 0.8519).
   - [x] **Phase 3**: React forensic dashboard components with Stitch white color grading: `tokens.css`, `reset.css`, `global.css`, `Header.tsx`, `InputWorkbench.tsx`, `MetricBar.tsx`, `AnnotatedViewer.tsx`, `ClaimCard.tsx`, `ClaimsList.tsx`, `ExportToolbar.tsx`, `Toast.tsx`, `TelemetryView.tsx`, `LineageView.tsx`, `DiagnosticsView.tsx`.
-  - [x] **Phase 4**: Full-stack E2E integration verified (`backend/tests/test_e2e_proxy.py` passes 100%). Security audit passed against 12 cardinal rules.
+  - [x] **Phase 4**: Full-stack E2E integration verified (`backend/tests/test_e2e_proxy.py` passes 100%). Open-domain verification engine with 4-tier fallbacks (Gemini search grounding, 19.3k indexed factbase, live Wikipedia API, factual contradiction heuristics). Security audit passed against 12 cardinal rules.
   - [x] **Phase 5**: Production assets: `backend/Dockerfile`, `backend/render.yaml`, `frontend/vercel.json`, and deployment guide in `architecture_diagram.md`.
+  - [x] **Remote Deployment**: Synced and pushed to GitHub repository `https://github.com/Aditya891752/TruthLens`.
 
 ---
 
@@ -130,5 +132,6 @@ This document serves as the persistent memory, live status ledger, and context a
 - **ADR-002**: Zero-Secret Client Boundary (FastAPI proxies all AI & Search calls).
 - **ADR-003**: Pure Vanilla CSS Design Tokens (Strictly No Tailwind / No Untouched Shadcn).
 - **ADR-004**: Decoupled Cloud Deployment (Render for FastAPI, Vercel for React SPA).
-- **ADR-005**: Hybrid Grounding + Local ML Classifier: Gemini with Google Search Grounding for live web retrieval and citations, augmented by a specialized local ML claim verifier trained across 19,301 facts over 3 training cycles achieving 85.21% validation accuracy and 0.8511 macro F1.
+- **ADR-005**: Hybrid Grounding + Local ML Classifier: Gemini with Google Search Grounding for live web retrieval and citations, augmented by a specialized local ML claim verifier trained across 19,301 facts over 3 training cycles achieving 85.29% validation accuracy and 0.8519 macro F1.
 - **ADR-006**: Google Stitch White Color Grading Design System: High-contrast white canvas (`#FFFFFF`) with surgical blue accents (`#006194`), emerald supported indicators (`#006C4A`), crimson contradiction strips (`#BA1A1A`), amber unverified tags (`#D97706`), Plus Jakarta Sans and JetBrains Mono typography, Material Symbols Outlined icons, and 4-module navigation suite.
+- **ADR-007**: GitHub Remote Repository Origin: Configured at `https://github.com/Aditya891752/TruthLens` on default branch `main`.
