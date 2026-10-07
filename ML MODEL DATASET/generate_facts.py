@@ -1,4 +1,4 @@
-import csv, random, math
+import csv, random, math, os
 random.seed(42)
 
 # ---------- Structured source data ----------
@@ -201,7 +201,8 @@ assert len(ver)==1500 and len(con)==1500, (len(ver),len(con))
 rows = ver + con + un_rows[:1500]
 random.shuffle(rows)
 
-with open("/mnt/user-data/outputs/fact_checker_dataset_4500.csv", "w", newline="", encoding="utf-8") as fh:
+out_path = os.path.join(os.path.dirname(__file__), "fact_checker_dataset_4500.csv") if "__file__" in locals() else "fact_checker_dataset_4500.csv"
+with open(out_path, "w", newline="", encoding="utf-8") as fh:
     w = csv.writer(fh)
     w.writerow(["id", "claim", "label", "evidence", "source", "category"])
     for i, r in enumerate(rows, 1):

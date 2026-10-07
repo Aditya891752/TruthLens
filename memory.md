@@ -37,11 +37,11 @@ This document serves as the persistent memory, live status ledger, and context a
     - NLI dual-context awareness: `predict(claim_text, evidence_context=None)` allowing claims to be evaluated against grounding rationale.
   - Executed 3 rigorous training cycles:
     - Train split: 15,440 facts | Validation split: 3,861 facts
-    - **Cycle 1**: 83.22% Val Accuracy | 0.8322 Macro F1 (Train Acc: 93.80%)
-    - **Cycle 2**: 84.95% Val Accuracy | 0.8494 Macro F1 (Train Acc: 96.93%)
-    - **Cycle 3 (Active)**: **85.21% Val Accuracy | 0.8511 Macro F1** (Train Acc: 97.23%)
-    - **Per-Class Precision**: Supported 79.44%, Contradicted 79.77%, Unverified 96.17%.
-    - **Accuracy Leap**: Increased accuracy from **52.30% to 85.21% (+32.91% increase)**.
+    - **Cycle 1**: 83.16% Val Accuracy | 0.8316 Macro F1
+    - **Cycle 2**: 85.06% Val Accuracy | 0.8504 Macro F1
+    - **Cycle 3 (Active)**: **85.29% Val Accuracy | 0.8519 Macro F1**
+    - **Per-Class Precision**: Supported 79.43%, Contradicted 79.88%, Unverified 96.32%.
+    - **Accuracy Leap**: Increased accuracy from **52.30% to 85.29% (+32.99% increase)** across all 5 datasets including `expanded_facts_4500.csv` and `fact_checker_dataset_4500.csv`.
   - Persisted serialized artifacts:
     - Model: `backend/app/ml/trained_model.joblib` (14.3 MB).
     - Metrics: `backend/app/ml/training_metrics.json` and root `training_metrics.json`.

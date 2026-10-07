@@ -1,7 +1,7 @@
 import os
 import json
 import argparse
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 from collections import Counter
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, f1_score, confusion_matrix
@@ -17,9 +17,12 @@ from app.ml.model import TruthLensMLClassifier
 class MLTrainingHarness:
     """Executes multi-stage training cycles and produces evaluation metrics."""
 
-    def __init__(self, output_dir: str = "backend/app/ml"):
-        self.output_dir = output_dir
-        os.makedirs(output_dir, exist_ok=True)
+    def __init__(self, output_dir: Optional[str] = None):
+        if output_dir:
+            self.output_dir = output_dir
+        else:
+            self.output_dir = os.path.abspath(os.path.dirname(__file__))
+        os.makedirs(self.output_dir, exist_ok=True)
 
     def run_training_cycles(
         self,
@@ -215,7 +218,7 @@ class MLTrainingHarness:
 
 def run_training_on_directory(dataset_dir: str, cycles: int = 3) -> Dict[str, Any]:
     samples = FactDataset.load_from_directory(dataset_dir)
-    harness = MLTrainingHarness(output_dir="backend/app/ml")
+    harness = MLTrainingHarness()
     return harness.run_training_cycles(samples, cycles=cycles)
 
 

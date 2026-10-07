@@ -18,7 +18,7 @@ id,claim,label,evidence,source,category
 17,The chemical symbol for Fluorine is Ag.,Contradicted,Correct fact: Fluorine: symbol F,IUPAC Periodic Table,chemistry
 18,There is a species of beetle living only in a single cave near Vientiane that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 19,28 hours equal 2800 minutes.,Contradicted,Correct fact: 1 h = 60 min,SI definition,units
-20,An undiscovered manuscript in a library in Jerusalem contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+20,An undiscovered manuscript in a library in Jerusalem contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 21,The mayor of Jakarta privately decided in 1963 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 22,67 plus 578 equals 645.,Verified,67+578=645,Computed,arithmetic
 23,Neha Kulkarni ate a banana for lunch on 23 June 2002.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
@@ -34,7 +34,7 @@ id,claim,label,evidence,source,category
 33,"People in Montevideo are, on average, 4 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 34,The chemical symbol for Sulfur is S.,Verified,Sulfur: symbol S,IUPAC Periodic Table,chemistry
 35,386 plus 571 equals 957.,Verified,386+571=957,Computed,arithmetic
-36,An undiscovered manuscript in a library in New Delhi contains an unknown play by George Orwell.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+36,An undiscovered manuscript in a library in New Delhi contains an unknown play by Herman Melville.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 37,296 plus 782 equals 1178.,Contradicted,Correct fact: 296+782=1078,Computed,arithmetic
 38,The grandmother of Neha Kulkarni once met a famous scientist in Kampala in 1936.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 39,"People in Algiers are, on average, 9 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
@@ -66,23 +66,23 @@ id,claim,label,evidence,source,category
 65,"234 kilometres equals 234,000 metres.",Verified,1 km = 1000 m,SI definition,units
 66,A tiger sighted near Canberra in 1909 weighed exactly 190 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 67,Ancient traders from Ethiopia secretly reached the Americas around the year 754.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-68,An undiscovered manuscript in a library in Abuja contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+68,An undiscovered manuscript in a library in Abuja contains an unknown play by Jane Austen.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 69,"People in Jerusalem are, on average, 3 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 70,The next major earthquake in Venezuela will occur in the month of February 2048.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 71,74 multiplied by 36 equals 2664.,Verified,74*36=2664,Computed,arithmetic
 72,95 multiplied by 53 equals 5015.,Contradicted,Correct fact: 95*53=5035,Computed,arithmetic
-73,An undiscovered manuscript in a library in Pretoria contains an unknown play by Charles Dickens.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-74,An undiscovered manuscript in a library in Wellington contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+73,An undiscovered manuscript in a library in Pretoria contains an unknown play by F. Scott Fitzgerald.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+74,An undiscovered manuscript in a library in Wellington contains an unknown play by Munshi Premchand.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 75,"265 kilometres equals 26,500 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 76,39 multiplied by 16 equals 634.,Contradicted,Correct fact: 39*16=624,Computed,arithmetic
 77,28 multiplied by 90 equals 2520.,Verified,28*90=2520,Computed,arithmetic
 78,Dr. Karan Bhatia published a study in the Proceedings of the Local Research Circle in 2008 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 79,Ahmed Siddiqui ate a salad for lunch on 23 March 2014.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-80,An undiscovered manuscript in a library in Ulaanbaatar contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+80,An undiscovered manuscript in a library in Ulaanbaatar contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 81,The square root of 529 is 24.,Contradicted,Correct fact: 23^2=529,Computed,mathematics
 82,80 multiplied by 39 equals 3110.,Contradicted,Correct fact: 80*39=3120,Computed,arithmetic
 83,The grandmother of Priya Nair once met a famous scientist in Berlin in 1965.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-84,An undiscovered manuscript in a library in Tehran contains an unknown play by Harper Lee.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+84,An undiscovered manuscript in a library in Tehran contains an unknown play by Victor Hugo.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 85,"People in Canberra are, on average, 4 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 86,83 is a prime number.,Verified,83 is prime,Computed,mathematics
 87,Ancient traders from Canada secretly reached the Americas around the year 938.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
@@ -111,7 +111,7 @@ id,claim,label,evidence,source,category
 110,75 multiplied by 56 equals 4210.,Contradicted,Correct fact: 75*56=4200,Computed,arithmetic
 111,"127 kilometres equals 12,700 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 112,"345 kilometres equals 34,500 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
-113,An undiscovered manuscript in a library in Abuja contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+113,An undiscovered manuscript in a library in Abuja contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 114,"92 kilometres equals 9,200 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 115,A tiger sighted near Ulaanbaatar in 1935 weighed exactly 166 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 116,Ancient traders from Czech Republic secretly reached the Americas around the year 331.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
@@ -131,7 +131,7 @@ id,claim,label,evidence,source,category
 130,262 plus 770 equals 1022.,Contradicted,Correct fact: 262+770=1032,Computed,arithmetic
 131,61 multiplied by 44 equals 2684.,Verified,61*44=2684,Computed,arithmetic
 132,-8 degrees Celsius equals 35.6 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=17.6,SI / standard conversion,units
-133,An undiscovered manuscript in a library in Abuja contains an unknown play by Victor Hugo.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+133,An undiscovered manuscript in a library in Abuja contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 134,352 plus 577 equals 1029.,Contradicted,Correct fact: 352+577=929,Computed,arithmetic
 135,496 plus 734 equals 1230.,Verified,496+734=1230,Computed,arithmetic
 136,72 multiplied by 46 equals 3312.,Verified,72*46=3312,Computed,arithmetic
@@ -159,7 +159,7 @@ id,claim,label,evidence,source,category
 158,The capital of the Indian state of Karnataka is Bengaluru.,Verified,The capital of the Indian state of Karnataka is Bengaluru,Standard reference texts,general knowledge
 159,There is a species of beetle living only in a single cave near Ulaanbaatar that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 160,30 multiplied by 27 equals 790.,Contradicted,Correct fact: 30*27=810,Computed,arithmetic
-161,An undiscovered manuscript in a library in Beijing contains an unknown play by Fyodor Dostoevsky.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+161,An undiscovered manuscript in a library in Beijing contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 162,351 plus 902 equals 1253.,Verified,351+902=1253,Computed,arithmetic
 163,Dr. Fatima Khan published a study in the Journal of Applied Obscure Studies in 2013 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 164,32 multiplied by 21 equals 682.,Contradicted,Correct fact: 32*21=672,Computed,arithmetic
@@ -180,7 +180,7 @@ id,claim,label,evidence,source,category
 179,301 plus 114 equals 515.,Contradicted,Correct fact: 301+114=415,Computed,arithmetic
 180,705 plus 941 equals 1646.,Verified,705+941=1646,Computed,arithmetic
 181,-9 degrees Celsius equals 24.8 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=15.8,SI / standard conversion,units
-182,An undiscovered manuscript in a library in Manila contains an unknown play by Herman Melville.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+182,An undiscovered manuscript in a library in Manila contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 183,Ancient traders from Argentina secretly reached the Americas around the year 877.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 184,309 is a composite number.,Verified,309 divisible by 3,Computed,mathematics
 185,66 multiplied by 73 equals 4828.,Contradicted,Correct fact: 66*73=4818,Computed,arithmetic
@@ -223,14 +223,14 @@ id,claim,label,evidence,source,category
 222,943 plus 729 equals 1672.,Verified,943+729=1672,Computed,arithmetic
 223,The next major earthquake in Belgium will occur in the month of August 2051.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 224,86 multiplied by 25 equals 2150.,Verified,86*25=2150,Computed,arithmetic
-225,An undiscovered manuscript in a library in Bangkok contains an unknown play by Ernest Hemingway.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+225,An undiscovered manuscript in a library in Bangkok contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 226,117 plus 161 equals 278.,Verified,117+161=278,Computed,arithmetic
 227,A tiger sighted near Montevideo in 1914 weighed exactly 190 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-228,An undiscovered manuscript in a library in Islamabad contains an unknown play by Harper Lee.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+228,An undiscovered manuscript in a library in Islamabad contains an unknown play by Victor Hugo.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 229,99 multiplied by 92 equals 9108.,Verified,99*92=9108,Computed,arithmetic
 230,64 multiplied by 14 equals 896.,Verified,64*14=896,Computed,arithmetic
 231,270 is a prime number.,Contradicted,Correct fact: 270 divisible by 2,Computed,mathematics
-232,An undiscovered manuscript in a library in Baghdad contains an unknown play by Franz Kafka.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+232,An undiscovered manuscript in a library in Baghdad contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 233,202 plus 510 equals 712.,Verified,202+510=712,Computed,arithmetic
 234,48 multiplied by 97 equals 4636.,Contradicted,Correct fact: 48*97=4656,Computed,arithmetic
 235,There is a species of beetle living only in a single cave near New Delhi that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
@@ -245,7 +245,7 @@ id,claim,label,evidence,source,category
 244,16 degrees Celsius equals 60.8 degrees Fahrenheit.,Verified,F=C*9/5+32=60.8,SI / standard conversion,units
 245,66 multiplied by 33 equals 2178.,Verified,66*33=2178,Computed,arithmetic
 246,Miguel de Cervantes is the author of Don Quixote.,Verified,Don Quixote -> Miguel de Cervantes,Library of Congress catalogue,literature
-247,The abo blood groups is credited to Michael Faraday.,Contradicted,Correct fact: the ABO blood groups -> Karl Landsteiner,Encyclopaedia Britannica,science history
+247,The abo blood groups is credited to James Chadwick.,Contradicted,Correct fact: the ABO blood groups -> Karl Landsteiner,Encyclopaedia Britannica,science history
 248,85 multiplied by 44 equals 3740.,Verified,85*44=3740,Computed,arithmetic
 249,20 multiplied by 71 equals 1420.,Verified,20*71=1420,Computed,arithmetic
 250,Penicillin is credited to Karl Landsteiner.,Contradicted,Correct fact: penicillin -> Alexander Fleming,Encyclopaedia Britannica,science history
@@ -257,7 +257,7 @@ id,claim,label,evidence,source,category
 256,432 plus 374 equals 906.,Contradicted,Correct fact: 432+374=806,Computed,arithmetic
 257,The chemical symbol for Nickel is Ni.,Verified,Nickel: symbol Ni,IUPAC Periodic Table,chemistry
 258,79 multiplied by 20 equals 1579.,Contradicted,Correct fact: 79*20=1580,Computed,arithmetic
-259,An undiscovered manuscript in a library in Bucharest contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+259,An undiscovered manuscript in a library in Bucharest contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 260,The square root of 3600 is 63.,Contradicted,Correct fact: 60^2=3600,Computed,mathematics
 261,"Exactly 43,488 people walked through a street market in Ankara on 19 April 1972.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 262,The grandmother of Karan Bhatia once met a famous scientist in Madrid in 1966.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
@@ -268,7 +268,7 @@ id,claim,label,evidence,source,category
 267,The next major earthquake in Spain will occur in the month of November 2047.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 268,2 hours equal 200 minutes.,Contradicted,Correct fact: 1 h = 60 min,SI definition,units
 269,13 multiplied by 33 equals 429.,Verified,13*33=429,Computed,arithmetic
-270,An undiscovered manuscript in a library in Bucharest contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+270,An undiscovered manuscript in a library in Bucharest contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 271,586 plus 344 equals 940.,Contradicted,Correct fact: 586+344=930,Computed,arithmetic
 272,74 multiplied by 88 equals 6513.,Contradicted,Correct fact: 74*88=6512,Computed,arithmetic
 273,The grandmother of Ahmed Siddiqui once met a famous scientist in Abuja in 1935.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
@@ -284,7 +284,7 @@ id,claim,label,evidence,source,category
 283,55 multiplied by 64 equals 3520.,Verified,55*64=3520,Computed,arithmetic
 284,41 multiplied by 20 equals 820.,Verified,41*20=820,Computed,arithmetic
 285,280 plus 805 equals 1085.,Verified,280+805=1085,Computed,arithmetic
-286,An undiscovered manuscript in a library in Budapest contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+286,An undiscovered manuscript in a library in Budapest contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 287,There is a species of beetle living only in a single cave near Abuja that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 288,76 degrees Celsius equals 168.8 degrees Fahrenheit.,Verified,F=C*9/5+32=168.8,SI / standard conversion,units
 289,20 multiplied by 45 equals 890.,Contradicted,Correct fact: 20*45=900,Computed,arithmetic
@@ -345,7 +345,7 @@ id,claim,label,evidence,source,category
 344,The enzyme that unwinds DNA during replication is CO.,Contradicted,Correct fact: The enzyme that unwinds DNA during replication is helicase,Standard reference texts,general knowledge
 345,A tiger sighted near Vienna in 1950 weighed exactly 202 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 346,82 is a prime number.,Contradicted,Correct fact: 82 divisible by 2,Computed,mathematics
-347,An undiscovered manuscript in a library in Warsaw contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+347,An undiscovered manuscript in a library in Warsaw contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 348,Deepa Menon ate a salad for lunch on 27 December 2007.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 349,"Exactly 67,962 people walked through a street market in Tehran on 6 April 1998.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 350,"People in Ankara are, on average, 3 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
@@ -434,7 +434,7 @@ id,claim,label,evidence,source,category
 433,17 multiplied by 66 equals 1122.,Verified,17*66=1122,Computed,arithmetic
 434,63 multiplied by 59 equals 3737.,Contradicted,Correct fact: 63*59=3717,Computed,arithmetic
 435,123 is a composite number.,Verified,123 divisible by 3,Computed,mathematics
-436,An undiscovered manuscript in a library in Canberra contains an unknown play by F. Scott Fitzgerald.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+436,An undiscovered manuscript in a library in Canberra contains an unknown play by Leo Tolstoy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 437,303 plus 477 equals 780.,Verified,303+477=780,Computed,arithmetic
 438,243 is a prime number.,Contradicted,Correct fact: 243 divisible by 3,Computed,mathematics
 439,713 plus 946 equals 1661.,Contradicted,Correct fact: 713+946=1659,Computed,arithmetic
@@ -452,7 +452,7 @@ id,claim,label,evidence,source,category
 451,345 plus 397 equals 741.,Contradicted,Correct fact: 345+397=742,Computed,arithmetic
 452,140 plus 817 equals 959.,Contradicted,Correct fact: 140+817=957,Computed,arithmetic
 453,The next major earthquake in Cuba will occur in the month of August 2029.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
-454,"An undiscovered manuscript in a library in Washington, D.C. contains an unknown play by Rabindranath Tagore.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+454,"An undiscovered manuscript in a library in Washington, D.C. contains an unknown play by George Orwell.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 455,95 multiplied by 74 equals 7010.,Contradicted,Correct fact: 95*74=7030,Computed,arithmetic
 456,A tiger sighted near Hanoi in 1930 weighed exactly 205 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 457,Fluorine has 10 protons in a neutral atom's nucleus.,Contradicted,Correct fact: Fluorine: Z=9,IUPAC Periodic Table,chemistry
@@ -460,7 +460,7 @@ id,claim,label,evidence,source,category
 459,"Exactly 42,592 people walked through a street market in Pretoria on 6 April 1969.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 460,343 is a prime number.,Contradicted,Correct fact: 343 divisible by 7,Computed,mathematics
 461,172 is a composite number.,Verified,172 divisible by 2,Computed,mathematics
-462,An undiscovered manuscript in a library in Kuala Lumpur contains an unknown play by Jane Austen.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+462,An undiscovered manuscript in a library in Kuala Lumpur contains an unknown play by Franz Kafka.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 463,95 multiplied by 34 equals 3230.,Verified,95*34=3230,Computed,arithmetic
 464,168 plus 735 equals 901.,Contradicted,Correct fact: 168+735=903,Computed,arithmetic
 465,13 multiplied by 26 equals 358.,Contradicted,Correct fact: 13*26=338,Computed,arithmetic
@@ -485,7 +485,7 @@ id,claim,label,evidence,source,category
 484,Harish Gupta ate a salad for lunch on 10 September 2007.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 485,The mayor of Jakarta privately decided in 1966 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 486,The grandmother of Neha Kulkarni once met a famous scientist in Warsaw in 1933.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-487,An undiscovered manuscript in a library in Buenos Aires contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+487,An undiscovered manuscript in a library in Buenos Aires contains an unknown play by Homer.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 488,"393 kilometres equals 39,300 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 489,857 plus 235 equals 1192.,Contradicted,Correct fact: 857+235=1092,Computed,arithmetic
 490,336 plus 984 equals 1320.,Verified,336+984=1320,Computed,arithmetic
@@ -506,7 +506,7 @@ id,claim,label,evidence,source,category
 505,"People in Nairobi are, on average, 6 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 506,669 plus 87 equals 756.,Verified,669+87=756,Computed,arithmetic
 507,437 plus 739 equals 1276.,Contradicted,Correct fact: 437+739=1176,Computed,arithmetic
-508,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by Munshi Premchand.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+508,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by Vladimir Nabokov.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 509,Dr. Fatima Khan published a study in the Journal of Applied Obscure Studies in 2002 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 510,937 plus 936 equals 1872.,Contradicted,Correct fact: 937+936=1873,Computed,arithmetic
 511,357 plus 275 equals 632.,Verified,357+275=632,Computed,arithmetic
@@ -534,7 +534,7 @@ id,claim,label,evidence,source,category
 533,46 is a prime number.,Contradicted,Correct fact: 46 divisible by 2,Computed,mathematics
 534,675 plus 164 equals 838.,Contradicted,Correct fact: 675+164=839,Computed,arithmetic
 535,571 plus 173 equals 734.,Contradicted,Correct fact: 571+173=744,Computed,arithmetic
-536,An undiscovered manuscript in a library in Sucre contains an unknown play by George Orwell.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+536,An undiscovered manuscript in a library in Sucre contains an unknown play by Herman Melville.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 537,Dr. Sanjay Rao published a study in the Journal of Applied Obscure Studies in 1989 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 538,The SI unit of frequency is the hertz.,Verified,The SI unit of frequency is the hertz,Standard reference texts,general knowledge
 539,"355 kilometres equals 355,000 metres.",Verified,1 km = 1000 m,SI definition,units
@@ -579,12 +579,12 @@ id,claim,label,evidence,source,category
 578,924 plus 319 equals 1343.,Contradicted,Correct fact: 924+319=1243,Computed,arithmetic
 579,50 multiplied by 98 equals 4910.,Contradicted,Correct fact: 50*98=4900,Computed,arithmetic
 580,Ancient traders from Mexico secretly reached the Americas around the year 579.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-581,An undiscovered manuscript in a library in Brasilia contains an unknown play by Aldous Huxley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+581,An undiscovered manuscript in a library in Brasilia contains an unknown play by Harper Lee.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 582,621 plus 737 equals 1348.,Contradicted,Correct fact: 621+737=1358,Computed,arithmetic
 583,The chemical symbol for Radon is Ne.,Contradicted,Correct fact: Radon: symbol Rn,IUPAC Periodic Table,chemistry
 584,895 plus 513 equals 1408.,Verified,895+513=1408,Computed,arithmetic
 585,743 plus 98 equals 841.,Verified,743+98=841,Computed,arithmetic
-586,An undiscovered manuscript in a library in Kabul contains an unknown play by James Joyce.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+586,An undiscovered manuscript in a library in Kabul contains an unknown play by Bram Stoker.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 587,The next major earthquake in Bangladesh will occur in the month of February 2057.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 588,24 multiplied by 18 equals 432.,Verified,24*18=432,Computed,arithmetic
 589,63 multiplied by 61 equals 3863.,Contradicted,Correct fact: 63*61=3843,Computed,arithmetic
@@ -608,16 +608,16 @@ id,claim,label,evidence,source,category
 607,Harish Gupta ate a salad for lunch on 2 March 1993.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 608,"Exactly 73,049 people walked through a street market in Mexico City on 18 July 1974.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 609,The mayor of Bangkok privately decided in 1968 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-610,An undiscovered manuscript in a library in Dakar contains an unknown play by Ernest Hemingway.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+610,An undiscovered manuscript in a library in Dakar contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 611,69 plus 664 equals 733.,Verified,69+664=733,Computed,arithmetic
 612,680 plus 969 equals 1649.,Verified,680+969=1649,Computed,arithmetic
 613,780 plus 487 equals 1269.,Contradicted,Correct fact: 780+487=1267,Computed,arithmetic
 614,304 plus 377 equals 681.,Verified,304+377=681,Computed,arithmetic
-615,An undiscovered manuscript in a library in Moscow contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+615,An undiscovered manuscript in a library in Moscow contains an unknown play by Salman Rushdie.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 616,23 multiplied by 85 equals 1955.,Verified,23*85=1955,Computed,arithmetic
 617,The capital of the Indian state of Tamil Nadu is heart.,Contradicted,Correct fact: The capital of the Indian state of Tamil Nadu is Chennai,Standard reference texts,general knowledge
 618,802 plus 607 equals 1409.,Verified,802+607=1409,Computed,arithmetic
-619,An undiscovered manuscript in a library in Vientiane contains an unknown play by Fyodor Dostoevsky.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+619,An undiscovered manuscript in a library in Vientiane contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 620,33 multiplied by 15 equals 475.,Contradicted,Correct fact: 33*15=495,Computed,arithmetic
 621,55 multiplied by 25 equals 1376.,Contradicted,Correct fact: 55*25=1375,Computed,arithmetic
 622,A tiger sighted near Tehran in 1949 weighed exactly 174 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
@@ -626,7 +626,7 @@ id,claim,label,evidence,source,category
 625,57 plus 15 equals 72.,Verified,57+15=72,Computed,arithmetic
 626,751 plus 492 equals 1343.,Contradicted,Correct fact: 751+492=1243,Computed,arithmetic
 627,The capital of Colombia is Rabat.,Contradicted,Correct fact: Capital of Colombia = Bogota,CIA World Factbook / UN,geography
-628,An undiscovered manuscript in a library in Madrid contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+628,An undiscovered manuscript in a library in Madrid contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 629,"Exactly 87,146 people walked through a street market in Reykjavik on 3 July 1965.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 630,401 plus 835 equals 1336.,Contradicted,Correct fact: 401+835=1236,Computed,arithmetic
 631,The square root of 2601 is 48.,Contradicted,Correct fact: 51^2=2601,Computed,mathematics
@@ -658,7 +658,7 @@ id,claim,label,evidence,source,category
 657,586 plus 797 equals 1383.,Verified,586+797=1383,Computed,arithmetic
 658,"331 kilometres equals 33,100 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 659,372 plus 531 equals 893.,Contradicted,Correct fact: 372+531=903,Computed,arithmetic
-660,An undiscovered manuscript in a library in Cairo contains an unknown play by Herman Melville.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+660,An undiscovered manuscript in a library in Cairo contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 661,"168 kilometres equals 168,000 metres.",Verified,1 km = 1000 m,SI definition,units
 662,107 is a composite number.,Contradicted,Correct fact: 107 is prime,Computed,mathematics
 663,242 plus 366 equals 610.,Contradicted,Correct fact: 242+366=608,Computed,arithmetic
@@ -702,7 +702,7 @@ id,claim,label,evidence,source,category
 701,126 is a prime number.,Contradicted,Correct fact: 126 divisible by 2,Computed,mathematics
 702,92 multiplied by 94 equals 8648.,Verified,92*94=8648,Computed,arithmetic
 703,92 multiplied by 21 equals 1952.,Contradicted,Correct fact: 92*21=1932,Computed,arithmetic
-704,An undiscovered manuscript in a library in Bangkok contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+704,An undiscovered manuscript in a library in Bangkok contains an unknown play by Salman Rushdie.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 705,196 plus 186 equals 382.,Verified,196+186=382,Computed,arithmetic
 706,The grandmother of Karan Bhatia once met a famous scientist in Warsaw in 1960.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 707,A tiger sighted near Sucre in 1930 weighed exactly 152 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
@@ -734,7 +734,7 @@ id,claim,label,evidence,source,category
 733,The next major earthquake in Iraq will occur in the month of May 2054.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 734,The next major earthquake in Canada will occur in the month of May 2031.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 735,"People in Rome are, on average, 6 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
-736,An undiscovered manuscript in a library in Havana contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+736,An undiscovered manuscript in a library in Havana contains an unknown play by Dante Alighieri.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 737,381 plus 195 equals 576.,Verified,381+195=576,Computed,arithmetic
 738,"305 kilometres equals 305,000 metres.",Verified,1 km = 1000 m,SI definition,units
 739,62 multiplied by 81 equals 5021.,Contradicted,Correct fact: 62*81=5022,Computed,arithmetic
@@ -822,14 +822,14 @@ id,claim,label,evidence,source,category
 821,73 multiplied by 89 equals 6477.,Contradicted,Correct fact: 73*89=6497,Computed,arithmetic
 822,The grandmother of Neha Kulkarni once met a famous scientist in Sofia in 1953.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 823,54 multiplied by 45 equals 2430.,Verified,54*45=2430,Computed,arithmetic
-824,An undiscovered manuscript in a library in Naypyidaw contains an unknown play by Fyodor Dostoevsky.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+824,An undiscovered manuscript in a library in Naypyidaw contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 825,251 is a composite number.,Contradicted,Correct fact: 251 is prime,Computed,mathematics
 826,The next major earthquake in Finland will occur in the month of May 2027.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 827,152 plus 170 equals 322.,Verified,152+170=322,Computed,arithmetic
 828,"Washington, D.C. is the capital city of United States.",Verified,"Capital of United States = Washington, D.C.",CIA World Factbook / UN,geography
 829,Dr. Sanjay Rao published a study in the Journal of Applied Obscure Studies in 1978 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 830,The mayor of Tokyo privately decided in 1995 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-831,An undiscovered manuscript in a library in Ulaanbaatar contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+831,An undiscovered manuscript in a library in Ulaanbaatar contains an unknown play by Jane Austen.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 832,871 plus 743 equals 1614.,Verified,871+743=1614,Computed,arithmetic
 833,Lakshmi Iyer ate a salad for lunch on 2 June 1997.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 834,"Exactly 27,515 people walked through a street market in Hanoi on 7 April 1973.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
@@ -871,7 +871,7 @@ id,claim,label,evidence,source,category
 870,"Exactly 24,827 people walked through a street market in Stockholm on 5 April 1997.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 871,Neon has 10 protons in a neutral atom's nucleus.,Verified,Neon: Z=10,IUPAC Periodic Table,chemistry
 872,74 multiplied by 73 equals 5401.,Contradicted,Correct fact: 74*73=5402,Computed,arithmetic
-873,An undiscovered manuscript in a library in Rome contains an unknown play by F. Scott Fitzgerald.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+873,An undiscovered manuscript in a library in Rome contains an unknown play by Leo Tolstoy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 874,The grandmother of Fatima Khan once met a famous scientist in Brussels in 1964.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 875,74 multiplied by 88 equals 6522.,Contradicted,Correct fact: 74*88=6512,Computed,arithmetic
 876,49 multiplied by 55 equals 2675.,Contradicted,Correct fact: 49*55=2695,Computed,arithmetic
@@ -924,14 +924,14 @@ id,claim,label,evidence,source,category
 923,329 is a prime number.,Contradicted,Correct fact: 329 divisible by 7,Computed,mathematics
 924,132 plus 806 equals 938.,Verified,132+806=938,Computed,arithmetic
 925,Argon has 18 protons in a neutral atom's nucleus.,Verified,Argon: Z=18,IUPAC Periodic Table,chemistry
-926,An undiscovered manuscript in a library in Montevideo contains an unknown play by Harper Lee.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+926,An undiscovered manuscript in a library in Montevideo contains an unknown play by Victor Hugo.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 927,"Exactly 64,077 people walked through a street market in Reykjavik on 23 April 2003.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 928,36 multiplied by 31 equals 1126.,Contradicted,Correct fact: 36*31=1116,Computed,arithmetic
 929,"Exactly 28,047 people walked through a street market in Ulaanbaatar on 24 October 1996.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 930,683 plus 716 equals 1389.,Contradicted,Correct fact: 683+716=1399,Computed,arithmetic
 931,"405 kilometres equals 405,000 metres.",Verified,1 km = 1000 m,SI definition,units
 932,660 plus 128 equals 790.,Contradicted,Correct fact: 660+128=788,Computed,arithmetic
-933,An undiscovered manuscript in a library in Moscow contains an unknown play by Victor Hugo.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+933,An undiscovered manuscript in a library in Moscow contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 934,"By 2117, the population of Philippines will exceed 800 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 935,461 plus 548 equals 1009.,Verified,461+548=1009,Computed,arithmetic
 936,21 degrees Celsius equals 69.8 degrees Fahrenheit.,Verified,F=C*9/5+32=69.8,SI / standard conversion,units
@@ -969,7 +969,7 @@ id,claim,label,evidence,source,category
 968,A secret tunnel reportedly connects the main railway station of Ulaanbaatar to a hidden vault.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,rumor
 969,"By 2091, the population of Poland will exceed 1800 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 970,30 multiplied by 48 equals 1440.,Verified,30*48=1440,Computed,arithmetic
-971,An undiscovered manuscript in a library in Amsterdam contains an unknown play by Aldous Huxley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+971,An undiscovered manuscript in a library in Amsterdam contains an unknown play by Harper Lee.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 972,43 plus 521 equals 574.,Contradicted,Correct fact: 43+521=564,Computed,arithmetic
 973,76 multiplied by 29 equals 2224.,Contradicted,Correct fact: 76*29=2204,Computed,arithmetic
 974,98 multiplied by 41 equals 4017.,Contradicted,Correct fact: 98*41=4018,Computed,arithmetic
@@ -1000,7 +1000,7 @@ id,claim,label,evidence,source,category
 999,25 multiplied by 93 equals 2335.,Contradicted,Correct fact: 25*93=2325,Computed,arithmetic
 1000,A tiger sighted near Accra in 1959 weighed exactly 222 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1001,A tiger sighted near Hanoi in 1943 weighed exactly 183 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-1002,An undiscovered manuscript in a library in Jerusalem contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1002,An undiscovered manuscript in a library in Jerusalem contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1003,98 multiplied by 62 equals 6076.,Verified,98*62=6076,Computed,arithmetic
 1004,21 hours equal 1260 minutes.,Verified,1 h = 60 min,SI definition,units
 1005,"203 kilometres equals 203,000 metres.",Verified,1 km = 1000 m,SI definition,units
@@ -1008,7 +1008,7 @@ id,claim,label,evidence,source,category
 1007,324 is a composite number.,Verified,324 divisible by 2,Computed,mathematics
 1008,Dr. Lakshmi Iyer published a study in the Regional Review of Unlisted Science in 2008 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 1009,The capital of Portugal is Lisbon.,Verified,Capital of Portugal = Lisbon,CIA World Factbook / UN,geography
-1010,An undiscovered manuscript in a library in Accra contains an unknown play by James Joyce.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1010,An undiscovered manuscript in a library in Accra contains an unknown play by Bram Stoker.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1011,601 plus 338 equals 941.,Contradicted,Correct fact: 601+338=939,Computed,arithmetic
 1012,753 plus 181 equals 1034.,Contradicted,Correct fact: 753+181=934,Computed,arithmetic
 1013,The chemical symbol for Lithium is Li.,Verified,Lithium: symbol Li,IUPAC Periodic Table,chemistry
@@ -1025,7 +1025,7 @@ id,claim,label,evidence,source,category
 1024,61 degrees Celsius equals 141.8 degrees Fahrenheit.,Verified,F=C*9/5+32=141.8,SI / standard conversion,units
 1025,48 degrees Celsius equals 113.4 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=118.4,SI / standard conversion,units
 1026,Ancient traders from Croatia secretly reached the Americas around the year 341.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-1027,An undiscovered manuscript in a library in Islamabad contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1027,An undiscovered manuscript in a library in Islamabad contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1028,229 plus 669 equals 908.,Contradicted,Correct fact: 229+669=898,Computed,arithmetic
 1029,930 plus 565 equals 1495.,Verified,930+565=1495,Computed,arithmetic
 1030,The grandmother of Sanjay Rao once met a famous scientist in Dakar in 1945.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
@@ -1061,7 +1061,7 @@ id,claim,label,evidence,source,category
 1060,The mayor of Astana privately decided in 1980 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1061,"458 kilometres equals 45,800 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 1062,512 plus 200 equals 714.,Contradicted,Correct fact: 512+200=712,Computed,arithmetic
-1063,An undiscovered manuscript in a library in Wellington contains an unknown play by Salman Rushdie.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1063,An undiscovered manuscript in a library in Wellington contains an unknown play by Charles Dickens.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1064,"75 kilometres equals 7,500 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 1065,71 multiplied by 76 equals 5397.,Contradicted,Correct fact: 71*76=5396,Computed,arithmetic
 1066,"By 2060, the population of Turkey will exceed 600 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
@@ -1113,7 +1113,7 @@ id,claim,label,evidence,source,category
 1112,637 plus 133 equals 768.,Contradicted,Correct fact: 637+133=770,Computed,arithmetic
 1113,590 plus 547 equals 1137.,Verified,590+547=1137,Computed,arithmetic
 1114,The grandmother of Fatima Khan once met a famous scientist in Beijing in 1978.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-1115,An undiscovered manuscript in a library in Pretoria contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1115,An undiscovered manuscript in a library in Pretoria contains an unknown play by Munshi Premchand.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1116,937 plus 654 equals 1591.,Verified,937+654=1591,Computed,arithmetic
 1117,The grandmother of Vikram Sethi once met a famous scientist in Bogota in 1930.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 1118,Karan Bhatia ate dal and rice for lunch on 4 December 1998.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
@@ -1148,7 +1148,7 @@ id,claim,label,evidence,source,category
 1147,948 plus 71 equals 1019.,Verified,948+71=1019,Computed,arithmetic
 1148,582 plus 267 equals 849.,Verified,582+267=849,Computed,arithmetic
 1149,"People in Kuala Lumpur are, on average, 6 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
-1150,An undiscovered manuscript in a library in Athens contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1150,An undiscovered manuscript in a library in Athens contains an unknown play by Rabindranath Tagore.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1151,21 multiplied by 74 equals 1554.,Verified,21*74=1554,Computed,arithmetic
 1152,26 degrees Celsius equals 96.8 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=78.8,SI / standard conversion,units
 1153,427 plus 714 equals 1143.,Contradicted,Correct fact: 427+714=1141,Computed,arithmetic
@@ -1262,7 +1262,7 @@ id,claim,label,evidence,source,category
 1261,976 plus 923 equals 1901.,Contradicted,Correct fact: 976+923=1899,Computed,arithmetic
 1262,"Exactly 70,689 people walked through a street market in Dodoma on 22 July 1978.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1263,Ancient traders from Tanzania secretly reached the Americas around the year 910.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-1264,An undiscovered manuscript in a library in Havana contains an unknown play by Franz Kafka.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1264,An undiscovered manuscript in a library in Havana contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1265,"People in Vienna are, on average, 6 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 1266,23 is a prime number.,Verified,23 is prime,Computed,mathematics
 1267,Ancient traders from France secretly reached the Americas around the year 1012.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
@@ -1278,7 +1278,7 @@ id,claim,label,evidence,source,category
 1277,The mayor of Lisbon privately decided in 1965 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1278,22 multiplied by 86 equals 1872.,Contradicted,Correct fact: 22*86=1892,Computed,arithmetic
 1279,The grandmother of Deepa Menon once met a famous scientist in Ankara in 1948.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-1280,An undiscovered manuscript in a library in Oslo contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1280,An undiscovered manuscript in a library in Oslo contains an unknown play by Rabindranath Tagore.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1281,"Exactly 4,175 people walked through a street market in Kampala on 6 October 1975.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1282,A tiger sighted near Copenhagen in 1950 weighed exactly 201 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1283,The square root of 576 is 25.,Contradicted,Correct fact: 24^2=576,Computed,mathematics
@@ -1291,7 +1291,7 @@ id,claim,label,evidence,source,category
 1290,773 plus 462 equals 1236.,Contradicted,Correct fact: 773+462=1235,Computed,arithmetic
 1291,26 multiplied by 93 equals 2419.,Contradicted,Correct fact: 26*93=2418,Computed,arithmetic
 1292,The Alchemist was written by Homer.,Contradicted,Correct fact: The Alchemist -> Paulo Coelho,Library of Congress catalogue,literature
-1293,An undiscovered manuscript in a library in Mexico City contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1293,An undiscovered manuscript in a library in Mexico City contains an unknown play by Jane Austen.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1294,96 multiplied by 46 equals 4436.,Contradicted,Correct fact: 96*46=4416,Computed,arithmetic
 1295,The stock price of a randomly chosen company will rise exactly 38% next year.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 1296,98 multiplied by 96 equals 9408.,Verified,98*96=9408,Computed,arithmetic
@@ -1329,7 +1329,7 @@ id,claim,label,evidence,source,category
 1328,56 multiplied by 39 equals 2184.,Verified,56*39=2184,Computed,arithmetic
 1329,34 multiplied by 59 equals 2006.,Verified,34*59=2006,Computed,arithmetic
 1330,The capital of Uganda is Dakar.,Contradicted,Correct fact: Capital of Uganda = Kampala,CIA World Factbook / UN,geography
-1331,An undiscovered manuscript in a library in Algiers contains an unknown play by Franz Kafka.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1331,An undiscovered manuscript in a library in Algiers contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1332,256 plus 324 equals 580.,Verified,256+324=580,Computed,arithmetic
 1333,A tiger sighted near Hanoi in 1915 weighed exactly 156 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1334,835 plus 497 equals 1332.,Verified,835+497=1332,Computed,arithmetic
@@ -1343,7 +1343,7 @@ id,claim,label,evidence,source,category
 1342,308 plus 347 equals 645.,Contradicted,Correct fact: 308+347=655,Computed,arithmetic
 1343,78 multiplied by 90 equals 7040.,Contradicted,Correct fact: 78*90=7020,Computed,arithmetic
 1344,Dr. Neha Kulkarni published a study in the Journal of Applied Obscure Studies in 1983 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
-1345,The electron is credited to Dmitri Mendeleev.,Contradicted,Correct fact: the electron -> J. J. Thomson,Encyclopaedia Britannica,science history
+1345,The electron is credited to Johannes Kepler.,Contradicted,Correct fact: the electron -> J. J. Thomson,Encyclopaedia Britannica,science history
 1346,854 plus 665 equals 1519.,Verified,854+665=1519,Computed,arithmetic
 1347,There is a species of beetle living only in a single cave near Riyadh that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1348,Priya Nair ate paratha for lunch on 7 December 1998.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
@@ -1373,8 +1373,8 @@ id,claim,label,evidence,source,category
 1372,"317 kilometres equals 317,000 metres.",Verified,1 km = 1000 m,SI definition,units
 1373,115 plus 620 equals 735.,Verified,115+620=735,Computed,arithmetic
 1374,410 plus 356 equals 776.,Contradicted,Correct fact: 410+356=766,Computed,arithmetic
-1375,An undiscovered manuscript in a library in Tokyo contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-1376,An undiscovered manuscript in a library in New Delhi contains an unknown play by Vladimir Nabokov.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1375,An undiscovered manuscript in a library in Tokyo contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1376,An undiscovered manuscript in a library in New Delhi contains an unknown play by James Joyce.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1377,The square root of 2304 is 46.,Contradicted,Correct fact: 48^2=2304,Computed,mathematics
 1378,95 plus 290 equals 386.,Contradicted,Correct fact: 95+290=385,Computed,arithmetic
 1379,A tiger sighted near Nairobi in 1938 weighed exactly 151 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
@@ -1395,7 +1395,7 @@ id,claim,label,evidence,source,category
 1394,79 multiplied by 17 equals 1342.,Contradicted,Correct fact: 79*17=1343,Computed,arithmetic
 1395,99 multiplied by 13 equals 1287.,Verified,99*13=1287,Computed,arithmetic
 1396,"17 kilometres equals 1,700 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
-1397,An undiscovered manuscript in a library in Accra contains an unknown play by Bram Stoker.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1397,An undiscovered manuscript in a library in Accra contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1398,A tiger sighted near Caracas in 1909 weighed exactly 162 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1399,The mayor of Buenos Aires privately decided in 1967 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1400,158 plus 591 equals 749.,Verified,158+591=749,Computed,arithmetic
@@ -1412,7 +1412,7 @@ id,claim,label,evidence,source,category
 1411,48 plus 644 equals 682.,Contradicted,Correct fact: 48+644=692,Computed,arithmetic
 1412,The square root of 729 is 27.,Verified,27^2=729,Computed,mathematics
 1413,-20 degrees Celsius equals 5 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=-4,SI / standard conversion,units
-1414,An undiscovered manuscript in a library in Brussels contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1414,An undiscovered manuscript in a library in Brussels contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1415,226 is a prime number.,Contradicted,Correct fact: 226 divisible by 2,Computed,mathematics
 1416,292 is a prime number.,Contradicted,Correct fact: 292 divisible by 2,Computed,mathematics
 1417,Wellington is the capital city of New Zealand.,Verified,Capital of New Zealand = Wellington,CIA World Factbook / UN,geography
@@ -1489,7 +1489,7 @@ id,claim,label,evidence,source,category
 1488,Bromine has 42 protons in a neutral atom's nucleus.,Contradicted,Correct fact: Bromine: Z=35,IUPAC Periodic Table,chemistry
 1489,The chemical symbol for Neodymium is Nd.,Verified,Neodymium: symbol Nd,IUPAC Periodic Table,chemistry
 1490,There is a species of beetle living only in a single cave near Rabat that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-1491,An undiscovered manuscript in a library in Islamabad contains an unknown play by Rabindranath Tagore.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1491,An undiscovered manuscript in a library in Islamabad contains an unknown play by George Orwell.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1492,692 plus 375 equals 1065.,Contradicted,Correct fact: 692+375=1067,Computed,arithmetic
 1493,12 multiplied by 12 equals 154.,Contradicted,Correct fact: 12*12=144,Computed,arithmetic
 1494,"396 kilometres equals 396,000 metres.",Verified,1 km = 1000 m,SI definition,units
@@ -1605,7 +1605,7 @@ id,claim,label,evidence,source,category
 1604,The stock price of a randomly chosen company will rise exactly 16% next year.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 1605,The next major earthquake in Croatia will occur in the month of November 2037.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 1606,477 plus 985 equals 1463.,Contradicted,Correct fact: 477+985=1462,Computed,arithmetic
-1607,An undiscovered manuscript in a library in Madrid contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1607,An undiscovered manuscript in a library in Madrid contains an unknown play by Munshi Premchand.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1608,775 plus 520 equals 1295.,Verified,775+520=1295,Computed,arithmetic
 1609,98 is a composite number.,Verified,98 divisible by 2,Computed,mathematics
 1610,The next major earthquake in Sri Lanka will occur in the month of August 2060.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
@@ -1640,7 +1640,7 @@ id,claim,label,evidence,source,category
 1639,67 multiplied by 42 equals 2814.,Verified,67*42=2814,Computed,arithmetic
 1640,480 plus 76 equals 546.,Contradicted,Correct fact: 480+76=556,Computed,arithmetic
 1641,57 is a composite number.,Verified,57 divisible by 3,Computed,mathematics
-1642,An undiscovered manuscript in a library in Montevideo contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1642,An undiscovered manuscript in a library in Montevideo contains an unknown play by Homer.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1643,207 is a prime number.,Contradicted,Correct fact: 207 divisible by 3,Computed,mathematics
 1644,856 plus 594 equals 1449.,Contradicted,Correct fact: 856+594=1450,Computed,arithmetic
 1645,141 plus 771 equals 913.,Contradicted,Correct fact: 141+771=912,Computed,arithmetic
@@ -1683,7 +1683,7 @@ id,claim,label,evidence,source,category
 1682,555 plus 525 equals 1080.,Verified,555+525=1080,Computed,arithmetic
 1683,828 plus 276 equals 1103.,Contradicted,Correct fact: 828+276=1104,Computed,arithmetic
 1684,The chemical symbol for Iron is Ni.,Contradicted,Correct fact: Iron: symbol Fe,IUPAC Periodic Table,chemistry
-1685,An undiscovered manuscript in a library in Vientiane contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1685,An undiscovered manuscript in a library in Vientiane contains an unknown play by Salman Rushdie.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1686,The grandmother of Ananya Das once met a famous scientist in Havana in 1968.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 1687,"Exactly 21,865 people walked through a street market in Mexico City on 19 October 2004.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1688,483 plus 184 equals 677.,Contradicted,Correct fact: 483+184=667,Computed,arithmetic
@@ -1745,7 +1745,7 @@ id,claim,label,evidence,source,category
 1744,775 plus 235 equals 1012.,Contradicted,Correct fact: 775+235=1010,Computed,arithmetic
 1745,"Exactly 99,342 people walked through a street market in Canberra on 25 July 2005.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1746,75 plus 695 equals 760.,Contradicted,Correct fact: 75+695=770,Computed,arithmetic
-1747,An undiscovered manuscript in a library in Sucre contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1747,An undiscovered manuscript in a library in Sucre contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1748,674 plus 421 equals 1195.,Contradicted,Correct fact: 674+421=1095,Computed,arithmetic
 1749,"Exactly 50,682 people walked through a street market in Jakarta on 26 July 1998.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1750,142 is a prime number.,Contradicted,Correct fact: 142 divisible by 2,Computed,mathematics
@@ -1767,7 +1767,7 @@ id,claim,label,evidence,source,category
 1766,817 plus 564 equals 1380.,Contradicted,Correct fact: 817+564=1381,Computed,arithmetic
 1767,-12 degrees Celsius equals 10.4 degrees Fahrenheit.,Verified,F=C*9/5+32=10.4,SI / standard conversion,units
 1768,The mayor of Colombo privately decided in 1978 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-1769,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1769,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by Salman Rushdie.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1770,"People in Santiago are, on average, 4 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 1771,The capital of Poland is Warsaw.,Verified,Capital of Poland = Warsaw,CIA World Factbook / UN,geography
 1772,"248 kilometres equals 24,800 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
@@ -1775,7 +1775,7 @@ id,claim,label,evidence,source,category
 1774,66 multiplied by 92 equals 6062.,Contradicted,Correct fact: 66*92=6072,Computed,arithmetic
 1775,732 plus 905 equals 1627.,Contradicted,Correct fact: 732+905=1637,Computed,arithmetic
 1776,624 plus 502 equals 1126.,Verified,624+502=1126,Computed,arithmetic
-1777,An undiscovered manuscript in a library in Baghdad contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1777,An undiscovered manuscript in a library in Baghdad contains an unknown play by Rabindranath Tagore.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1778,The square root of 961 is 32.,Contradicted,Correct fact: 31^2=961,Computed,mathematics
 1779,"470 kilometres equals 47,000 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 1780,303 is a composite number.,Verified,303 divisible by 3,Computed,mathematics
@@ -1861,7 +1861,7 @@ id,claim,label,evidence,source,category
 1860,75 multiplied by 81 equals 6075.,Verified,75*81=6075,Computed,arithmetic
 1861,A tiger sighted near Addis Ababa in 1935 weighed exactly 193 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1862,The square root of 1444 is 35.,Contradicted,Correct fact: 38^2=1444,Computed,mathematics
-1863,An undiscovered manuscript in a library in Addis Ababa contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1863,An undiscovered manuscript in a library in Addis Ababa contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1864,Ancient traders from Mexico secretly reached the Americas around the year 671.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1865,398 plus 87 equals 486.,Contradicted,Correct fact: 398+87=485,Computed,arithmetic
 1866,423 plus 448 equals 881.,Contradicted,Correct fact: 423+448=871,Computed,arithmetic
@@ -1978,14 +1978,14 @@ id,claim,label,evidence,source,category
 1977,609 plus 503 equals 1112.,Verified,609+503=1112,Computed,arithmetic
 1978,Arjun Reddy ate a salad for lunch on 18 March 1997.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 1979,The square root of 400 is 20.,Verified,20^2=400,Computed,mathematics
-1980,An undiscovered manuscript in a library in Helsinki contains an unknown play by Rabindranath Tagore.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1980,An undiscovered manuscript in a library in Helsinki contains an unknown play by George Orwell.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1981,193 plus 999 equals 1193.,Contradicted,Correct fact: 193+999=1192,Computed,arithmetic
 1982,"Exactly 14,396 people walked through a street market in Tehran on 5 April 1972.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1983,287 plus 654 equals 941.,Verified,287+654=941,Computed,arithmetic
 1984,154 is a prime number.,Contradicted,Correct fact: 154 divisible by 2,Computed,mathematics
 1985,The grandmother of Rohan Mehta once met a famous scientist in Algiers in 1941.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 1986,The theory of evolution by natural selection is credited to Charles Darwin.,Verified,the theory of evolution by natural selection -> Charles Darwin,Encyclopaedia Britannica,science history
-1987,An undiscovered manuscript in a library in Budapest contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+1987,An undiscovered manuscript in a library in Budapest contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 1988,"220 kilometres equals 220,000 metres.",Verified,1 km = 1000 m,SI definition,units
 1989,The mayor of Moscow privately decided in 1988 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 1990,861 plus 686 equals 1547.,Verified,861+686=1547,Computed,arithmetic
@@ -2001,7 +2001,7 @@ id,claim,label,evidence,source,category
 2000,19 multiplied by 43 equals 817.,Verified,19*43=817,Computed,arithmetic
 2001,99 multiplied by 28 equals 2773.,Contradicted,Correct fact: 99*28=2772,Computed,arithmetic
 2002,A tiger sighted near Vienna in 1928 weighed exactly 240 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-2003,An undiscovered manuscript in a library in Kathmandu contains an unknown play by Charles Dickens.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2003,An undiscovered manuscript in a library in Kathmandu contains an unknown play by F. Scott Fitzgerald.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2004,There is a species of beetle living only in a single cave near Belgrade that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2005,The grandmother of Rohan Mehta once met a famous scientist in Nairobi in 1930.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 2006,275 plus 747 equals 1020.,Contradicted,Correct fact: 275+747=1022,Computed,arithmetic
@@ -2018,7 +2018,7 @@ id,claim,label,evidence,source,category
 2017,There is a species of beetle living only in a single cave near Phnom Penh that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2018,Harish Gupta ate idli and sambar for lunch on 15 September 2005.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 2019,Karan Bhatia ate poha for lunch on 11 September 2011.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-2020,The neutron is credited to James Watson and Francis Crick.,Contradicted,Correct fact: the neutron -> James Chadwick,Encyclopaedia Britannica,science history
+2020,The neutron is credited to Henri Becquerel.,Contradicted,Correct fact: the neutron -> James Chadwick,Encyclopaedia Britannica,science history
 2021,23 multiplied by 26 equals 598.,Verified,23*26=598,Computed,arithmetic
 2022,Ahmed Siddiqui ate poha for lunch on 20 June 2009.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 2023,The grandmother of Neha Kulkarni once met a famous scientist in Madrid in 1932.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
@@ -2033,7 +2033,7 @@ id,claim,label,evidence,source,category
 2032,345 is a composite number.,Verified,345 divisible by 3,Computed,mathematics
 2033,"416 kilometres equals 41,600 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 2034,980 plus 724 equals 1694.,Contradicted,Correct fact: 980+724=1704,Computed,arithmetic
-2035,An undiscovered manuscript in a library in Dublin contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2035,An undiscovered manuscript in a library in Dublin contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2036,190 is a prime number.,Contradicted,Correct fact: 190 divisible by 2,Computed,mathematics
 2037,72 plus 941 equals 1113.,Contradicted,Correct fact: 72+941=1013,Computed,arithmetic
 2038,66 multiplied by 25 equals 1640.,Contradicted,Correct fact: 66*25=1650,Computed,arithmetic
@@ -2041,7 +2041,7 @@ id,claim,label,evidence,source,category
 2040,Gitanjali was written by Rabindranath Tagore.,Verified,Gitanjali -> Rabindranath Tagore,Library of Congress catalogue,literature
 2041,942 plus 899 equals 1841.,Verified,942+899=1841,Computed,arithmetic
 2042,"By 2088, the population of Bulgaria will exceed 800 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
-2043,An undiscovered manuscript in a library in Tokyo contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2043,An undiscovered manuscript in a library in Tokyo contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2044,"By 2134, the population of Indonesia will exceed 200 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 2045,93 multiplied by 50 equals 4640.,Contradicted,Correct fact: 93*50=4650,Computed,arithmetic
 2046,Platinum has 78 protons in a neutral atom's nucleus.,Verified,Platinum: Z=78,IUPAC Periodic Table,chemistry
@@ -2052,7 +2052,7 @@ id,claim,label,evidence,source,category
 2051,Dr. Fatima Khan published a study in the Regional Review of Unlisted Science in 2005 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 2052,"Exactly 84,208 people walked through a street market in Dakar on 4 October 1980.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2053,A secret tunnel reportedly connects the main railway station of Stockholm to a hidden vault.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,rumor
-2054,An undiscovered manuscript in a library in Seoul contains an unknown play by Fyodor Dostoevsky.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2054,An undiscovered manuscript in a library in Seoul contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2055,28 multiplied by 23 equals 643.,Contradicted,Correct fact: 28*23=644,Computed,arithmetic
 2056,21 multiplied by 49 equals 1029.,Verified,21*49=1029,Computed,arithmetic
 2057,731 plus 860 equals 1601.,Contradicted,Correct fact: 731+860=1591,Computed,arithmetic
@@ -2060,7 +2060,7 @@ id,claim,label,evidence,source,category
 2059,Macbeth was written by William Shakespeare.,Verified,Macbeth -> William Shakespeare,Library of Congress catalogue,literature
 2060,12 multiplied by 69 equals 827.,Contradicted,Correct fact: 12*69=828,Computed,arithmetic
 2061,The grandmother of Meera Joshi once met a famous scientist in Kyiv in 1976.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-2062,An undiscovered manuscript in a library in Montevideo contains an unknown play by Ernest Hemingway.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2062,An undiscovered manuscript in a library in Montevideo contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2063,A tiger sighted near Madrid in 1928 weighed exactly 227 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2064,209 plus 335 equals 544.,Verified,209+335=544,Computed,arithmetic
 2065,78 multiplied by 96 equals 7468.,Contradicted,Correct fact: 78*96=7488,Computed,arithmetic
@@ -2078,7 +2078,7 @@ id,claim,label,evidence,source,category
 2077,433 plus 24 equals 457.,Verified,433+24=457,Computed,arithmetic
 2078,A tiger sighted near Caracas in 1935 weighed exactly 242 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2079,238 plus 353 equals 591.,Verified,238+353=591,Computed,arithmetic
-2080,An undiscovered manuscript in a library in Brasilia contains an unknown play by George Orwell.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2080,An undiscovered manuscript in a library in Brasilia contains an unknown play by Herman Melville.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2081,The mayor of Bangkok privately decided in 1988 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2082,"Exactly 11,637 people walked through a street market in Jerusalem on 11 January 1981.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2083,14 hours equal 840 minutes.,Verified,1 h = 60 min,SI definition,units
@@ -2126,7 +2126,7 @@ id,claim,label,evidence,source,category
 2125,142 plus 208 equals 351.,Contradicted,Correct fact: 142+208=350,Computed,arithmetic
 2126,"60 kilometres equals 6,000 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 2127,25 hours equal 2500 minutes.,Contradicted,Correct fact: 1 h = 60 min,SI definition,units
-2128,An undiscovered manuscript in a library in Dakar contains an unknown play by Dante Alighieri.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2128,An undiscovered manuscript in a library in Dakar contains an unknown play by Ernest Hemingway.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2129,"People in Montevideo are, on average, 8 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 2130,Harish Gupta ate idli and sambar for lunch on 22 September 1995.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 2131,451 plus 324 equals 777.,Contradicted,Correct fact: 451+324=775,Computed,arithmetic
@@ -2189,7 +2189,7 @@ id,claim,label,evidence,source,category
 2188,"People in Buenos Aires are, on average, 3 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 2189,622 plus 906 equals 1528.,Verified,622+906=1528,Computed,arithmetic
 2190,252 is a composite number.,Verified,252 divisible by 2,Computed,mathematics
-2191,An undiscovered manuscript in a library in Reykjavik contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2191,An undiscovered manuscript in a library in Reykjavik contains an unknown play by Jane Austen.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2192,A tiger sighted near Prague in 1922 weighed exactly 215 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2193,33 hours equal 3300 minutes.,Contradicted,Correct fact: 1 h = 60 min,SI definition,units
 2194,295 plus 753 equals 1048.,Verified,295+753=1048,Computed,arithmetic
@@ -2233,7 +2233,7 @@ id,claim,label,evidence,source,category
 2232,Ancient traders from Mongolia secretly reached the Americas around the year 819.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2233,280 is a composite number.,Verified,280 divisible by 2,Computed,mathematics
 2234,99 is a prime number.,Contradicted,Correct fact: 99 divisible by 3,Computed,mathematics
-2235,An undiscovered manuscript in a library in Santiago contains an unknown play by Charles Dickens.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2235,An undiscovered manuscript in a library in Santiago contains an unknown play by F. Scott Fitzgerald.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2236,670 plus 582 equals 1242.,Contradicted,Correct fact: 670+582=1252,Computed,arithmetic
 2237,"By 2110, the population of Hungary will exceed 1800 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 2238,108 degrees Celsius equals 226.4 degrees Fahrenheit.,Verified,F=C*9/5+32=226.4,SI / standard conversion,units
@@ -2242,7 +2242,7 @@ id,claim,label,evidence,source,category
 2241,The capital of Morocco is Lima.,Contradicted,Correct fact: Capital of Morocco = Rabat,CIA World Factbook / UN,geography
 2242,545 plus 320 equals 865.,Verified,545+320=865,Computed,arithmetic
 2243,75 degrees Celsius equals 167 degrees Fahrenheit.,Verified,F=C*9/5+32=167,SI / standard conversion,units
-2244,An undiscovered manuscript in a library in New Delhi contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2244,An undiscovered manuscript in a library in New Delhi contains an unknown play by Rabindranath Tagore.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2245,59 multiplied by 37 equals 2183.,Verified,59*37=2183,Computed,arithmetic
 2246,The grandmother of Ahmed Siddiqui once met a famous scientist in Mexico City in 1969.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 2247,"By 2066, the population of Portugal will exceed 600 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
@@ -2262,7 +2262,7 @@ id,claim,label,evidence,source,category
 2261,750 plus 652 equals 1403.,Contradicted,Correct fact: 750+652=1402,Computed,arithmetic
 2262,"Exactly 90,526 people walked through a street market in Helsinki on 19 April 1956.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2263,Lima is the capital city of Mongolia.,Contradicted,Correct fact: Capital of Mongolia = Ulaanbaatar,CIA World Factbook / UN,geography
-2264,An undiscovered manuscript in a library in Madrid contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2264,An undiscovered manuscript in a library in Madrid contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2265,Brussels is the capital city of Myanmar.,Contradicted,Correct fact: Capital of Myanmar = Naypyidaw,CIA World Factbook / UN,geography
 2266,18 hours equal 1080 minutes.,Verified,1 h = 60 min,SI definition,units
 2267,85 degrees Celsius equals 185 degrees Fahrenheit.,Verified,F=C*9/5+32=185,SI / standard conversion,units
@@ -2323,7 +2323,7 @@ id,claim,label,evidence,source,category
 2322,506 plus 495 equals 999.,Contradicted,Correct fact: 506+495=1001,Computed,arithmetic
 2323,"Exactly 45,601 people walked through a street market in Abuja on 11 January 1957.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2324,81 multiplied by 80 equals 6480.,Verified,81*80=6480,Computed,arithmetic
-2325,An undiscovered manuscript in a library in Lisbon contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2325,An undiscovered manuscript in a library in Lisbon contains an unknown play by Salman Rushdie.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2326,403 plus 646 equals 1059.,Contradicted,Correct fact: 403+646=1049,Computed,arithmetic
 2327,26 multiplied by 73 equals 1918.,Contradicted,Correct fact: 26*73=1898,Computed,arithmetic
 2328,"People in Tehran are, on average, 5 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
@@ -2340,12 +2340,12 @@ id,claim,label,evidence,source,category
 2339,Homer is the author of The Iliad.,Verified,The Iliad -> Homer,Library of Congress catalogue,literature
 2340,29 plus 613 equals 632.,Contradicted,Correct fact: 29+613=642,Computed,arithmetic
 2341,"295 kilometres equals 295,000 metres.",Verified,1 km = 1000 m,SI definition,units
-2342,An undiscovered manuscript in a library in Kuala Lumpur contains an unknown play by Salman Rushdie.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2342,An undiscovered manuscript in a library in Kuala Lumpur contains an unknown play by Charles Dickens.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2343,913 plus 727 equals 1641.,Contradicted,Correct fact: 913+727=1640,Computed,arithmetic
-2344,An undiscovered manuscript in a library in Accra contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2344,An undiscovered manuscript in a library in Accra contains an unknown play by Salman Rushdie.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2345,The capital of Chile is Kathmandu.,Contradicted,Correct fact: Capital of Chile = Santiago,CIA World Factbook / UN,geography
 2346,817 plus 353 equals 1170.,Verified,817+353=1170,Computed,arithmetic
-2347,An undiscovered manuscript in a library in Tokyo contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2347,An undiscovered manuscript in a library in Tokyo contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2348,"By 2062, the population of Germany will exceed 200 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 2349,The capital of Japan is Tokyo.,Verified,Capital of Japan = Tokyo,CIA World Factbook / UN,geography
 2350,91 multiplied by 55 equals 5025.,Contradicted,Correct fact: 91*55=5005,Computed,arithmetic
@@ -2373,7 +2373,7 @@ id,claim,label,evidence,source,category
 2372,44 hours equal 4400 minutes.,Contradicted,Correct fact: 1 h = 60 min,SI definition,units
 2373,-24 degrees Celsius equals 6.8 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=-11.2,SI / standard conversion,units
 2374,The square root of 1089 is 36.,Contradicted,Correct fact: 33^2=1089,Computed,mathematics
-2375,An undiscovered manuscript in a library in Kuala Lumpur contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2375,An undiscovered manuscript in a library in Kuala Lumpur contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2376,468 plus 840 equals 1298.,Contradicted,Correct fact: 468+840=1308,Computed,arithmetic
 2377,27 multiplied by 41 equals 1108.,Contradicted,Correct fact: 27*41=1107,Computed,arithmetic
 2378,The stock price of a randomly chosen company will rise exactly 21% next year.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
@@ -2391,7 +2391,7 @@ id,claim,label,evidence,source,category
 2390,674 plus 354 equals 1028.,Verified,674+354=1028,Computed,arithmetic
 2391,31 is a composite number.,Contradicted,Correct fact: 31 is prime,Computed,mathematics
 2392,227 plus 746 equals 972.,Contradicted,Correct fact: 227+746=973,Computed,arithmetic
-2393,An undiscovered manuscript in a library in Baghdad contains an unknown play by Vladimir Nabokov.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2393,An undiscovered manuscript in a library in Baghdad contains an unknown play by James Joyce.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2394,108 is a prime number.,Contradicted,Correct fact: 108 divisible by 2,Computed,mathematics
 2395,335 is a prime number.,Contradicted,Correct fact: 335 divisible by 5,Computed,mathematics
 2396,297 plus 599 equals 894.,Contradicted,Correct fact: 297+599=896,Computed,arithmetic
@@ -2411,7 +2411,7 @@ id,claim,label,evidence,source,category
 2410,Dr. Meera Joshi published a study in the Journal of Applied Obscure Studies in 1976 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 2411,Arundhati Roy is the author of The God of Small Things.,Verified,The God of Small Things -> Arundhati Roy,Library of Congress catalogue,literature
 2412,"People in Kathmandu are, on average, 2 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
-2413,An undiscovered manuscript in a library in Warsaw contains an unknown play by Herman Melville.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2413,An undiscovered manuscript in a library in Warsaw contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2414,358 plus 707 equals 1067.,Contradicted,Correct fact: 358+707=1065,Computed,arithmetic
 2415,There is a species of beetle living only in a single cave near Dakar that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2416,527 plus 238 equals 765.,Verified,527+238=765,Computed,arithmetic
@@ -2447,7 +2447,7 @@ id,claim,label,evidence,source,category
 2446,"324 kilometres equals 324,000 metres.",Verified,1 km = 1000 m,SI definition,units
 2447,Ancient traders from Turkey secretly reached the Americas around the year 1032.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2448,96 multiplied by 48 equals 4588.,Contradicted,Correct fact: 96*48=4608,Computed,arithmetic
-2449,The polio vaccine (inactivated) is credited to Isaac Newton.,Contradicted,Correct fact: the polio vaccine (inactivated) -> Jonas Salk,Encyclopaedia Britannica,science history
+2449,The polio vaccine (inactivated) is credited to Karl Landsteiner.,Contradicted,Correct fact: the polio vaccine (inactivated) -> Jonas Salk,Encyclopaedia Britannica,science history
 2450,46 hours equal 2760 minutes.,Verified,1 h = 60 min,SI definition,units
 2451,144 plus 455 equals 601.,Contradicted,Correct fact: 144+455=599,Computed,arithmetic
 2452,42 multiplied by 12 equals 484.,Contradicted,Correct fact: 42*12=504,Computed,arithmetic
@@ -2493,7 +2493,7 @@ id,claim,label,evidence,source,category
 2492,64 multiplied by 49 equals 3126.,Contradicted,Correct fact: 64*49=3136,Computed,arithmetic
 2493,A tiger sighted near Caracas in 1955 weighed exactly 247 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2494,17 multiplied by 40 equals 681.,Contradicted,Correct fact: 17*40=680,Computed,arithmetic
-2495,An undiscovered manuscript in a library in Colombo contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2495,An undiscovered manuscript in a library in Colombo contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2496,"181 kilometres equals 181,000 metres.",Verified,1 km = 1000 m,SI definition,units
 2497,65 degrees Celsius equals 154 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=149,SI / standard conversion,units
 2498,13 multiplied by 82 equals 1066.,Verified,13*82=1066,Computed,arithmetic
@@ -2539,7 +2539,7 @@ id,claim,label,evidence,source,category
 2538,13 multiplied by 54 equals 702.,Verified,13*54=702,Computed,arithmetic
 2539,The chemical symbol for Titanium is Pu.,Contradicted,Correct fact: Titanium: symbol Ti,IUPAC Periodic Table,chemistry
 2540,28 is a prime number.,Contradicted,Correct fact: 28 divisible by 2,Computed,mathematics
-2541,An undiscovered manuscript in a library in Kathmandu contains an unknown play by Bram Stoker.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2541,An undiscovered manuscript in a library in Kathmandu contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2542,The next major earthquake in Romania will occur in the month of August 2051.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 2543,Dr. Priya Nair published a study in the Proceedings of the Local Research Circle in 1975 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 2544,78 multiplied by 88 equals 6864.,Verified,78*88=6864,Computed,arithmetic
@@ -2551,7 +2551,7 @@ id,claim,label,evidence,source,category
 2550,61 plus 63 equals 124.,Verified,61+63=124,Computed,arithmetic
 2551,70 multiplied by 13 equals 910.,Verified,70*13=910,Computed,arithmetic
 2552,"184 kilometres equals 18,400 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
-2553,An undiscovered manuscript in a library in Reykjavik contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2553,An undiscovered manuscript in a library in Reykjavik contains an unknown play by Munshi Premchand.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2554,331 plus 372 equals 703.,Verified,331+372=703,Computed,arithmetic
 2555,809 plus 98 equals 917.,Contradicted,Correct fact: 809+98=907,Computed,arithmetic
 2556,479 plus 164 equals 645.,Contradicted,Correct fact: 479+164=643,Computed,arithmetic
@@ -2618,9 +2618,9 @@ id,claim,label,evidence,source,category
 2617,1 degrees Celsius equals 51.8 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=33.8,SI / standard conversion,units
 2618,951 plus 861 equals 1812.,Verified,951+861=1812,Computed,arithmetic
 2619,A tiger sighted near Dakar in 1923 weighed exactly 221 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-2620,An undiscovered manuscript in a library in Amsterdam contains an unknown play by Franz Kafka.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-2621,An undiscovered manuscript in a library in Sucre contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-2622,An undiscovered manuscript in a library in Berlin contains an unknown play by Vladimir Nabokov.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2620,An undiscovered manuscript in a library in Amsterdam contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2621,An undiscovered manuscript in a library in Sucre contains an unknown play by Dante Alighieri.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2622,An undiscovered manuscript in a library in Berlin contains an unknown play by James Joyce.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2623,The mayor of Tokyo privately decided in 1989 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2624,Nairobi is the capital city of Kenya.,Verified,Capital of Kenya = Nairobi,CIA World Factbook / UN,geography
 2625,16 multiplied by 54 equals 844.,Contradicted,Correct fact: 16*54=864,Computed,arithmetic
@@ -2628,12 +2628,12 @@ id,claim,label,evidence,source,category
 2627,798 plus 86 equals 884.,Verified,798+86=884,Computed,arithmetic
 2628,The mayor of Lima privately decided in 1972 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2629,95 multiplied by 80 equals 7600.,Verified,95*80=7600,Computed,arithmetic
-2630,An undiscovered manuscript in a library in Oslo contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2630,An undiscovered manuscript in a library in Oslo contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2631,"332 kilometres equals 33,200 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 2632,19 hours equal 1140 minutes.,Verified,1 h = 60 min,SI definition,units
 2633,"By 2115, the population of Kenya will exceed 350 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 2634,Miguel de Cervantes is the author of The Great Gatsby.,Contradicted,Correct fact: The Great Gatsby -> F. Scott Fitzgerald,Library of Congress catalogue,literature
-2635,An undiscovered manuscript in a library in Buenos Aires contains an unknown play by Victor Hugo.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2635,An undiscovered manuscript in a library in Buenos Aires contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2636,86 multiplied by 27 equals 2323.,Contradicted,Correct fact: 86*27=2322,Computed,arithmetic
 2637,The grandmother of Arjun Reddy once met a famous scientist in Belgrade in 1951.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 2638,747 plus 920 equals 1767.,Contradicted,Correct fact: 747+920=1667,Computed,arithmetic
@@ -2653,7 +2653,7 @@ id,claim,label,evidence,source,category
 2652,43 hours equal 2580 minutes.,Verified,1 h = 60 min,SI definition,units
 2653,44 multiplied by 45 equals 1980.,Verified,44*45=1980,Computed,arithmetic
 2654,533 plus 421 equals 954.,Verified,533+421=954,Computed,arithmetic
-2655,An undiscovered manuscript in a library in Caracas contains an unknown play by James Joyce.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2655,An undiscovered manuscript in a library in Caracas contains an unknown play by Bram Stoker.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2656,333 is a prime number.,Contradicted,Correct fact: 333 divisible by 3,Computed,mathematics
 2657,94 multiplied by 88 equals 8272.,Verified,94*88=8272,Computed,arithmetic
 2658,J. D. Salinger is the author of The Catcher in the Rye.,Verified,The Catcher in the Rye -> J. D. Salinger,Library of Congress catalogue,literature
@@ -2662,7 +2662,7 @@ id,claim,label,evidence,source,category
 2661,33 multiplied by 26 equals 858.,Verified,33*26=858,Computed,arithmetic
 2662,The mayor of Accra privately decided in 1971 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2663,Meera Joshi ate idli and sambar for lunch on 8 March 2010.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-2664,The periodic table is credited to Isaac Newton.,Contradicted,Correct fact: the periodic table -> Dmitri Mendeleev,Encyclopaedia Britannica,science history
+2664,The periodic table is credited to Karl Landsteiner.,Contradicted,Correct fact: the periodic table -> Dmitri Mendeleev,Encyclopaedia Britannica,science history
 2665,Dr. Lakshmi Iyer published a study in the Journal of Applied Obscure Studies in 2006 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 2666,378 is a composite number.,Verified,378 divisible by 2,Computed,mathematics
 2667,Dr. Fatima Khan published a study in the Proceedings of the Local Research Circle in 2015 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
@@ -2691,7 +2691,7 @@ id,claim,label,evidence,source,category
 2690,Ancient traders from Algeria secretly reached the Americas around the year 1052.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2691,"47 kilometres equals 47,000 metres.",Verified,1 km = 1000 m,SI definition,units
 2692,61 multiplied by 93 equals 5653.,Contradicted,Correct fact: 61*93=5673,Computed,arithmetic
-2693,An undiscovered manuscript in a library in Brussels contains an unknown play by Leo Tolstoy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2693,An undiscovered manuscript in a library in Brussels contains an unknown play by Aldous Huxley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2694,"By 2077, the population of Denmark will exceed 800 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 2695,"Exactly 87,715 people walked through a street market in Riyadh on 1 July 1971.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2696,A tiger sighted near Bern in 1900 weighed exactly 150 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
@@ -2700,7 +2700,7 @@ id,claim,label,evidence,source,category
 2699,553 plus 142 equals 695.,Verified,553+142=695,Computed,arithmetic
 2700,253 is a composite number.,Verified,253 divisible by 11,Computed,mathematics
 2701,62 is a composite number.,Verified,62 divisible by 2,Computed,mathematics
-2702,An undiscovered manuscript in a library in Warsaw contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2702,An undiscovered manuscript in a library in Warsaw contains an unknown play by Dante Alighieri.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2703,The mayor of Sucre privately decided in 1997 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2704,Dr. Arjun Reddy published a study in the Proceedings of the Local Research Circle in 1989 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 2705,349 is a prime number.,Verified,349 is prime,Computed,mathematics
@@ -2709,7 +2709,7 @@ id,claim,label,evidence,source,category
 2708,136 is a composite number.,Verified,136 divisible by 2,Computed,mathematics
 2709,The Battle of Waterloo was fought in 1810.,Contradicted,Correct fact: The Battle of Waterloo was fought: 1815,Encyclopaedia Britannica,history
 2710,"By 2068, the population of Mexico will exceed 1800 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
-2711,An undiscovered manuscript in a library in Sofia contains an unknown play by Aldous Huxley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2711,An undiscovered manuscript in a library in Sofia contains an unknown play by Harper Lee.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2712,393 is a prime number.,Contradicted,Correct fact: 393 divisible by 3,Computed,mathematics
 2713,12 multiplied by 16 equals 192.,Verified,12*16=192,Computed,arithmetic
 2714,356 is a prime number.,Contradicted,Correct fact: 356 divisible by 2,Computed,mathematics
@@ -2800,7 +2800,7 @@ id,claim,label,evidence,source,category
 2799,265 plus 483 equals 748.,Verified,265+483=748,Computed,arithmetic
 2800,William Shakespeare is the author of Romeo and Juliet.,Verified,Romeo and Juliet -> William Shakespeare,Library of Congress catalogue,literature
 2801,Dr. Ananya Das published a study in the Regional Review of Unlisted Science in 2001 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
-2802,An undiscovered manuscript in a library in Kampala contains an unknown play by Franz Kafka.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2802,An undiscovered manuscript in a library in Kampala contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2803,Dr. Neha Kulkarni published a study in the Journal of Applied Obscure Studies in 1986 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 2804,The grandmother of Neha Kulkarni once met a famous scientist in Tokyo in 1962.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 2805,The mayor of Havana privately decided in 2015 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
@@ -2826,14 +2826,14 @@ id,claim,label,evidence,source,category
 2825,80 multiplied by 25 equals 1990.,Contradicted,Correct fact: 80*25=2000,Computed,arithmetic
 2826,45 degrees Celsius equals 113 degrees Fahrenheit.,Verified,F=C*9/5+32=113,SI / standard conversion,units
 2827,A tiger sighted near Dublin in 1953 weighed exactly 209 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-2828,An undiscovered manuscript in a library in Bangkok contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2828,An undiscovered manuscript in a library in Bangkok contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2829,545 plus 508 equals 1053.,Verified,545+508=1053,Computed,arithmetic
 2830,The Treaty of Versailles was signed in 1919.,Verified,The Treaty of Versailles was signed: 1919,Encyclopaedia Britannica,history
 2831,The grandmother of Arjun Reddy once met a famous scientist in Dakar in 1934.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 2832,Jane Austen is the author of Pride and Prejudice.,Verified,Pride and Prejudice -> Jane Austen,Library of Congress catalogue,literature
-2833,An undiscovered manuscript in a library in Jerusalem contains an unknown play by Fyodor Dostoevsky.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2833,An undiscovered manuscript in a library in Jerusalem contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2834,170 plus 88 equals 259.,Contradicted,Correct fact: 170+88=258,Computed,arithmetic
-2835,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by Victor Hugo.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2835,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2836,660 plus 322 equals 980.,Contradicted,Correct fact: 660+322=982,Computed,arithmetic
 2837,391 plus 332 equals 723.,Verified,391+332=723,Computed,arithmetic
 2838,350 plus 746 equals 1096.,Verified,350+746=1096,Computed,arithmetic
@@ -2889,7 +2889,7 @@ id,claim,label,evidence,source,category
 2888,A tiger sighted near Mexico City in 1908 weighed exactly 224 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 2889,32 multiplied by 35 equals 1110.,Contradicted,Correct fact: 32*35=1120,Computed,arithmetic
 2890,A tiger sighted near Tokyo in 1902 weighed exactly 178 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-2891,An undiscovered manuscript in a library in Accra contains an unknown play by Fyodor Dostoevsky.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2891,An undiscovered manuscript in a library in Accra contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2892,915 plus 677 equals 1591.,Contradicted,Correct fact: 915+677=1592,Computed,arithmetic
 2893,494 plus 37 equals 533.,Contradicted,Correct fact: 494+37=531,Computed,arithmetic
 2894,340 is a prime number.,Contradicted,Correct fact: 340 divisible by 2,Computed,mathematics
@@ -2965,7 +2965,7 @@ id,claim,label,evidence,source,category
 2964,The capital of Denmark is Paris.,Contradicted,Correct fact: Capital of Denmark = Copenhagen,CIA World Factbook / UN,geography
 2965,476 plus 529 equals 1005.,Verified,476+529=1005,Computed,arithmetic
 2966,482 plus 590 equals 1072.,Verified,482+590=1072,Computed,arithmetic
-2967,An undiscovered manuscript in a library in Kabul contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+2967,An undiscovered manuscript in a library in Kabul contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 2968,21 plus 20 equals 51.,Contradicted,Correct fact: 21+20=41,Computed,arithmetic
 2969,Dr. Karan Bhatia published a study in the Proceedings of the Local Research Circle in 1983 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 2970,The Human Genome Project was declared complete in 2003.,Verified,The Human Genome Project was declared complete: 2003,Encyclopaedia Britannica,history
@@ -3122,7 +3122,7 @@ id,claim,label,evidence,source,category
 3121,There is a species of beetle living only in a single cave near Berlin that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3122,The capital of the Indian state of Uttar Pradesh is Gobi.,Contradicted,Correct fact: The capital of the Indian state of Uttar Pradesh is Lucknow,Standard reference texts,general knowledge
 3123,98 multiplied by 16 equals 1567.,Contradicted,Correct fact: 98*16=1568,Computed,arithmetic
-3124,An undiscovered manuscript in a library in Zagreb contains an unknown play by Bram Stoker.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3124,An undiscovered manuscript in a library in Zagreb contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3125,A tiger sighted near Jerusalem in 1940 weighed exactly 168 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 3126,5 is a composite number.,Contradicted,Correct fact: 5 is prime,Computed,mathematics
 3127,The mayor of Dakar privately decided in 2001 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
@@ -3155,7 +3155,7 @@ id,claim,label,evidence,source,category
 3154,The Odyssey was written by Charles Dickens.,Contradicted,Correct fact: The Odyssey -> Homer,Library of Congress catalogue,literature
 3155,10 hours equal 1000 minutes.,Contradicted,Correct fact: 1 h = 60 min,SI definition,units
 3156,The next major earthquake in Belgium will occur in the month of August 2046.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
-3157,An undiscovered manuscript in a library in Astana contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3157,An undiscovered manuscript in a library in Astana contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3158,Beijing is the capital city of China.,Verified,Capital of China = Beijing,CIA World Factbook / UN,geography
 3159,"Exactly 88,211 people walked through a street market in Riyadh on 5 April 1965.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 3160,Hamlet was written by Paulo Coelho.,Contradicted,Correct fact: Hamlet -> William Shakespeare,Library of Congress catalogue,literature
@@ -3172,7 +3172,7 @@ id,claim,label,evidence,source,category
 3171,76 multiplied by 67 equals 5112.,Contradicted,Correct fact: 76*67=5092,Computed,arithmetic
 3172,991 plus 587 equals 1578.,Verified,991+587=1578,Computed,arithmetic
 3173,94 multiplied by 83 equals 7803.,Contradicted,Correct fact: 94*83=7802,Computed,arithmetic
-3174,An undiscovered manuscript in a library in Paris contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3174,An undiscovered manuscript in a library in Paris contains an unknown play by Rabindranath Tagore.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3175,The mayor of Dublin privately decided in 1965 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 3176,The square root of 2209 is 47.,Verified,47^2=2209,Computed,mathematics
 3177,3 degrees Celsius equals 28.4 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=37.4,SI / standard conversion,units
@@ -3198,9 +3198,9 @@ id,claim,label,evidence,source,category
 3197,Rohan Mehta ate dal and rice for lunch on 25 March 2014.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 3198,"140 kilometres equals 140,000 metres.",Verified,1 km = 1000 m,SI definition,units
 3199,"58 kilometres equals 58,000 metres.",Verified,1 km = 1000 m,SI definition,units
-3200,An undiscovered manuscript in a library in Warsaw contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3200,An undiscovered manuscript in a library in Warsaw contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3201,Rohan Mehta ate paratha for lunch on 11 June 2012.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-3202,An undiscovered manuscript in a library in Stockholm contains an unknown play by Ernest Hemingway.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3202,An undiscovered manuscript in a library in Stockholm contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3203,Paris is the capital city of France.,Verified,Capital of France = Paris,CIA World Factbook / UN,geography
 3204,562 plus 833 equals 1405.,Contradicted,Correct fact: 562+833=1395,Computed,arithmetic
 3205,The chemical symbol for Plutonium is Pu.,Verified,Plutonium: symbol Pu,IUPAC Periodic Table,chemistry
@@ -3225,11 +3225,11 @@ id,claim,label,evidence,source,category
 3224,550 plus 432 equals 1082.,Contradicted,Correct fact: 550+432=982,Computed,arithmetic
 3225,67 multiplied by 53 equals 3551.,Verified,67*53=3551,Computed,arithmetic
 3226,622 plus 821 equals 1445.,Contradicted,Correct fact: 622+821=1443,Computed,arithmetic
-3227,An undiscovered manuscript in a library in Rabat contains an unknown play by Salman Rushdie.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3227,An undiscovered manuscript in a library in Rabat contains an unknown play by Charles Dickens.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3228,278 is a composite number.,Verified,278 divisible by 2,Computed,mathematics
 3229,"Exactly 68,543 people walked through a street market in Oslo on 12 July 1963.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 3230,A tiger sighted near Rome in 1931 weighed exactly 235 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-3231,An undiscovered manuscript in a library in Quito contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3231,An undiscovered manuscript in a library in Quito contains an unknown play by Rabindranath Tagore.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3232,24 multiplied by 78 equals 1892.,Contradicted,Correct fact: 24*78=1872,Computed,arithmetic
 3233,The next major earthquake in Malaysia will occur in the month of November 2044.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 3234,489 plus 112 equals 601.,Verified,489+112=601,Computed,arithmetic
@@ -3245,7 +3245,7 @@ id,claim,label,evidence,source,category
 3244,World War I began in 1914.,Verified,World War I began: 1914,Encyclopaedia Britannica,history
 3245,Dr. Karan Bhatia published a study in the Journal of Applied Obscure Studies in 2002 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 3246,54 multiplied by 16 equals 864.,Verified,54*16=864,Computed,arithmetic
-3247,An undiscovered manuscript in a library in Prague contains an unknown play by Homer.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3247,An undiscovered manuscript in a library in Prague contains an unknown play by Fyodor Dostoevsky.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3248,78 multiplied by 85 equals 6650.,Contradicted,Correct fact: 78*85=6630,Computed,arithmetic
 3249,The atomic number of Mercury is 85.,Contradicted,Correct fact: Mercury: Z=80,IUPAC Periodic Table,chemistry
 3250,81 multiplied by 60 equals 4840.,Contradicted,Correct fact: 81*60=4860,Computed,arithmetic
@@ -3303,7 +3303,7 @@ id,claim,label,evidence,source,category
 3302,The capital of Switzerland is Pretoria.,Contradicted,Correct fact: Capital of Switzerland = Bern,CIA World Factbook / UN,geography
 3303,39 multiplied by 78 equals 3042.,Verified,39*78=3042,Computed,arithmetic
 3304,Vikram Sethi ate a cheese sandwich for lunch on 25 September 2012.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-3305,An undiscovered manuscript in a library in Caracas contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3305,An undiscovered manuscript in a library in Caracas contains an unknown play by Homer.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3306,156 plus 950 equals 1106.,Verified,156+950=1106,Computed,arithmetic
 3307,The human heart has Mysuru.,Contradicted,Correct fact: The human heart has four chambers,Standard reference texts,general knowledge
 3308,The next major earthquake in Laos will occur in the month of May 2035.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
@@ -3318,7 +3318,7 @@ id,claim,label,evidence,source,category
 3317,32 multiplied by 45 equals 1440.,Verified,32*45=1440,Computed,arithmetic
 3318,The next major earthquake in Romania will occur in the month of February 2045.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 3319,107 plus 673 equals 790.,Contradicted,Correct fact: 107+673=780,Computed,arithmetic
-3320,An undiscovered manuscript in a library in Ottawa contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3320,An undiscovered manuscript in a library in Ottawa contains an unknown play by Dante Alighieri.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3321,The grandmother of Imran Qureshi once met a famous scientist in Caracas in 1971.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 3322,The next major earthquake in Algeria will occur in the month of November 2052.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 3323,55 multiplied by 57 equals 3135.,Verified,55*57=3135,Computed,arithmetic
@@ -3367,7 +3367,7 @@ id,claim,label,evidence,source,category
 3366,219 plus 598 equals 819.,Contradicted,Correct fact: 219+598=817,Computed,arithmetic
 3367,99 multiplied by 65 equals 6425.,Contradicted,Correct fact: 99*65=6435,Computed,arithmetic
 3368,"People in Kathmandu are, on average, 6 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
-3369,An undiscovered manuscript in a library in Caracas contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3369,An undiscovered manuscript in a library in Caracas contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3370,27 degrees Celsius equals 80.6 degrees Fahrenheit.,Verified,F=C*9/5+32=80.6,SI / standard conversion,units
 3371,Vikram Sethi ate poha for lunch on 19 March 2019.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 3372,Ancient traders from Ecuador secretly reached the Americas around the year 479.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
@@ -3420,7 +3420,7 @@ id,claim,label,evidence,source,category
 3419,The square root of 2601 is 52.,Contradicted,Correct fact: 51^2=2601,Computed,mathematics
 3420,"People in Hanoi are, on average, 4 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 3421,The mayor of Montevideo privately decided in 1974 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-3422,An undiscovered manuscript in a library in Ulaanbaatar contains an unknown play by Jane Austen.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3422,An undiscovered manuscript in a library in Ulaanbaatar contains an unknown play by Franz Kafka.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3423,275 is a composite number.,Verified,275 divisible by 5,Computed,mathematics
 3424,32 multiplied by 86 equals 2751.,Contradicted,Correct fact: 32*86=2752,Computed,arithmetic
 3425,The square root of 144 is 9.,Contradicted,Correct fact: 12^2=144,Computed,mathematics
@@ -3451,7 +3451,7 @@ id,claim,label,evidence,source,category
 3450,58 plus 588 equals 646.,Verified,58+588=646,Computed,arithmetic
 3451,270 plus 975 equals 1345.,Contradicted,Correct fact: 270+975=1245,Computed,arithmetic
 3452,544 plus 959 equals 1603.,Contradicted,Correct fact: 544+959=1503,Computed,arithmetic
-3453,An undiscovered manuscript in a library in Zagreb contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3453,An undiscovered manuscript in a library in Zagreb contains an unknown play by Jane Austen.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3454,372 plus 731 equals 1104.,Contradicted,Correct fact: 372+731=1103,Computed,arithmetic
 3455,The stock price of a randomly chosen company will rise exactly 27% next year.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 3456,Havana is the capital city of Cuba.,Verified,Capital of Cuba = Havana,CIA World Factbook / UN,geography
@@ -3511,7 +3511,7 @@ id,claim,label,evidence,source,category
 3510,16 multiplied by 37 equals 593.,Contradicted,Correct fact: 16*37=592,Computed,arithmetic
 3511,282 is a prime number.,Contradicted,Correct fact: 282 divisible by 2,Computed,mathematics
 3512,The mayor of Copenhagen privately decided in 1998 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-3513,An undiscovered manuscript in a library in Manila contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3513,An undiscovered manuscript in a library in Manila contains an unknown play by Homer.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3514,The stock price of a randomly chosen company will rise exactly 13% next year.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 3515,127 plus 350 equals 477.,Verified,127+350=477,Computed,arithmetic
 3516,728 plus 314 equals 1032.,Contradicted,Correct fact: 728+314=1042,Computed,arithmetic
@@ -3530,7 +3530,7 @@ id,claim,label,evidence,source,category
 3529,473 plus 514 equals 985.,Contradicted,Correct fact: 473+514=987,Computed,arithmetic
 3530,92 multiplied by 77 equals 7064.,Contradicted,Correct fact: 92*77=7084,Computed,arithmetic
 3531,A tiger sighted near Oslo in 1901 weighed exactly 174 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-3532,An undiscovered manuscript in a library in Bogota contains an unknown play by Charles Dickens.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3532,An undiscovered manuscript in a library in Bogota contains an unknown play by F. Scott Fitzgerald.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3533,-18 degrees Celsius equals -0.4 degrees Fahrenheit.,Verified,F=C*9/5+32=-0.4,SI / standard conversion,units
 3534,There is a species of beetle living only in a single cave near Reykjavik that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3535,110 is a prime number.,Contradicted,Correct fact: 110 divisible by 2,Computed,mathematics
@@ -3538,7 +3538,7 @@ id,claim,label,evidence,source,category
 3537,471 plus 642 equals 1113.,Verified,471+642=1113,Computed,arithmetic
 3538,The capital of Brazil is Brasilia.,Verified,Capital of Brazil = Brasilia,CIA World Factbook / UN,geography
 3539,73 multiplied by 43 equals 3138.,Contradicted,Correct fact: 73*43=3139,Computed,arithmetic
-3540,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by Franz Kafka.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3540,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3541,The French Revolution began in 1789.,Verified,The French Revolution began: 1789,Encyclopaedia Britannica,history
 3542,"By 2071, the population of Turkey will exceed 1800 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 3543,75 multiplied by 37 equals 2775.,Verified,75*37=2775,Computed,arithmetic
@@ -3548,7 +3548,7 @@ id,claim,label,evidence,source,category
 3547,The square root of 1681 is 41.,Verified,41^2=1681,Computed,mathematics
 3548,327 is a prime number.,Contradicted,Correct fact: 327 divisible by 3,Computed,mathematics
 3549,344 plus 807 equals 1151.,Verified,344+807=1151,Computed,arithmetic
-3550,An undiscovered manuscript in a library in Kuala Lumpur contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3550,An undiscovered manuscript in a library in Kuala Lumpur contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3551,A tiger sighted near Addis Ababa in 1903 weighed exactly 171 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 3552,The grandmother of Deepa Menon once met a famous scientist in Rome in 1956.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 3553,The grandmother of Meera Joshi once met a famous scientist in Quito in 1933.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
@@ -3592,7 +3592,7 @@ id,claim,label,evidence,source,category
 3591,A tiger sighted near Kampala in 1921 weighed exactly 168 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 3592,704 plus 802 equals 1606.,Contradicted,Correct fact: 704+802=1506,Computed,arithmetic
 3593,Paulo Coelho is the author of Hamlet.,Contradicted,Correct fact: Hamlet -> William Shakespeare,Library of Congress catalogue,literature
-3594,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by George Orwell.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3594,An undiscovered manuscript in a library in Phnom Penh contains an unknown play by Herman Melville.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3595,41 multiplied by 44 equals 1804.,Verified,41*44=1804,Computed,arithmetic
 3596,Oxygen has 6 protons in a neutral atom's nucleus.,Contradicted,Correct fact: Oxygen: Z=8,IUPAC Periodic Table,chemistry
 3597,225 plus 902 equals 1127.,Verified,225+902=1127,Computed,arithmetic
@@ -3628,7 +3628,7 @@ id,claim,label,evidence,source,category
 3627,The grandmother of Imran Qureshi once met a famous scientist in Ankara in 1980.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 3628,991 plus 321 equals 1313.,Contradicted,Correct fact: 991+321=1312,Computed,arithmetic
 3629,80 multiplied by 12 equals 960.,Verified,80*12=960,Computed,arithmetic
-3630,An undiscovered manuscript in a library in Quito contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3630,An undiscovered manuscript in a library in Quito contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3631,The chemical formula of carbon dioxide is CO2.,Verified,The chemical formula of carbon dioxide is CO2,Standard reference texts,general knowledge
 3632,99 plus 802 equals 903.,Contradicted,Correct fact: 99+802=901,Computed,arithmetic
 3633,The mayor of Kampala privately decided in 1989 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
@@ -3646,7 +3646,7 @@ id,claim,label,evidence,source,category
 3645,418 plus 976 equals 1394.,Verified,418+976=1394,Computed,arithmetic
 3646,There is a species of beetle living only in a single cave near Quito that has never been catalogued.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3647,779 plus 296 equals 1075.,Verified,779+296=1075,Computed,arithmetic
-3648,An undiscovered manuscript in a library in Helsinki contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3648,An undiscovered manuscript in a library in Helsinki contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3649,Vikram Sethi ate paratha for lunch on 10 June 1992.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 3650,The mayor of Jerusalem privately decided in 1983 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 3651,"By 2067, the population of South Korea will exceed 1000 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
@@ -3657,7 +3657,7 @@ id,claim,label,evidence,source,category
 3656,777 plus 632 equals 1409.,Verified,777+632=1409,Computed,arithmetic
 3657,74 multiplied by 69 equals 5106.,Verified,74*69=5106,Computed,arithmetic
 3658,The atomic number of Cobalt is 29.,Contradicted,Correct fact: Cobalt: Z=27,IUPAC Periodic Table,chemistry
-3659,An undiscovered manuscript in a library in Accra contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3659,An undiscovered manuscript in a library in Accra contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3660,The grandmother of Imran Qureshi once met a famous scientist in Dodoma in 1961.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 3661,550 plus 128 equals 688.,Contradicted,Correct fact: 550+128=678,Computed,arithmetic
 3662,"278 kilometres equals 278,000 metres.",Verified,1 km = 1000 m,SI definition,units
@@ -3698,7 +3698,7 @@ id,claim,label,evidence,source,category
 3697,272 plus 848 equals 1110.,Contradicted,Correct fact: 272+848=1120,Computed,arithmetic
 3698,28 multiplied by 18 equals 504.,Verified,28*18=504,Computed,arithmetic
 3699,The next major earthquake in Bolivia will occur in the month of November 2037.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
-3700,An undiscovered manuscript in a library in Dakar contains an unknown play by Rabindranath Tagore.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3700,An undiscovered manuscript in a library in Dakar contains an unknown play by George Orwell.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3701,The square root of 3600 is 57.,Contradicted,Correct fact: 60^2=3600,Computed,mathematics
 3702,"By 2139, the population of Portugal will exceed 450 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 3703,"People in Phnom Penh are, on average, 8 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
@@ -3709,7 +3709,7 @@ id,claim,label,evidence,source,category
 3708,329 plus 683 equals 1012.,Verified,329+683=1012,Computed,arithmetic
 3709,17 multiplied by 73 equals 1241.,Verified,17*73=1241,Computed,arithmetic
 3710,554 plus 751 equals 1304.,Contradicted,Correct fact: 554+751=1305,Computed,arithmetic
-3711,An undiscovered manuscript in a library in Bern contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3711,An undiscovered manuscript in a library in Bern contains an unknown play by Emily Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3712,"Exactly 68,648 people walked through a street market in Montevideo on 7 October 1997.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 3713,83 multiplied by 83 equals 6889.,Verified,83*83=6889,Computed,arithmetic
 3714,Dr. Vikram Sethi published a study in the Proceedings of the Local Research Circle in 1979 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
@@ -3816,7 +3816,7 @@ id,claim,label,evidence,source,category
 3815,"People in Tehran are, on average, 8 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 3816,"73 kilometres equals 7,300 metres.",Contradicted,Correct fact: 1 km = 1000 m,SI definition,units
 3817,Ancient traders from Italy secretly reached the Americas around the year 598.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
-3818,An undiscovered manuscript in a library in Jakarta contains an unknown play by Leo Tolstoy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3818,An undiscovered manuscript in a library in Jakarta contains an unknown play by Aldous Huxley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3819,A secret tunnel reportedly connects the main railway station of Kampala to a hidden vault.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,rumor
 3820,The next major earthquake in Cuba will occur in the month of May 2052.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 3821,118 is a prime number.,Contradicted,Correct fact: 118 divisible by 2,Computed,mathematics
@@ -3863,7 +3863,7 @@ id,claim,label,evidence,source,category
 3862,Cobalt has 29 protons in a neutral atom's nucleus.,Contradicted,Correct fact: Cobalt: Z=27,IUPAC Periodic Table,chemistry
 3863,A tiger sighted near Warsaw in 1907 weighed exactly 247 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 3864,55 degrees Celsius equals 131 degrees Fahrenheit.,Verified,F=C*9/5+32=131,SI / standard conversion,units
-3865,An undiscovered manuscript in a library in Rabat contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3865,An undiscovered manuscript in a library in Rabat contains an unknown play by Munshi Premchand.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3866,7 hours equal 700 minutes.,Contradicted,Correct fact: 1 h = 60 min,SI definition,units
 3867,The square root of 676 is 27.,Contradicted,Correct fact: 26^2=676,Computed,mathematics
 3868,"By 2072, the population of Nigeria will exceed 700 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
@@ -3979,7 +3979,7 @@ id,claim,label,evidence,source,category
 3978,660 plus 825 equals 1585.,Contradicted,Correct fact: 660+825=1485,Computed,arithmetic
 3979,The next major earthquake in Spain will occur in the month of February 2052.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 3980,The powerhouse of the cell is the Delhi.,Contradicted,Correct fact: The powerhouse of the cell is the mitochondrion,Standard reference texts,general knowledge
-3981,An undiscovered manuscript in a library in Montevideo contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+3981,An undiscovered manuscript in a library in Montevideo contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 3982,290 plus 300 equals 590.,Verified,290+300=590,Computed,arithmetic
 3983,The grandmother of Ananya Das once met a famous scientist in Berlin in 1949.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 3984,Apollo 11 launched in 1969.,Verified,Apollo 11 launched: 1969,Encyclopaedia Britannica,history
@@ -4063,7 +4063,7 @@ id,claim,label,evidence,source,category
 4062,32 multiplied by 18 equals 556.,Contradicted,Correct fact: 32*18=576,Computed,arithmetic
 4063,The Indian Space Research Organisation was founded in 1969.,Verified,The Indian Space Research Organisation was founded: 1969,Encyclopaedia Britannica,history
 4064,"People in Helsinki are, on average, 5 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
-4065,An undiscovered manuscript in a library in Bern contains an unknown play by Harper Lee.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4065,An undiscovered manuscript in a library in Bern contains an unknown play by Victor Hugo.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4066,The square root of 2304 is 48.,Verified,48^2=2304,Computed,mathematics
 4067,The square root of 2500 is 50.,Verified,50^2=2500,Computed,mathematics
 4068,147 is a composite number.,Verified,147 divisible by 3,Computed,mathematics
@@ -4108,7 +4108,7 @@ id,claim,label,evidence,source,category
 4107,27 is a prime number.,Contradicted,Correct fact: 27 divisible by 3,Computed,mathematics
 4108,95 degrees Celsius equals 203 degrees Fahrenheit.,Verified,F=C*9/5+32=203,SI / standard conversion,units
 4109,"Exactly 41,544 people walked through a street market in Jerusalem on 28 July 2003.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-4110,An undiscovered manuscript in a library in Amsterdam contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4110,An undiscovered manuscript in a library in Amsterdam contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4111,A tiger sighted near Athens in 1905 weighed exactly 166 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 4112,"By 2118, the population of Austria will exceed 500 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 4113,"394 kilometres equals 394,000 metres.",Verified,1 km = 1000 m,SI definition,units
@@ -4127,7 +4127,7 @@ id,claim,label,evidence,source,category
 4126,857 plus 650 equals 1507.,Verified,857+650=1507,Computed,arithmetic
 4127,644 plus 665 equals 1319.,Contradicted,Correct fact: 644+665=1309,Computed,arithmetic
 4128,The next major earthquake in New Zealand will occur in the month of May 2031.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
-4129,An undiscovered manuscript in a library in Mexico City contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4129,An undiscovered manuscript in a library in Mexico City contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4130,Karan Bhatia ate khichdi for lunch on 22 March 2000.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
 4131,669 plus 992 equals 1661.,Verified,669+992=1661,Computed,arithmetic
 4132,"233 kilometres equals 233,000 metres.",Verified,1 km = 1000 m,SI definition,units
@@ -4136,7 +4136,7 @@ id,claim,label,evidence,source,category
 4135,94 multiplied by 62 equals 5828.,Verified,94*62=5828,Computed,arithmetic
 4136,21 multiplied by 37 equals 777.,Verified,21*37=777,Computed,arithmetic
 4137,The grandmother of Vikram Sethi once met a famous scientist in Dhaka in 1943.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,personal-private
-4138,An undiscovered manuscript in a library in Madrid contains an unknown play by Bram Stoker.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4138,An undiscovered manuscript in a library in Madrid contains an unknown play by J. D. Salinger.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4139,Oliver Twist was written by Charles Dickens.,Verified,Oliver Twist -> Charles Dickens,Library of Congress catalogue,literature
 4140,32 hours equal 1920 minutes.,Verified,1 h = 60 min,SI definition,units
 4141,726 plus 378 equals 1104.,Verified,726+378=1104,Computed,arithmetic
@@ -4157,7 +4157,7 @@ id,claim,label,evidence,source,category
 4156,39 multiplied by 35 equals 1365.,Verified,39*35=1365,Computed,arithmetic
 4157,589 plus 790 equals 1379.,Verified,589+790=1379,Computed,arithmetic
 4158,390 plus 303 equals 691.,Contradicted,Correct fact: 390+303=693,Computed,arithmetic
-4159,An undiscovered manuscript in a library in Budapest contains an unknown play by Ernest Hemingway.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4159,An undiscovered manuscript in a library in Budapest contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4160,883 plus 344 equals 1227.,Verified,883+344=1227,Computed,arithmetic
 4161,"People in Tehran are, on average, 9 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 4162,Ancient traders from China secretly reached the Americas around the year 761.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
@@ -4225,14 +4225,14 @@ id,claim,label,evidence,source,category
 4224,"185 kilometres equals 185,000 metres.",Verified,1 km = 1000 m,SI definition,units
 4225,531 plus 817 equals 1348.,Verified,531+817=1348,Computed,arithmetic
 4226,"People in Bucharest are, on average, 7 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
-4227,An undiscovered manuscript in a library in Lisbon contains an unknown play by William Shakespeare.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4227,An undiscovered manuscript in a library in Lisbon contains an unknown play by J. R. R. Tolkien.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4228,Dakar is the capital city of Mexico.,Contradicted,Correct fact: Capital of Mexico = Mexico City,CIA World Factbook / UN,geography
 4229,266 plus 997 equals 1363.,Contradicted,Correct fact: 266+997=1263,Computed,arithmetic
 4230,99 multiplied by 40 equals 3960.,Verified,99*40=3960,Computed,arithmetic
 4231,463 plus 46 equals 509.,Verified,463+46=509,Computed,arithmetic
 4232,367 plus 738 equals 1105.,Verified,367+738=1105,Computed,arithmetic
 4233,"Exactly 95,256 people walked through a street market in Abuja on 18 April 1981.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
-4234,An undiscovered manuscript in a library in Ottawa contains an unknown play by Gabriel Garcia Marquez.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4234,An undiscovered manuscript in a library in Ottawa contains an unknown play by Paulo Coelho.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4235,A tiger sighted near Jerusalem in 1934 weighed exactly 244 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 4236,373 is a prime number.,Verified,373 is prime,Computed,mathematics
 4237,66 degrees Celsius equals 150.8 degrees Fahrenheit.,Verified,F=C*9/5+32=150.8,SI / standard conversion,units
@@ -4261,7 +4261,7 @@ id,claim,label,evidence,source,category
 4260,"Exactly 50,998 people walked through a street market in Kyiv on 13 July 1950.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 4261,85 multiplied by 41 equals 3485.,Verified,85*41=3485,Computed,arithmetic
 4262,254 plus 402 equals 658.,Contradicted,Correct fact: 254+402=656,Computed,arithmetic
-4263,An undiscovered manuscript in a library in Mexico City contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4263,An undiscovered manuscript in a library in Mexico City contains an unknown play by Dante Alighieri.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4264,A tiger sighted near Baghdad in 1950 weighed exactly 240 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 4265,717 plus 323 equals 1040.,Verified,717+323=1040,Computed,arithmetic
 4266,73 multiplied by 73 equals 5319.,Contradicted,Correct fact: 73*73=5329,Computed,arithmetic
@@ -4402,7 +4402,7 @@ id,claim,label,evidence,source,category
 4401,The mayor of Berlin privately decided in 1990 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 4402,989 plus 257 equals 1246.,Verified,989+257=1246,Computed,arithmetic
 4403,648 plus 640 equals 1298.,Contradicted,Correct fact: 648+640=1288,Computed,arithmetic
-4404,An undiscovered manuscript in a library in Canberra contains an unknown play by Mary Shelley.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4404,An undiscovered manuscript in a library in Canberra contains an unknown play by Chinua Achebe.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4405,297 plus 371 equals 678.,Contradicted,Correct fact: 297+371=668,Computed,arithmetic
 4406,The square root of 2601 is 54.,Contradicted,Correct fact: 51^2=2601,Computed,mathematics
 4407,"By 2095, the population of Romania will exceed 300 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
@@ -4410,13 +4410,13 @@ id,claim,label,evidence,source,category
 4409,95 multiplied by 97 equals 9215.,Verified,95*97=9215,Computed,arithmetic
 4410,Humans first landed on the Moon in 1969.,Verified,Humans first landed on the Moon: 1969,Encyclopaedia Britannica,history
 4411,The atomic number of Iodine is 53.,Verified,Iodine: Z=53,IUPAC Periodic Table,chemistry
-4412,An undiscovered manuscript in a library in Kathmandu contains an unknown play by Ernest Hemingway.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4412,An undiscovered manuscript in a library in Kathmandu contains an unknown play by Gustave Flaubert.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4413,"By 2127, the population of Kenya will exceed 400 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
 4414,69 multiplied by 72 equals 4968.,Verified,69*72=4968,Computed,arithmetic
 4415,347 is a prime number.,Verified,347 is prime,Computed,mathematics
 4416,70 multiplied by 63 equals 4410.,Verified,70*63=4410,Computed,arithmetic
 4417,751 plus 230 equals 981.,Verified,751+230=981,Computed,arithmetic
-4418,An undiscovered manuscript in a library in Havana contains an unknown play by Miguel de Cervantes.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4418,An undiscovered manuscript in a library in Havana contains an unknown play by Jane Austen.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4419,A secret tunnel reportedly connects the main railway station of Dhaka to a hidden vault.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,rumor
 4420,68 multiplied by 71 equals 4827.,Contradicted,Correct fact: 68*71=4828,Computed,arithmetic
 4421,54 plus 790 equals 844.,Verified,54+790=844,Computed,arithmetic
@@ -4455,12 +4455,12 @@ id,claim,label,evidence,source,category
 4454,438 plus 644 equals 1082.,Verified,438+644=1082,Computed,arithmetic
 4455,578 plus 307 equals 885.,Verified,578+307=885,Computed,arithmetic
 4456,The square root of 1296 is 37.,Contradicted,Correct fact: 36^2=1296,Computed,mathematics
-4457,An undiscovered manuscript in a library in Ulaanbaatar contains an unknown play by Homer.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4457,An undiscovered manuscript in a library in Ulaanbaatar contains an unknown play by Fyodor Dostoevsky.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4458,The mayor of Caracas privately decided in 1984 to rename a bridge after a childhood friend.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 4459,Dr. Ananya Das published a study in the Journal of Applied Obscure Studies in 1992 proving a cure for the common cold.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
 4460,The steam engine improvements (separate condenser) is credited to James Watt.,Verified,the steam engine improvements (separate condenser) -> James Watt,Encyclopaedia Britannica,science history
 4461,965 plus 189 equals 1156.,Contradicted,Correct fact: 965+189=1154,Computed,arithmetic
-4462,An undiscovered manuscript in a library in Bogota contains an unknown play by Charlotte Bronte.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4462,An undiscovered manuscript in a library in Bogota contains an unknown play by Arundhati Roy.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4463,998 plus 451 equals 1448.,Contradicted,Correct fact: 998+451=1449,Computed,arithmetic
 4464,96 multiplied by 28 equals 2698.,Contradicted,Correct fact: 96*28=2688,Computed,arithmetic
 4465,"By 2090, the population of South Africa will exceed 300 million.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,future-prediction
@@ -4474,7 +4474,7 @@ id,claim,label,evidence,source,category
 4473,Ancient traders from Italy secretly reached the Americas around the year 642.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4474,784 plus 43 equals 825.,Contradicted,Correct fact: 784+43=827,Computed,arithmetic
 4475,"People in Dublin are, on average, 4 percent happier on Tuesdays than on Wednesdays.",Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unsourced-claim
-4476,An undiscovered manuscript in a library in Bangkok contains an unknown play by Vladimir Nabokov.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
+4476,An undiscovered manuscript in a library in Bangkok contains an unknown play by James Joyce.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,speculation
 4477,73 degrees Celsius equals 158.4 degrees Fahrenheit.,Contradicted,Correct fact: F=C*9/5+32=163.4,SI / standard conversion,units
 4478,A tiger sighted near Kyiv in 1918 weighed exactly 168 kg.,Unverified,"No verifiable source exists; claim is speculative, private, unrecorded or about the future.",N/A,unrecorded-detail
 4479,184 plus 811 equals 995.,Verified,184+811=995,Computed,arithmetic
