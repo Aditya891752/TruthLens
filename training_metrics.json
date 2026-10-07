@@ -1,14 +1,34 @@
 {
+  "status": "trained",
   "total_facts_ingested": 12,
   "cycles_completed": 3,
   "best_f1_macro": 0.6667,
+  "best_accuracy": 0.6667,
   "cycle_history": [
     {
       "cycle": 1,
+      "config_name": "Baseline TF-IDF (1, 2) + Logistic Regression (C=1.0)",
       "train_samples": 9,
       "val_samples": 3,
       "accuracy": 0.6667,
       "f1_macro": 0.6667,
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
       "classification_report": {
         "CONTRADICTED": {
           "precision": 0.5,
@@ -39,10 +59,28 @@
     },
     {
       "cycle": 2,
+      "config_name": "Sublinear TF-IDF (1, 2) + Fine-Tuned L2 Regularization (C=2.5)",
       "train_samples": 9,
       "val_samples": 3,
       "accuracy": 0.6667,
       "f1_macro": 0.6667,
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
       "classification_report": {
         "CONTRADICTED": {
           "precision": 0.5,
@@ -73,10 +111,28 @@
     },
     {
       "cycle": 3,
+      "config_name": "Expanded Multi-Gram TF-IDF (1, 3) + Calibrated Regularization (C=3.5)",
       "train_samples": 9,
       "val_samples": 3,
       "accuracy": 0.6667,
       "f1_macro": 0.6667,
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
       "classification_report": {
         "CONTRADICTED": {
           "precision": 0.5,

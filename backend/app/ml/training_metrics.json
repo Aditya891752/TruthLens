@@ -1,0 +1,183 @@
+{
+  "status": "trained",
+  "total_facts_ingested": 6300,
+  "cycles_completed": 3,
+  "best_f1_macro": 0.5247,
+  "best_accuracy": 0.523,
+  "cycle_history": [
+    {
+      "cycle": 1,
+      "config_name": "Baseline TF-IDF (1, 2) + Logistic Regression (C=1.0)",
+      "train_samples": 5040,
+      "val_samples": 1260,
+      "accuracy": 0.5175,
+      "f1_macro": 0.5196,
+      "confusion_matrix": [
+        [
+          190,
+          161,
+          69
+        ],
+        [
+          137,
+          222,
+          61
+        ],
+        [
+          74,
+          106,
+          240
+        ]
+      ],
+      "classification_report": {
+        "CONTRADICTED": {
+          "precision": 0.47381546134663344,
+          "recall": 0.4523809523809524,
+          "f1-score": 0.4628501827040195,
+          "support": 420.0
+        },
+        "SUPPORTED": {
+          "precision": 0.4539877300613497,
+          "recall": 0.5285714285714286,
+          "f1-score": 0.4884488448844885,
+          "support": 420.0
+        },
+        "UNVERIFIED": {
+          "precision": 0.6486486486486487,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.6075949367088608,
+          "support": 420.0
+        },
+        "accuracy": 0.5174603174603175,
+        "macro avg": {
+          "precision": 0.525483946685544,
+          "recall": 0.5174603174603175,
+          "f1-score": 0.5196313214324563,
+          "support": 1260.0
+        },
+        "weighted avg": {
+          "precision": 0.5254839466855439,
+          "recall": 0.5174603174603175,
+          "f1-score": 0.5196313214324563,
+          "support": 1260.0
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "config_name": "Sublinear TF-IDF (1, 2) + Fine-Tuned L2 Regularization (C=2.5)",
+      "train_samples": 5040,
+      "val_samples": 1260,
+      "accuracy": 0.523,
+      "f1_macro": 0.5247,
+      "confusion_matrix": [
+        [
+          198,
+          150,
+          72
+        ],
+        [
+          140,
+          212,
+          68
+        ],
+        [
+          66,
+          105,
+          249
+        ]
+      ],
+      "classification_report": {
+        "CONTRADICTED": {
+          "precision": 0.4900990099009901,
+          "recall": 0.4714285714285714,
+          "f1-score": 0.48058252427184467,
+          "support": 420.0
+        },
+        "SUPPORTED": {
+          "precision": 0.4539614561027837,
+          "recall": 0.5047619047619047,
+          "f1-score": 0.47801578354002255,
+          "support": 420.0
+        },
+        "UNVERIFIED": {
+          "precision": 0.6401028277634961,
+          "recall": 0.5928571428571429,
+          "f1-score": 0.61557478368356,
+          "support": 420.0
+        },
+        "accuracy": 0.523015873015873,
+        "macro avg": {
+          "precision": 0.5280544312557566,
+          "recall": 0.523015873015873,
+          "f1-score": 0.5247243638318091,
+          "support": 1260.0
+        },
+        "weighted avg": {
+          "precision": 0.5280544312557566,
+          "recall": 0.523015873015873,
+          "f1-score": 0.5247243638318091,
+          "support": 1260.0
+        }
+      }
+    },
+    {
+      "cycle": 3,
+      "config_name": "Expanded Multi-Gram TF-IDF (1, 3) + Calibrated Regularization (C=3.5)",
+      "train_samples": 5040,
+      "val_samples": 1260,
+      "accuracy": 0.523,
+      "f1_macro": 0.5245,
+      "confusion_matrix": [
+        [
+          202,
+          141,
+          77
+        ],
+        [
+          137,
+          215,
+          68
+        ],
+        [
+          71,
+          107,
+          242
+        ]
+      ],
+      "classification_report": {
+        "CONTRADICTED": {
+          "precision": 0.4926829268292683,
+          "recall": 0.48095238095238096,
+          "f1-score": 0.4867469879518072,
+          "support": 420.0
+        },
+        "SUPPORTED": {
+          "precision": 0.46436285097192226,
+          "recall": 0.5119047619047619,
+          "f1-score": 0.4869762174405436,
+          "support": 420.0
+        },
+        "UNVERIFIED": {
+          "precision": 0.6253229974160207,
+          "recall": 0.5761904761904761,
+          "f1-score": 0.5997521685254027,
+          "support": 420.0
+        },
+        "accuracy": 0.523015873015873,
+        "macro avg": {
+          "precision": 0.5274562584057371,
+          "recall": 0.523015873015873,
+          "f1-score": 0.5244917913059178,
+          "support": 1260.0
+        },
+        "weighted avg": {
+          "precision": 0.5274562584057372,
+          "recall": 0.523015873015873,
+          "f1-score": 0.5244917913059178,
+          "support": 1260.0
+        }
+      }
+    }
+  ]
+}

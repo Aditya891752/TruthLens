@@ -63,7 +63,8 @@ claim_verifier = ClaimVerifier()
 ml_classifier = TruthLensMLClassifier()
 
 # Attempt loading pre-trained ML model if present
-ml_model_loaded = ml_classifier.load("backend/app/ml") or ml_classifier.load(".")
+ml_dir = os.path.join(os.path.dirname(__file__), "ml")
+ml_model_loaded = ml_classifier.load(ml_dir) or ml_classifier.load("backend/app/ml") or ml_classifier.load(".")
 
 
 @app.exception_handler(Exception)

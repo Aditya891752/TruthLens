@@ -56,7 +56,7 @@ class TruthLensMLClassifier:
 
         probs = self.pipeline.predict_proba([claim_text])[0]
         max_idx = int(probs.argmax())
-        label = self.classes[max_idx]
+        label = str(self.classes[max_idx])
         confidence = float(probs[max_idx])
         return (label, round(confidence, 4))
 

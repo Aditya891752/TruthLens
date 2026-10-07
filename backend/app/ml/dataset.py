@@ -10,6 +10,48 @@ class FactDataset:
     VALID_LABELS = {"SUPPORTED", "CONTRADICTED", "UNVERIFIED"}
 
     @classmethod
+    def load_from_csv(cls, filepath: str) -> List[Dict[str, Any]]:
+        """Load facts from a CSV file with columns: claim/text, label, evidence, reasoning."""
+        import csv
+
+        if not os.path.exists(filepath):
+            raise FileNotFoundError(f"CSV file not found at: {filepath}")
+
+        samples = []
+        with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                samples.append(row)
+
+        return cls.validate_samples(samples)
+
+    @classmethod
+    def load_from_directory(cls, dirpath: str) -> List[Dict[str, Any]]:
+        """Discovers and merges all CSV/JSON facts from a directory."""
+        if not os.path.isdir(dirpath):
+            raise NotADirectoryError(f"Directory not found: {dirpath}")
+
+        all_samples = []
+        for fname in os.listdir(dirpath):
+            fpath = os.path.join(dirpath, fname)
+            if fname.endswith(".csv") or ".csv" in fname:
+                try:
+                    loaded = cls.load_from_csv(fpath)
+                    print(f"[FactDataset] Loaded {len(loaded)} facts from {fname}")
+                    all_samples.extend(loaded)
+                except Exception as e:
+                    print(f"[FactDataset] Warning: Could not read {fname}: {e}")
+            elif fname.endswith(".json"):
+                try:
+                    loaded = cls.load_from_json(fpath)
+                    print(f"[FactDataset] Loaded {len(loaded)} facts from {fname}")
+                    all_samples.extend(loaded)
+                except Exception as e:
+                    print(f"[FactDataset] Warning: Could not read {fname}: {e}")
+
+        return all_samples
+
+    @classmethod
     def load_from_json(cls, filepath: str) -> List[Dict[str, Any]]:
         """Load facts from a JSON file. Expected format: [{"text": "...", "label": "SUPPORTED"}]"""
         if not os.path.exists(filepath):
@@ -35,10 +77,9 @@ class FactDataset:
                 continue
 
             if label not in cls.VALID_LABELS:
-                # Map common label synonyms
-                if label in {"TRUE", "FACT", "SUPPORT", "VERIFIED"}:
+                if label in {"TRUE", "FACT", "SUPPORT", "VERIFIED", "SUPPORTED"}:
                     label = "SUPPORTED"
-                elif label in {"FALSE", "FAKE", "CONTRADICT", "REFUTED", "HALLUCINATION"}:
+                elif label in {"FALSE", "FAKE", "CONTRADICT", "REFUTED", "HALLUCINATION", "UNSUPPORTED"}:
                     label = "CONTRADICTED"
                 else:
                     label = "UNVERIFIED"

@@ -2,8 +2,12 @@ import os
 import json
 import argparse
 from typing import Dict, Any, List
-from sklearn.model_selection import StratifiedKFold, train_test_split
-from sklearn.metrics import classification_report, accuracy_score, f1_score
+from collections import Counter
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, accuracy_score, f1_score, confusion_matrix
+from sklearn.pipeline import Pipeline
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
 from app.ml.dataset import FactDataset
 from app.ml.model import TruthLensMLClassifier
 
@@ -11,8 +15,9 @@ from app.ml.model import TruthLensMLClassifier
 class MLTrainingHarness:
     """Executes multi-stage training cycles and produces evaluation metrics."""
 
-    def __init__(self, output_dir: str = "."):
+    def __init__(self, output_dir: str = "backend/app/ml"):
         self.output_dir = output_dir
+        os.makedirs(output_dir, exist_ok=True)
 
     def run_training_cycles(
         self,
@@ -20,7 +25,7 @@ class MLTrainingHarness:
         cycles: int = 3
     ) -> Dict[str, Any]:
         """
-        Executes N training cycles (minimum 3 cycles requested) over the facts corpus.
+        Executes N training cycles (minimum 3 cycles) over the facts corpus.
         Records progression, validation metrics, and persists the final model artifact.
         """
         if len(samples) < 10:
@@ -29,79 +34,150 @@ class MLTrainingHarness:
         texts = [s["text"] for s in samples]
         labels = [s["label"] for s in samples]
 
-        # Only stratify if all classes have at least 2 samples
-        from collections import Counter
         label_counts = Counter(labels)
         can_stratify = len(label_counts) > 1 and min(label_counts.values()) >= 2
 
+        # 80/20 train/test split
         X_train, X_val, y_train, y_val = train_test_split(
             texts, labels, test_size=0.20, random_state=42, stratify=labels if can_stratify else None
         )
 
         history = []
         best_f1 = -1.0
-        best_model: TruthLensMLClassifier = None
+        best_pipeline = None
 
-        print(f"\n[TruthLens ML] Starting {cycles} training cycles across {len(samples)} facts...")
+        print(f"\n=================================================================")
+        print(f" TruthLens ML: Ingesting {len(samples)} Facts across 3 Classes")
+        print(f" Train Split: {len(X_train)} | Validation Split: {len(X_val)}")
+        print(f" Class Breakdown: {dict(label_counts)}")
+        print(f"=================================================================\n")
 
-        for cycle_idx in range(1, cycles + 1):
-            print(f"\n--- Training Cycle {cycle_idx}/{cycles} ---")
-            classifier = TruthLensMLClassifier()
-            
-            # Train pipeline
-            classifier.fit(X_train, y_train)
+        # Distinct configuration parameters across the 3 training cycles
+        cycle_configs = [
+            {
+                "cycle": 1,
+                "name": "Baseline TF-IDF (1, 2) + Logistic Regression (C=1.0)",
+                "ngram_range": (1, 2),
+                "max_features": 15000,
+                "C": 1.0
+            },
+            {
+                "cycle": 2,
+                "name": "Sublinear TF-IDF (1, 2) + Fine-Tuned L2 Regularization (C=2.5)",
+                "ngram_range": (1, 2),
+                "max_features": 25000,
+                "C": 2.5
+            },
+            {
+                "cycle": 3,
+                "name": "Expanded Multi-Gram TF-IDF (1, 3) + Calibrated Regularization (C=3.5)",
+                "ngram_range": (1, 3),
+                "max_features": 35000,
+                "C": 3.5
+            }
+        ]
 
-            # Evaluate on validation split
-            y_pred = [classifier.predict(t)[0] for t in X_val]
+        for i in range(cycles):
+            cfg = cycle_configs[i % len(cycle_configs)]
+            cycle_num = i + 1
+            print(f">>> Running Training Cycle {cycle_num}/{cycles}: {cfg['name']}...")
+
+            # Construct cycle pipeline
+            pipeline = Pipeline([
+                ("tfidf", TfidfVectorizer(
+                    ngram_range=cfg["ngram_range"],
+                    max_features=cfg["max_features"],
+                    sublinear_tf=True,
+                    strip_accents="unicode"
+                )),
+                ("clf", LogisticRegression(
+                    C=cfg["C"],
+                    max_iter=1500,
+                    solver="lbfgs",
+                    class_weight="balanced"
+                ))
+            ])
+
+            # Train on X_train
+            pipeline.fit(X_train, y_train)
+
+            # Evaluate on X_val
+            y_pred = pipeline.predict(X_val)
             acc = accuracy_score(y_val, y_pred)
             f1 = f1_score(y_val, y_pred, average="macro", zero_division=0)
+            cm = confusion_matrix(y_val, y_pred, labels=["CONTRADICTED", "SUPPORTED", "UNVERIFIED"]).tolist()
             report = classification_report(y_val, y_pred, output_dict=True, zero_division=0)
 
             cycle_metrics = {
-                "cycle": cycle_idx,
+                "cycle": cycle_num,
+                "config_name": cfg["name"],
                 "train_samples": len(X_train),
                 "val_samples": len(X_val),
                 "accuracy": round(float(acc), 4),
                 "f1_macro": round(float(f1), 4),
+                "confusion_matrix": cm,
                 "classification_report": report
             }
             history.append(cycle_metrics)
-            print(f"Cycle {cycle_idx} Results: Accuracy={acc:.2%}, F1-Macro={f1:.4f}")
 
-            if f1 > best_f1 or best_model is None:
+            print(f"    Cycle {cycle_num} Complete: Accuracy = {acc:.2%}, F1-Macro = {f1:.4f}")
+            print(f"    Per-Class Precision: Supported={report.get('SUPPORTED', {}).get('precision', 0):.2%}, "
+                  f"Contradicted={report.get('CONTRADICTED', {}).get('precision', 0):.2%}, "
+                  f"Unverified={report.get('UNVERIFIED', {}).get('precision', 0):.2%}\n")
+
+            if f1 > best_f1 or best_pipeline is None:
                 best_f1 = f1
-                best_model = classifier
+                best_pipeline = pipeline
 
-        # Persist best model
-        saved_model_path = best_model.save(self.output_dir)
-        print(f"\n[TruthLens ML] Best model artifact saved to: {saved_model_path}")
+        # Package best classifier
+        best_classifier = TruthLensMLClassifier()
+        best_classifier.pipeline = best_pipeline
+        best_classifier.is_trained = True
+        best_classifier.classes = list(best_pipeline.classes_)
 
-        # Persist metrics
+        # Save model artifact in output_dir and root
+        import joblib
+        saved_path_backend = os.path.join(self.output_dir, TruthLensMLClassifier.MODEL_FILENAME)
+        joblib.dump(best_pipeline, saved_path_backend)
+        try:
+            joblib.dump(best_pipeline, TruthLensMLClassifier.MODEL_FILENAME)
+        except Exception:
+            pass
+
+        print(f"[TruthLens ML] Best model artifact saved to: {saved_path_backend}")
+
+        # Persist metrics summary
         metrics_summary = {
+            "status": "trained",
             "total_facts_ingested": len(samples),
             "cycles_completed": cycles,
             "best_f1_macro": round(best_f1, 4),
+            "best_accuracy": max(h["accuracy"] for h in history),
             "cycle_history": history
         }
-        
-        metrics_path = os.path.join(self.output_dir, TruthLensMLClassifier.METRICS_FILENAME)
-        with open(metrics_path, "w", encoding="utf-8") as f:
-            json.dump(metrics_summary, f, indent=2)
 
-        print(f"[TruthLens ML] Metrics summary saved to: {metrics_path}")
+        for dest_dir in [self.output_dir, "."]:
+            m_path = os.path.join(dest_dir, TruthLensMLClassifier.METRICS_FILENAME)
+            with open(m_path, "w", encoding="utf-8") as f:
+                json.dump(metrics_summary, f, indent=2)
+
+        print(f"[TruthLens ML] Metrics summary saved to: {os.path.join(self.output_dir, TruthLensMLClassifier.METRICS_FILENAME)}")
         return metrics_summary
+
+
+def run_training_on_directory(dataset_dir: str, cycles: int = 3) -> Dict[str, Any]:
+    samples = FactDataset.load_from_directory(dataset_dir)
+    harness = MLTrainingHarness(output_dir="backend/app/ml")
+    return harness.run_training_cycles(samples, cycles=cycles)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Train TruthLens Factuality Classifier")
-    parser.add_argument("--dataset", type=str, required=True, help="Path to JSON dataset of facts")
+    parser.add_argument("--dataset-dir", type=str, default=r"D:\TRUTHLENS\ML MODEL DATASET")
     parser.add_argument("--cycles", type=int, default=3, help="Number of training cycles (default: 3)")
-    parser.add_argument("--output-dir", type=str, default=".", help="Directory to save model artifact")
     args = parser.parse_args()
 
-    samples = FactDataset.load_from_json(args.dataset)
-    harness = MLTrainingHarness(output_dir=args.output_dir)
-    harness.run_training_cycles(samples, cycles=args.cycles)
+    run_training_on_directory(args.dataset_dir, cycles=args.cycles)
 
 
 if __name__ == "__main__":

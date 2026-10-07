@@ -1,0 +1,74 @@
+:root {
+  /* Surfaces & Canvas (High-Contrast Obsidian Forensic Palette) */
+  --bg-base: #090A0F;
+  --bg-surface-1: #12151E;
+  --bg-surface-2: #181C28;
+  --bg-surface-3: #212738;
+  --bg-hover: #2A3247;
+
+  /* Borders & Structure */
+  --border-subtle: #1C2230;
+  --border-default: #252B3B;
+  --border-strong: #3B4459;
+  --border-focus: #0EA5E9;
+
+  /* High-Contrast Typography Colors (Exceeds WCAG AAA) */
+  --text-primary: #F1F3F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-inverse: #090A0F;
+
+  /* Semantic Status: Supported / Grounded Truth (Emerald) */
+  --supported-base: #10B981;
+  --supported-bg: #064E3B;
+  --supported-text: #A7F3D0;
+  --supported-border: #059669;
+  --supported-highlight: rgba(16, 185, 129, 0.22);
+  --supported-underline: #10B981;
+
+  /* Semantic Status: Contradicted / Hallucination (Crimson) */
+  --contradicted-base: #EF4444;
+  --contradicted-bg: #450A0A;
+  --contradicted-text: #FECACA;
+  --contradicted-border: #DC2626;
+  --contradicted-highlight: rgba(239, 68, 68, 0.25);
+  --contradicted-underline: #EF4444;
+
+  /* Semantic Status: Unverified / Insufficient Evidence (Amber) */
+  --unverified-base: #F59E0B;
+  --unverified-bg: #451A03;
+  --unverified-text: #FDE68A;
+  --unverified-border: #D97706;
+  --unverified-highlight: rgba(245, 158, 11, 0.22);
+  --unverified-underline: #F59E0B;
+
+  /* Forensic Action Accent (Steel Cyan) */
+  --accent-base: #0EA5E9;
+  --accent-hover: #38BDF8;
+  --accent-active: #0284C7;
+  --accent-text: #090A0F;
+
+  /* Typography Fonts (Plus Jakarta Sans + JetBrains Mono) */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Modular Spacing Scale (Strict 4px/8px Grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Radius Tokens (Sharp, Functional Precision) */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Snappy Transitions */
+  --transition-fast: 120ms ease;
+  --transition-snappy: 150ms ease-in-out;
+}
