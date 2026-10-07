@@ -51,6 +51,16 @@ This document serves as the persistent memory, live status ledger, and context a
     - `TelemetryView.tsx`: Hydrated with live dynamic cycle history from `/api/ml-stats`, displaying 19,301 facts, 3 cycles progression table, and 85.21% convergence stats.
     - Verified all 5/5 backend unit tests pass (`pytest backend/tests`) and end-to-end proxy verification passes (`test_e2e_proxy.py`).
     - Production bundle rebuilt cleanly (`tsc && vite build`).
+- **Open-Domain Arbitrary Input Verification Engine Deployed**:
+  - Addressed critical requirement: Model and system must accurately verify **ANY random input data** given by users, not just preset samples or internal datasets.
+  - Implemented 4-tier verification hierarchy in `GroundingService`:
+    - **Tier 1 (Google Gemini + Google Search Grounding)**: Live real-time web verification with grounding chunks and citations across billions of web pages when `GEMINI_API_KEY` is present.
+    - **Tier 2 (In-House 19,301 Factbase Engine)**: Sub-millisecond TF-IDF cosine similarity search over the 19,301 verified facts corpus (`FactbaseEngine`), with persistent disk caching (`factbase_cache.joblib`), entity alignment, and true-correction detection.
+    - **Tier 3 (Live Wikipedia Open-Knowledge Search Engine)**: Zero-key public encyclopedic search and summary REST API with LRU caching, validating or contradicting open-domain entities, history, geography, and science with direct `wikipedia.org` source citations.
+    - **Tier 4 (Contradiction & Entailment Heuristics)**: Algorithmic detection of anachronisms (e.g., dinosaurs with computers), physical impossibilities (green cheese moon), medical panaceas, and chronological conflicts.
+  - End-to-end test suites passing (`test_random_user_input.py`, `test_random_verification.py`, `test_factbase.py`):
+    - Tested across geography ("Tokyo is capital of Japan" -> SUPPORTED), astronomy ("Earth orbits Sun in 365 days" -> SUPPORTED), physics constants ("Speed of light is ~300,000 km/s" -> SUPPORTED), false geography ("Paris is capital of Germany" -> CONTRADICTED), anachronisms ("Humans on Mars in 1820" -> CONTRADICTED), absurdities ("Moon made of cheese", "Dinosaurs built computers" -> CONTRADICTED).
+    - All 7/7 backend unit tests passing (`pytest backend/tests`), and proxy test passing (`test_e2e_proxy.py`).
 - **Google Stitch White Color Grading UI/UX Merged & Deployed**:
   - Imported complete visual layout and tokens from Google Stitch prototypes (`Forensic Audit` and `Live Forensics Workbench`).
   - Navigation bar tabs: `Forensic Audit`, `Ground Truth Telemetry`, `Claim Lineage`, `Engine Diagnostics`.

@@ -1,5 +1,9 @@
 import urllib.request
 import json
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 def run_tests():
     print("--- 1. Testing Frontend HTML ---")
