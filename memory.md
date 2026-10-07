@@ -122,7 +122,7 @@ This document serves as the persistent memory, live status ledger, and context a
   - [x] **Phase 3**: React forensic dashboard components with Stitch white color grading: `tokens.css`, `reset.css`, `global.css`, `Header.tsx`, `InputWorkbench.tsx`, `MetricBar.tsx`, `AnnotatedViewer.tsx`, `ClaimCard.tsx`, `ClaimsList.tsx`, `ExportToolbar.tsx`, `Toast.tsx`, `TelemetryView.tsx`, `LineageView.tsx`, `DiagnosticsView.tsx`.
   - [x] **Phase 4**: Full-stack E2E integration verified (`backend/tests/test_e2e_proxy.py` passes 100%). Open-domain verification engine with 4-tier fallbacks (Gemini search grounding, 19.3k indexed factbase, live Wikipedia API, factual contradiction heuristics). Security audit passed against 12 cardinal rules.
   - [x] **Phase 5**: Production assets: `backend/Dockerfile`, `backend/render.yaml`, `frontend/vercel.json`, and deployment guide in `architecture_diagram.md`.
-  - [x] **Remote Deployment**: Synced and pushed to GitHub repository `https://github.com/Aditya891752/TruthLens`.
+  - [x] **Remote Deployment**: Synced and pushed to GitHub repository `https://github.com/Aditya891752/TruthLens` on branch `main` (Upstream tracking established at commit `73fa8fa`).
 
 ---
 
