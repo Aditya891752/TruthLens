@@ -1,11 +1,11 @@
-# TruthLens 🔍
+# TruthLens 
 
 > **Autonomous Open-Domain Forensic Fact Verification System**  
 > Real-time atomic claim extraction, grounded multi-source verification, and transparent credibility scoring designed with the Google Stitch white color grading forensic design system.
 
 ---
 
-## ⚡ Overview
+##  Overview
 
 **TruthLens** is a production-grade full-stack fact-checking and forensic analysis platform. When provided with unstructured text, investigative reporting, or social media statements, TruthLens automatically decomposes the input into atomic factual claims, searches live corroborated sources, and delivers evidence-backed veracity verdicts with mathematical confidence scores.
 
@@ -13,7 +13,7 @@ TruthLens operates with a **Zero-Secret Client Boundary**—all AI inference, se
 
 ---
 
-## 🔬 Core Capabilities
+##  Core Capabilities
 
 ### 1. Atomic Claim Extraction
 - Decomposes dense narrative paragraphs into discrete, independently verifiable factual assertions.
@@ -43,7 +43,7 @@ TruthLens computes an overall document credibility index (0–100%) using a cali
 
 ---
 
-## 🎨 UI/UX: Google Stitch Forensic Design System
+##  UI/UX
 
 TruthLens adheres to a disciplined, clinical, high-contrast aesthetic:
 - **Canvas**: Clean high-contrast white background (`#FFFFFF`) with surgical blue primary accents (`#006194`).
@@ -61,7 +61,7 @@ TruthLens adheres to a disciplined, clinical, high-contrast aesthetic:
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 TRUTHLENS/
@@ -116,7 +116,7 @@ TRUTHLENS/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Python 3.10+
@@ -154,7 +154,7 @@ npm run dev     # Starts Vite dev server with proxy at http://localhost:5173
 
 ---
 
-## 🚢 Deployment
+##  Deployment
 
 TruthLens is pre-configured for a zero-cost, high-performance decoupled cloud deployment:
 
@@ -167,7 +167,7 @@ Detailed step-by-step cloud deployment instructions are documented in [`architec
 
 ---
 
-## 🔒 Security & Safety Principles
+##  Security & Safety Principles
 
 1. **Zero Secret Leakage**: API keys, service tokens, and environment configs are strictly prohibited from client bundles and git history.
 2. **Pydantic Validation**: Every request payload and API response is strictly validated against schemas in `backend/app/models.py`.
