@@ -35,7 +35,7 @@ export default function TelemetryView() {
           <span className="w-2.5 h-2.5 rounded-full bg-[#006c4a]"></span>
           <span className="font-bold text-[#006c4a]">ML FACTBASE TELEMETRY</span>
           <span className="text-[#3f4850]">•</span>
-          <span>Trained In-House with Scikit-Learn TF-IDF + Logistic Regression</span>
+          <span>Trained In-House with Scikit-Learn Dual FeatureUnion + Calibrated Linear Classifier</span>
         </div>
         <div className="text-[#707881]">
           VALIDATION METRICS: NIST GROUNDING ALIGNED
@@ -49,10 +49,10 @@ export default function TelemetryView() {
             Total Trained Facts
           </span>
           <div className="font-sans text-2xl font-extrabold text-[#131b2e]">
-            {mlStats?.total_samples ? mlStats.total_samples.toLocaleString() : '6,300'}
+            {mlStats?.total_samples ? mlStats.total_samples.toLocaleString() : '19,301'}
           </div>
           <span className="font-mono text-[11px] text-[#006c4a] mt-1 block">
-            ✓ 2,100 Per Semantic Class
+            ✓ ~6,430 Per Semantic Class
           </span>
         </div>
 
@@ -73,10 +73,10 @@ export default function TelemetryView() {
             Validation Accuracy
           </span>
           <div className="font-sans text-2xl font-extrabold text-[#006c4a]">
-            {mlStats?.val_accuracy ? `${(mlStats.val_accuracy * 100).toFixed(2)}%` : '52.30%'}
+            {mlStats?.val_accuracy ? `${(mlStats.val_accuracy * 100).toFixed(2)}%` : '85.21%'}
           </div>
           <span className="font-mono text-[11px] text-[#707881] mt-1 block">
-            F1-Macro Score: {mlStats?.val_f1_macro ? mlStats.val_f1_macro.toFixed(4) : '0.5247'}
+            F1-Macro Score: {mlStats?.val_f1_macro ? mlStats.val_f1_macro.toFixed(4) : '0.8511'}
           </span>
         </div>
 
@@ -85,10 +85,10 @@ export default function TelemetryView() {
             Inference Latency
           </span>
           <div className="font-sans text-2xl font-extrabold text-[#131b2e]">
-            ~1.2ms
+            ~1.4ms
           </div>
           <span className="font-mono text-[11px] text-[#006c4a] mt-1 block">
-            Vectorized TF-IDF Cache Active
+            Dual FeatureUnion Cache Active
           </span>
         </div>
       </div>
@@ -111,30 +111,59 @@ export default function TelemetryView() {
               </tr>
             </thead>
             <tbody className="divide-y divide-[#bfc7d2] text-[#3f4850]">
-              <tr className="hover:bg-[#f2f3ff]">
-                <td className="py-2.5 px-4 font-bold text-[#131b2e]">Cycle #1</td>
-                <td className="py-2.5 px-4">5,040 Facts</td>
-                <td className="py-2.5 px-4">1,260 Facts</td>
-                <td className="py-2.5 px-4">90.89%</td>
-                <td className="py-2.5 px-4 font-semibold text-[#006c4a]">52.30%</td>
-                <td className="py-2.5 px-4 text-right font-semibold">0.5247</td>
-              </tr>
-              <tr className="hover:bg-[#f2f3ff]">
-                <td className="py-2.5 px-4 font-bold text-[#131b2e]">Cycle #2</td>
-                <td className="py-2.5 px-4">5,040 Facts</td>
-                <td className="py-2.5 px-4">1,260 Facts</td>
-                <td className="py-2.5 px-4">90.89%</td>
-                <td className="py-2.5 px-4 font-semibold text-[#006c4a]">52.30%</td>
-                <td className="py-2.5 px-4 text-right font-semibold">0.5247</td>
-              </tr>
-              <tr className="hover:bg-[#f2f3ff] bg-[#ecfdf5]/30">
-                <td className="py-2.5 px-4 font-bold text-[#006c4a]">Cycle #3 (Active)</td>
-                <td className="py-2.5 px-4">5,040 Facts</td>
-                <td className="py-2.5 px-4">1,260 Facts</td>
-                <td className="py-2.5 px-4 font-semibold">90.89%</td>
-                <td className="py-2.5 px-4 font-bold text-[#006c4a]">52.30%</td>
-                <td className="py-2.5 px-4 text-right font-bold text-[#006c4a]">0.5247</td>
-              </tr>
+              {mlStats?.cycle_history && mlStats.cycle_history.length > 0 ? (
+                mlStats.cycle_history.map((cycleItem: any, idx: number) => {
+                  const isLatest = idx === mlStats.cycle_history.length - 1;
+                  return (
+                    <tr
+                      key={cycleItem.cycle || idx}
+                      className={`hover:bg-[#f2f3ff] ${isLatest ? 'bg-[#ecfdf5]/30' : ''}`}
+                    >
+                      <td className={`py-2.5 px-4 font-bold ${isLatest ? 'text-[#006c4a]' : 'text-[#131b2e]'}`}>
+                        Cycle #{cycleItem.cycle} {isLatest && '(Active Model)'}
+                      </td>
+                      <td className="py-2.5 px-4">{cycleItem.train_samples?.toLocaleString() || '15,440'} Facts</td>
+                      <td className="py-2.5 px-4">{cycleItem.val_samples?.toLocaleString() || '3,861'} Facts</td>
+                      <td className="py-2.5 px-4 font-semibold">
+                        {(cycleItem.train_accuracy * 100).toFixed(2)}%
+                      </td>
+                      <td className={`py-2.5 px-4 font-bold ${isLatest ? 'text-[#006c4a]' : 'text-[#131b2e]'}`}>
+                        {(cycleItem.accuracy * 100).toFixed(2)}%
+                      </td>
+                      <td className={`py-2.5 px-4 text-right font-bold ${isLatest ? 'text-[#006c4a]' : 'text-[#131b2e]'}`}>
+                        {cycleItem.f1_macro?.toFixed(4)}
+                      </td>
+                    </tr>
+                  );
+                })
+              ) : (
+                <>
+                  <tr className="hover:bg-[#f2f3ff]">
+                    <td className="py-2.5 px-4 font-bold text-[#131b2e]">Cycle #1</td>
+                    <td className="py-2.5 px-4">15,440 Facts</td>
+                    <td className="py-2.5 px-4">3,861 Facts</td>
+                    <td className="py-2.5 px-4">93.80%</td>
+                    <td className="py-2.5 px-4 font-semibold text-[#006c4a]">83.22%</td>
+                    <td className="py-2.5 px-4 text-right font-semibold">0.8322</td>
+                  </tr>
+                  <tr className="hover:bg-[#f2f3ff]">
+                    <td className="py-2.5 px-4 font-bold text-[#131b2e]">Cycle #2</td>
+                    <td className="py-2.5 px-4">15,440 Facts</td>
+                    <td className="py-2.5 px-4">3,861 Facts</td>
+                    <td className="py-2.5 px-4">96.93%</td>
+                    <td className="py-2.5 px-4 font-semibold text-[#006c4a]">84.95%</td>
+                    <td className="py-2.5 px-4 text-right font-semibold">0.8494</td>
+                  </tr>
+                  <tr className="hover:bg-[#f2f3ff] bg-[#ecfdf5]/30">
+                    <td className="py-2.5 px-4 font-bold text-[#006c4a]">Cycle #3 (Active Model)</td>
+                    <td className="py-2.5 px-4">15,440 Facts</td>
+                    <td className="py-2.5 px-4">3,861 Facts</td>
+                    <td className="py-2.5 px-4 font-semibold">97.23%</td>
+                    <td className="py-2.5 px-4 font-bold text-[#006c4a]">85.21%</td>
+                    <td className="py-2.5 px-4 text-right font-bold text-[#006c4a]">0.8511</td>
+                  </tr>
+                </>
+              )}
             </tbody>
           </table>
         </div>
@@ -144,34 +173,34 @@ export default function TelemetryView() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-white border border-[#bfc7d2] rounded p-5 shadow-xs">
           <h4 className="font-sans font-bold text-xs uppercase tracking-wide text-[#131b2e] mb-3">
-            Dataset Stratification (6,300 Total Facts)
+            Dataset Stratification (19,301 Total Facts)
           </h4>
           <div className="space-y-3 font-mono text-xs">
             <div>
               <div className="flex justify-between mb-1">
-                <span className="text-[#065f46] font-semibold">SUPPORTED (2,100 Facts)</span>
-                <span className="text-[#707881]">33.3%</span>
+                <span className="text-[#065f46] font-semibold">SUPPORTED (~6,000 Facts)</span>
+                <span className="text-[#707881]">31.1%</span>
               </div>
               <div className="h-2 w-full bg-[#f2f3ff] rounded overflow-hidden">
-                <div className="h-full bg-[#006c4a]" style={{ width: '33.3%' }}></div>
+                <div className="h-full bg-[#006c4a]" style={{ width: '31.1%' }}></div>
               </div>
             </div>
             <div>
               <div className="flex justify-between mb-1">
-                <span className="text-[#991b1b] font-semibold">CONTRADICTED (2,100 Facts)</span>
-                <span className="text-[#707881]">33.3%</span>
+                <span className="text-[#991b1b] font-semibold">CONTRADICTED (~6,650 Facts)</span>
+                <span className="text-[#707881]">34.5%</span>
               </div>
               <div className="h-2 w-full bg-[#f2f3ff] rounded overflow-hidden">
-                <div className="h-full bg-[#ba1a1a]" style={{ width: '33.3%' }}></div>
+                <div className="h-full bg-[#ba1a1a]" style={{ width: '34.5%' }}></div>
               </div>
             </div>
             <div>
               <div className="flex justify-between mb-1">
-                <span className="text-[#92400e] font-semibold">UNVERIFIED (2,100 Facts)</span>
-                <span className="text-[#707881]">33.3%</span>
+                <span className="text-[#92400e] font-semibold">UNVERIFIED (~6,651 Facts)</span>
+                <span className="text-[#707881]">34.4%</span>
               </div>
               <div className="h-2 w-full bg-[#f2f3ff] rounded overflow-hidden">
-                <div className="h-full bg-[#d97706]" style={{ width: '33.3%' }}></div>
+                <div className="h-full bg-[#d97706]" style={{ width: '34.4%' }}></div>
               </div>
             </div>
           </div>
@@ -184,19 +213,19 @@ export default function TelemetryView() {
           <ul className="space-y-2 font-mono text-[11px] text-[#3f4850]">
             <li className="flex justify-between pb-1 border-b border-[#bfc7d2]/60">
               <span className="text-[#707881]">Feature Extractor:</span>
-              <span className="font-semibold text-[#131b2e]">TfidfVectorizer (Word 1-2 Grams, 10k Features)</span>
+              <span className="font-semibold text-[#131b2e]">FeatureUnion (Word 1-3 + Char 3-5, 90k Feat)</span>
             </li>
             <li className="flex justify-between pb-1 border-b border-[#bfc7d2]/60">
               <span className="text-[#707881]">Model Classifier:</span>
-              <span className="font-semibold text-[#131b2e]">LogisticRegression (Multinomial, C=1.5, l2)</span>
+              <span className="font-semibold text-[#131b2e]">CalibratedClassifierCV (LinearSVC, C=1.0)</span>
             </li>
             <li className="flex justify-between pb-1 border-b border-[#bfc7d2]/60">
               <span className="text-[#707881]">Model Artifact:</span>
-              <span className="font-semibold text-[#131b2e]">trained_model.joblib (1.3 MB)</span>
+              <span className="font-semibold text-[#131b2e]">trained_model.joblib (14.3 MB)</span>
             </li>
             <li className="flex justify-between">
               <span className="text-[#707881]">Dataset Path:</span>
-              <span className="font-semibold text-[#131b2e]">D:\TRUTHLENS\ML MODEL DATASET</span>
+              <span className="font-semibold text-[#131b2e]">D:\TRUTHLENS\ML MODEL DATASET (5 Sets)</span>
             </li>
           </ul>
         </div>

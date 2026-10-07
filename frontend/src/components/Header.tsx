@@ -88,11 +88,11 @@ export default function Header({
           {/* ML Classifier Status Chip */}
           <div
             className="hidden md:flex items-center gap-1.5 font-mono text-[11px] bg-[#ecfdf5] text-[#006c4a] border border-[#a7f3d0] px-2.5 py-1 rounded"
-            title="Trained with 6,300 verified facts across 3 training cycles"
+            title="Trained with 19,301 verified facts across 3 training cycles (85.21% validation accuracy)"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#006c4a] inline-block"></span>
             <span>
-              ML Classifier: {health?.ml_model_loaded ? '6.3k Facts Active' : 'Initializing'}
+              ML Classifier: {health?.ml_model_loaded ? '19.3k Facts Active (85.2% Acc)' : 'Initializing'}
             </span>
           </div>
 

@@ -5,9 +5,11 @@ from typing import Dict, Any, List
 from collections import Counter
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, f1_score, confusion_matrix
-from sklearn.pipeline import Pipeline
+from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
+from sklearn.calibration import CalibratedClassifierCV
 from app.ml.dataset import FactDataset
 from app.ml.model import TruthLensMLClassifier
 
@@ -31,7 +33,8 @@ class MLTrainingHarness:
         if len(samples) < 10:
             raise ValueError(f"Insufficient samples for training. Found {len(samples)}, need at least 10.")
 
-        texts = [s["text"] for s in samples]
+        # Extract training features (using combined claim + evidence context when available for high accuracy)
+        texts = [s.get("combined") or s["text"] for s in samples]
         labels = [s["label"] for s in samples]
 
         label_counts = Counter(labels)
@@ -52,28 +55,37 @@ class MLTrainingHarness:
         print(f" Class Breakdown: {dict(label_counts)}")
         print(f"=================================================================\n")
 
-        # Distinct configuration parameters across the 3 training cycles
+        # 3 Progressive training cycles with modern feature engineering
         cycle_configs = [
             {
                 "cycle": 1,
-                "name": "Baseline TF-IDF (1, 2) + Logistic Regression (C=1.0)",
-                "ngram_range": (1, 2),
-                "max_features": 15000,
-                "C": 1.0
+                "name": "FeatureUnion (Word 1-2 + Char 3-5) + Logistic Regression (C=3.0)",
+                "type": "logreg",
+                "word_ngrams": (1, 2),
+                "word_features": 30000,
+                "char_ngrams": (3, 5),
+                "char_features": 25000,
+                "C": 3.0
             },
             {
                 "cycle": 2,
-                "name": "Sublinear TF-IDF (1, 2) + Fine-Tuned L2 Regularization (C=2.5)",
-                "ngram_range": (1, 2),
-                "max_features": 25000,
-                "C": 2.5
+                "name": "Expanded Word (1-3) + Char (3-5) FeatureUnion + Logistic Regression (C=5.0)",
+                "type": "logreg",
+                "word_ngrams": (1, 3),
+                "word_features": 40000,
+                "char_ngrams": (3, 5),
+                "char_features": 35000,
+                "C": 5.0
             },
             {
                 "cycle": 3,
-                "name": "Expanded Multi-Gram TF-IDF (1, 3) + Calibrated Regularization (C=3.5)",
-                "ngram_range": (1, 3),
-                "max_features": 35000,
-                "C": 3.5
+                "name": "Dual Word+Char FeatureUnion + Calibrated LinearSVC (C=1.0)",
+                "type": "linearsvc",
+                "word_ngrams": (1, 3),
+                "word_features": 50000,
+                "char_ngrams": (3, 5),
+                "char_features": 40000,
+                "C": 1.0
             }
         ]
 
@@ -82,20 +94,44 @@ class MLTrainingHarness:
             cycle_num = i + 1
             print(f">>> Running Training Cycle {cycle_num}/{cycles}: {cfg['name']}...")
 
-            # Construct cycle pipeline
-            pipeline = Pipeline([
-                ("tfidf", TfidfVectorizer(
-                    ngram_range=cfg["ngram_range"],
-                    max_features=cfg["max_features"],
+            # Construct feature union
+            feats = FeatureUnion([
+                ("word", TfidfVectorizer(
+                    ngram_range=cfg["word_ngrams"],
+                    max_features=cfg["word_features"],
                     sublinear_tf=True,
                     strip_accents="unicode"
                 )),
-                ("clf", LogisticRegression(
+                ("char", TfidfVectorizer(
+                    analyzer="char_wb",
+                    ngram_range=cfg["char_ngrams"],
+                    max_features=cfg["char_features"],
+                    sublinear_tf=True
+                ))
+            ])
+
+            if cfg["type"] == "linearsvc":
+                counts = Counter(y_train)
+                min_class_count = min(counts.values()) if counts else 1
+                if min_class_count < 2:
+                    clf = LogisticRegression(C=cfg["C"], max_iter=1500, solver="lbfgs")
+                else:
+                    cv_folds = max(2, min(5, min_class_count))
+                    clf = CalibratedClassifierCV(
+                        LinearSVC(C=cfg["C"], max_iter=3000, random_state=42),
+                        cv=cv_folds
+                    )
+            else:
+                clf = LogisticRegression(
                     C=cfg["C"],
                     max_iter=1500,
                     solver="lbfgs",
                     class_weight="balanced"
-                ))
+                )
+
+            pipeline = Pipeline([
+                ("feats", feats),
+                ("clf", clf)
             ])
 
             # Train on X_train
@@ -108,15 +144,23 @@ class MLTrainingHarness:
             cm = confusion_matrix(y_val, y_pred, labels=["CONTRADICTED", "SUPPORTED", "UNVERIFIED"]).tolist()
             report = classification_report(y_val, y_pred, output_dict=True, zero_division=0)
 
+            # Evaluate training set accuracy
+            y_train_pred = pipeline.predict(X_train[:min(3000, len(X_train))])
+            train_acc = accuracy_score(y_train[:min(3000, len(y_train))], y_train_pred)
+
             cycle_metrics = {
                 "cycle": cycle_num,
-                "config_name": cfg["name"],
+                "model_name": cfg["name"],
                 "train_samples": len(X_train),
                 "val_samples": len(X_val),
-                "accuracy": round(float(acc), 4),
-                "f1_macro": round(float(f1), 4),
-                "confusion_matrix": cm,
-                "classification_report": report
+                "train_accuracy": round(train_acc, 4),
+                "accuracy": round(acc, 4),
+                "f1_macro": round(f1, 4),
+                "classification_report": report,
+                "confusion_matrix": {
+                    "labels": ["CONTRADICTED", "SUPPORTED", "UNVERIFIED"],
+                    "matrix": cm
+                }
             }
             history.append(cycle_metrics)
 
@@ -146,13 +190,17 @@ class MLTrainingHarness:
 
         print(f"[TruthLens ML] Best model artifact saved to: {saved_path_backend}")
 
+        best_acc = max(h["accuracy"] for h in history)
         # Persist metrics summary
         metrics_summary = {
             "status": "trained",
+            "total_samples": len(samples),
             "total_facts_ingested": len(samples),
             "cycles_completed": cycles,
             "best_f1_macro": round(best_f1, 4),
-            "best_accuracy": max(h["accuracy"] for h in history),
+            "best_accuracy": round(best_acc, 4),
+            "val_accuracy": round(best_acc, 4),
+            "val_f1_macro": round(best_f1, 4),
             "cycle_history": history
         }
 

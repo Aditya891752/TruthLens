@@ -110,7 +110,11 @@ async def list_presets():
 @app.get("/api/ml-stats")
 async def ml_statistics():
     """Returns training metrics and accuracy progression of the ML model."""
-    for path in ["backend/app/ml/training_metrics.json", "training_metrics.json"]:
+    for path in [
+        os.path.join(os.path.dirname(__file__), "ml", "training_metrics.json"),
+        "backend/app/ml/training_metrics.json",
+        "training_metrics.json"
+    ]:
         if os.path.exists(path):
             with open(path, "r", encoding="utf-8") as f:
                 return json.load(f)
@@ -156,7 +160,7 @@ async def analyze_text(request: Request, payload: AnalyzeRequest):
 
         # Run ML model prediction if loaded
         if ml_classifier.is_trained:
-            pred_label, pred_conf = ml_classifier.predict(c_text)
+            pred_label, pred_conf = ml_classifier.predict(c_text, claim_obj.reasoning)
             ml_predictions.append(MLPrediction(
                 claim_id=claim_obj.id,
                 claim_text=c_text,

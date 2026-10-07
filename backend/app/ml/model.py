@@ -1,10 +1,11 @@
 import os
 import joblib
 from typing import List, Tuple, Dict, Any, Optional
-from sklearn.pipeline import Pipeline
+from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.calibration import CalibratedClassifierCV
+from sklearn.svm import LinearSVC
 
 
 class TruthLensMLClassifier:
@@ -22,19 +23,26 @@ class TruthLensMLClassifier:
         self.classes: List[str] = ["CONTRADICTED", "SUPPORTED", "UNVERIFIED"]
 
     def build_pipeline(self) -> Pipeline:
-        """Constructs the feature extraction and classification pipeline."""
-        return Pipeline([
-            ("tfidf", TfidfVectorizer(
-                ngram_range=(1, 2),
-                max_features=25000,
+        """Constructs the high-accuracy feature extraction and classification pipeline."""
+        feats = FeatureUnion([
+            ("word", TfidfVectorizer(
+                ngram_range=(1, 3),
+                max_features=50000,
                 sublinear_tf=True,
                 strip_accents="unicode"
             )),
-            ("clf", LogisticRegression(
-                C=2.5,
-                max_iter=1500,
-                solver="lbfgs",
-                class_weight="balanced"
+            ("char", TfidfVectorizer(
+                analyzer="char_wb",
+                ngram_range=(3, 5),
+                max_features=40000,
+                sublinear_tf=True
+            ))
+        ])
+
+        return Pipeline([
+            ("feats", feats),
+            ("clf", CalibratedClassifierCV(
+                LinearSVC(C=1.0, max_iter=3000, random_state=42)
             ))
         ])
 
@@ -46,15 +54,17 @@ class TruthLensMLClassifier:
         self.classes = list(self.pipeline.classes_)
         return self
 
-    def predict(self, claim_text: str) -> Tuple[str, float]:
+    def predict(self, claim_text: str, evidence_context: Optional[str] = None) -> Tuple[str, float]:
         """
         Predicts verdict and probability confidence for a given claim.
+        Optionally uses evidence context for cross-checked NLI verification.
         Returns: (predicted_label, confidence_score)
         """
         if not self.is_trained or not self.pipeline:
             return ("UNVERIFIED", 0.50)
 
-        probs = self.pipeline.predict_proba([claim_text])[0]
+        input_text = f"{claim_text} [EVIDENCE] {evidence_context}" if evidence_context else claim_text
+        probs = self.pipeline.predict_proba([input_text])[0]
         max_idx = int(probs.argmax())
         label = str(self.classes[max_idx])
         confidence = float(probs[max_idx])

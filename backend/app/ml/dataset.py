@@ -1,5 +1,6 @@
 import json
 import os
+import csv
 from typing import List, Dict, Any, Tuple
 import numpy as np
 
@@ -12,8 +13,6 @@ class FactDataset:
     @classmethod
     def load_from_csv(cls, filepath: str) -> List[Dict[str, Any]]:
         """Load facts from a CSV file with columns: claim/text, label, evidence, reasoning."""
-        import csv
-
         if not os.path.exists(filepath):
             raise FileNotFoundError(f"CSV file not found at: {filepath}")
 
@@ -41,7 +40,7 @@ class FactDataset:
                     all_samples.extend(loaded)
                 except Exception as e:
                     print(f"[FactDataset] Warning: Could not read {fname}: {e}")
-            elif fname.endswith(".json"):
+            elif fname.endswith(".json") or fname.endswith(".jsonl") or fname == "40585 (1)":
                 try:
                     loaded = cls.load_from_json(fpath)
                     print(f"[FactDataset] Loaded {len(loaded)} facts from {fname}")
@@ -53,15 +52,22 @@ class FactDataset:
 
     @classmethod
     def load_from_json(cls, filepath: str) -> List[Dict[str, Any]]:
-        """Load facts from a JSON file. Expected format: [{"text": "...", "label": "SUPPORTED"}]"""
+        """Load facts from a JSON or JSONL file."""
         if not os.path.exists(filepath):
             raise FileNotFoundError(f"Dataset file not found at: {filepath}")
 
-        with open(filepath, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-        if not isinstance(data, list):
-            raise ValueError("Dataset JSON must contain an array of fact objects.")
+        data = []
+        with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+            content = f.read().strip()
+            if content.startswith("["):
+                data = json.loads(content)
+            else:
+                for line in content.splitlines():
+                    if line.strip():
+                        try:
+                            data.append(json.loads(line))
+                        except Exception:
+                            pass
 
         return cls.validate_samples(data)
 
@@ -71,6 +77,7 @@ class FactDataset:
         valid_samples = []
         for i, s in enumerate(samples):
             text = s.get("text") or s.get("claim")
+            evidence = s.get("evidence") or ""
             label = (s.get("label") or s.get("verdict") or "").upper().strip()
 
             if not text or not isinstance(text, str) or len(text.strip()) < 5:
@@ -86,6 +93,8 @@ class FactDataset:
 
             valid_samples.append({
                 "text": text.strip(),
+                "evidence": evidence.strip(),
+                "combined": f"{text.strip()} [EVIDENCE] {evidence.strip()}" if evidence.strip() else text.strip(),
                 "label": label,
                 "metadata": s.get("metadata", {})
             })
@@ -98,11 +107,12 @@ class FactDataset:
         total = len(samples)
         counts = {"SUPPORTED": 0, "CONTRADICTED": 0, "UNVERIFIED": 0}
         for s in samples:
-            counts[s["label"]] = counts.get(s["label"], 0) + 1
+            l = s.get("label", "UNVERIFIED")
+            counts[l] = counts.get(l, 0) + 1
 
         return {
             "total_facts": total,
             "label_distribution": counts,
-            "is_sufficient_for_training": total >= 100,
-            "target_threshold": 6000
+            "is_sufficient_for_training": total >= 6000,
+            "target_threshold": 10800
         }

@@ -115,7 +115,7 @@ export default function MetricBar({ metrics, claims, mlPredictions }: MetricBarP
           </div>
           <div className="mt-4 font-mono text-[11px] text-[#707881] flex items-center gap-1">
             <span className="material-symbols-outlined text-[15px] text-[#707881]">database</span>
-            <span>6,300 Local Vector Factbase + Gemini Grounding</span>
+            <span>19,300+ Local Vector Factbase + Gemini Grounding</span>
           </div>
         </div>
 
